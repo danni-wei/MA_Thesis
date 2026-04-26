@@ -1,0 +1,17 @@
+Method: progress
+Checkpoint: checkpoint_progress.pt
+
+=== Sample Statistics ===
+Baseline mean: [0.018696395680308342, -0.026464082300662994]
+Baseline std : [1.0365065336227417, 1.043202519416809]
+PINN mean    : [-0.0068657537922263145, 0.03791333734989166]
+PINN std     : [1.010118007659912, 1.010594129562378]
+
+=== Baseline HMC Stats ===
+{'mean_accept_rate': 0.9996, 'mean_abs_delta_H': 0.00166997190117836}
+
+=== PINN-HMC Stats ===
+{'mean_accept_rate': 0.9828, 'mean_abs_delta_H': 0.04319459101855755}
+
+=== Trajectory Diagnostic ===
+{'mse_q': 0.0006722091347910464, 'mse_p': 0.0006151137058623135, 'mean_H_drift_ref': 0.007807453628629446, 'mean_H_drift_hat': 0.0352972187101841}

@@ -1,0 +1,17 @@
+Method: ema
+Checkpoint: checkpoint_ema.pt
+
+=== Sample Statistics ===
+Baseline mean: [0.018696395680308342, -0.026464082300662994]
+Baseline std : [1.0365065336227417, 1.043202519416809]
+PINN mean    : [0.000412628025515005, -0.1500617265701294]
+PINN std     : [3.1959498301148415e-05, 3.901170930475928e-05]
+
+=== Baseline HMC Stats ===
+{'mean_accept_rate': 0.9996, 'mean_abs_delta_H': 0.00166997190117836}
+
+=== PINN-HMC Stats ===
+{'mean_accept_rate': 1.0, 'mean_abs_delta_H': 1.0042400460388394}
+
+=== Trajectory Diagnostic ===
+{'mse_q': 0.4590896964073181, 'mse_p': 0.5178322196006775, 'mean_H_drift_ref': 0.007807453628629446, 'mean_H_drift_hat': 1.0984554377202471e-09}
