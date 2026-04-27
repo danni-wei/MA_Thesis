@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python pinn_hmc/target.py)",
+      "Bash(python pinn_hmc/sus.py)",
+      "Bash(python -c ' *)",
+      "Bash(python -m pinn_hmc.experiment_sus)"
+    ]
+  }
+}
