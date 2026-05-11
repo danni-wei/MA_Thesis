@@ -502,3 +502,154 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ─── Jacobian-corrected PINN-HMC (新增，不修改上面任何函数) ────────────────────
+
+def compute_pinn_log_jacobian(
+    model: TrajectoryPINN,
+    q0: torch.Tensor,
+    p0: torch.Tensor,
+    t_final: float,
+) -> torch.Tensor:
+    """
+    Log|det J| of the PINN map (q0, p0) → (q_T, p_T) for fixed t_final.
+
+    Uses torch.autograd.functional.jacobian to build the full 4×4 Jacobian
+    and torch.linalg.slogdet for the log-determinant (log-space for stability).
+
+    Parameters
+    ----------
+    model   : TrajectoryPINN
+    q0      : [1, 2] tensor
+    p0      : [1, 2] tensor
+    t_final : scalar float
+
+    Returns
+    -------
+    log_abs_det : scalar tensor  (detached, on same device as q0)
+    """
+    device = q0.device
+    dtype = q0.dtype
+
+    x0 = torch.cat([q0.detach(), p0.detach()], dim=-1).squeeze(0)  # [4]
+
+    with torch.enable_grad():
+        def _pinn_flat(x_flat: torch.Tensor) -> torch.Tensor:
+            q = x_flat[None, :2]
+            p = x_flat[None, 2:]
+            t = torch.full((1, 1), float(t_final), device=device, dtype=dtype)
+            q_hat, p_hat = model(q, p, t)
+            return torch.cat([q_hat, p_hat], dim=-1).squeeze(0)  # [4]
+
+        J = torch.autograd.functional.jacobian(_pinn_flat, x0, create_graph=False)
+        _, log_abs_det = torch.linalg.slogdet(J)
+
+    return log_abs_det.detach()
+
+
+def hmc_step_pinn_corrected(
+    model: TrajectoryPINN,
+    target,
+    q_current: torch.Tensor,
+    t_final: float,
+):
+    """
+    Single HMC step using PINN proposal with Jacobian-corrected acceptance:
+
+        log α = H(q0,p0) − H(q_T,p_T) − log|det J_PINN(q0,p0)|
+
+    This is the correct Metropolis-Hastings ratio for a non-volume-preserving
+    proposal (the leapfrog-replacing PINN map).  The uncorrected hmc_step_pinn
+    omits the last term, which is valid only when |det J| = 1.
+
+    Parameters / returns: identical to hmc_step_pinn, with the additional
+    key ``mean_log_det_J`` in the returned info dict.
+    """
+    batch_size = q_current.shape[0]
+
+    with torch.no_grad():
+        p0 = target.sample_momentum(batch_size, q_current.device)
+        t = torch.full(
+            (batch_size, 1), float(t_final),
+            device=q_current.device, dtype=q_current.dtype,
+        )
+        q_prop, p_prop = model(q_current, p0, t)
+        p_prop = -p_prop
+        H0 = target.H(q_current, p0)
+        H1 = target.H(q_prop, p_prop)
+
+    # Per-sample Jacobian correction (enable_grad handled inside helper)
+    log_det_J_list: list = []
+    for i in range(batch_size):
+        ld = compute_pinn_log_jacobian(
+            model, q_current[i : i + 1].detach(), p0[i : i + 1].detach(), t_final
+        )
+        log_det_J_list.append(ld)
+    log_det_J = torch.stack(log_det_J_list)  # [batch]
+
+    with torch.no_grad():
+        log_alpha = torch.clamp(H0 - H1 - log_det_J, max=80.0)
+        alpha = torch.exp(log_alpha).clamp(max=1.0)
+        u = torch.rand_like(alpha)
+        accept = u < alpha
+        q_next = torch.where(accept[:, None], q_prop, q_current)
+
+    info = {
+        "accept_rate": float(accept.float().mean().item()),
+        "mean_delta_H": float((H1 - H0).mean().item()),
+        "mean_abs_delta_H": float((H1 - H0).abs().mean().item()),
+        "mean_log_det_J": float(log_det_J.mean().item()),
+    }
+    return q_next, accept, alpha, info
+
+
+def run_hmc_pinn_corrected(
+    model: TrajectoryPINN,
+    target,
+    n_samples: int,
+    burn_in: int,
+    t_final: float,
+    init_q: Optional[torch.Tensor] = None,
+    device: Optional[torch.device] = None,
+):
+    """
+    Full HMC chain using PINN proposal with Jacobian-corrected acceptance.
+
+    Returns
+    -------
+    samples      : [n_samples, dim] CPU tensor
+    stats        : dict including ``mean_log_det_J``
+    log_det_Js   : list of per-step mean log|det J| values (burn-in included)
+    """
+    device = device or get_device()
+    q = (
+        init_q.clone().to(device)
+        if init_q is not None
+        else torch.zeros(1, target.dim, device=device)
+    )
+    if q.ndim == 1:
+        q = q.unsqueeze(0)
+
+    samples = []
+    accept_rates: list = []
+    delta_Hs: list = []
+    log_det_Js: list = []
+
+    total_steps = burn_in + n_samples
+    for i in range(total_steps):
+        q, _, _, info = hmc_step_pinn_corrected(model, target, q, t_final)
+        accept_rates.append(info["accept_rate"])
+        delta_Hs.append(info["mean_abs_delta_H"])
+        log_det_Js.append(info["mean_log_det_J"])
+
+        if i >= burn_in:
+            samples.append(q.squeeze(0).detach().cpu())
+
+    out = torch.stack(samples, dim=0)
+    stats = {
+        "mean_accept_rate": float(sum(accept_rates) / len(accept_rates)),
+        "mean_abs_delta_H": float(sum(delta_Hs) / len(delta_Hs)),
+        "mean_log_det_J": float(sum(log_det_Js) / len(log_det_Js)),
+    }
+    return out, stats, log_det_Js

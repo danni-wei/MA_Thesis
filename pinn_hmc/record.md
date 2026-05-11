@@ -351,7 +351,44 @@ Among them, progress-based weighting provides the best trade-off between stabili
 
 ---
 
-## 4. Overall Conclusions
+## 4. KS Test: Statistical Comparison of Sample Distributions
+
+**数据来源：** `compare_pinn_hnn/checkpoint_compare_pinn_hnn.pt`，每个方法 2000 个后燃烧期样本，目标分布为 BananaTarget（b=0.15, σ₁=σ₂=1）。
+
+**方法：** Two-sample Kolmogorov-Smirnov test（`scipy.stats.ks_2samp`）
+
+- 原假设 H₀：两组样本来自同一连续分布
+- 检验统计量 D = max |F₁(x) − F₂(x)|（经验分布函数之差的上确界）
+- **p-value > 0.05**：无法拒绝 H₀，两组样本与同一分布一致
+- **p-value < 0.05**：拒绝 H₀，两组样本来自统计上不同的分布
+
+n = 2000，α=0.05 临界值 D_crit ≈ 1.358 / √(n/2) ≈ 0.0430。
+
+### Results
+
+| Pair | Dimension | KS statistic | p-value | Conclusion |
+|------|-----------|------------:|--------:|------------|
+| Baseline HMC vs PINN-HMC | q1 | 0.0250 | 5.5968e-01 | same dist. |
+| Baseline HMC vs PINN-HMC | q2 | 0.0430 | 4.9535e-02 | **diff. dist.** ⚠️ |
+| Baseline HMC vs HNN-HMC  | q1 | 0.0350 | 1.7250e-01 | same dist. |
+| Baseline HMC vs HNN-HMC  | q2 | 0.0435 | 4.5429e-02 | **diff. dist.** ⚠️ |
+| PINN-HMC vs HNN-HMC      | q1 | 0.0385 | 1.0316e-01 | same dist. |
+| PINN-HMC vs HNN-HMC      | q2 | 0.0165 | 9.4837e-01 | same dist. |
+
+### Interpretation
+
+- **q1 维度**：三种方法两两之间均无显著差异（p > 0.10），样本边际分布一致。
+- **q2 维度**：PINN-HMC 和 HNN-HMC 与 Baseline 相比 p 值略低于 0.05（分别为 0.0495 和 0.0454），统计上可以拒绝同分布假设，但 KS 统计量极小（≈0.043），实际差异微弱。
+- **PINN-HMC vs HNN-HMC**：两个神经网络方法之间在 q1（p=0.103）和 q2（p=0.948）上均无显著差异，尽管架构不同，生成的样本分布几乎一致。
+- **结论**：banana 分布的弯曲轴（q2）对代理模型更难精确还原，但差异量级很小（D≈0.043），在实际应用中影响有限。
+
+### 图表
+
+见 `compare_pinn_hnn/plots_compare_pinn_hnn/ks_test_results.png` 和 `ks_test_report.md`。
+
+---
+
+## 5. Overall Conclusions
 
 ### What worked
 - Progress-based λ balancing
