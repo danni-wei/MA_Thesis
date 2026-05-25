@@ -4,7 +4,14 @@
       "Bash(python pinn_hmc/target.py)",
       "Bash(python pinn_hmc/sus.py)",
       "Bash(python -c ' *)",
-      "Bash(python -m pinn_hmc.experiment_sus)"
+      "Bash(python -m pinn_hmc.experiment_sus)",
+      "Bash(python sus_leapfrog_vs_yoshida.py)",
+      "Bash(python sus_stepsize_sweep.py)",
+      "Bash(python sus_banana.py)",
+      "Bash(python sus_high_dim.py)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_linear\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_linear\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_banana\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_banana\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_highdim\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_highdim\\\\\", \"\"\\) })"
     ]
   }
 }
