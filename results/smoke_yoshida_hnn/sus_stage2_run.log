@@ -1,0 +1,822 @@
+============================================================
+Stage 2 SuS — N_rep=30  tag=full
+step_size=0.1, n_steps=10, SUS_N=500, burn_in=200
+============================================================
+Device: cuda
+
+[Loading HNN models]
+  Loaded HNN(gaussian) from hnn_gaussian.pt
+  Loaded HNN(banana) from hnn_banana.pt
+Models loaded.
+
+[Running 30 reps × 4 configs]
+
+[gaussian] leapfrog+hnn  (30 reps)
+  rep01/30 seed=0 ...
+    rep01/30 L1: threshold=1.7153
+    rep01/30 L2: threshold=0.7459
+    rep01/30 L3: threshold=0.0180
+    rep01/30 L4: threshold=-0.4894
+    rep01/30 → terminated at L4, Pf=9.0000e-04
+  rep01/30 done: Pf=9.0000e-04  levels=4  (9.3s rep, 9.3s total)
+  rep02/30 seed=1 ...
+    rep02/30 L1: threshold=1.7292
+    rep02/30 L2: threshold=0.7213
+    rep02/30 L3: threshold=-0.2156
+    rep02/30 → terminated at L3, Pf=1.4000e-03
+  rep02/30 done: Pf=1.4000e-03  levels=3  (8.5s rep, 17.9s total)
+  rep03/30 seed=2 ...
+    rep03/30 L1: threshold=1.6982
+    rep03/30 L2: threshold=0.7283
+    rep03/30 L3: threshold=-0.0081
+    rep03/30 → terminated at L3, Pf=1.0200e-03
+  rep03/30 done: Pf=1.0200e-03  levels=3  (8.5s rep, 26.3s total)
+  rep04/30 seed=3 ...
+    rep04/30 L1: threshold=1.7133
+    rep04/30 L2: threshold=0.7164
+    rep04/30 L3: threshold=-0.1975
+    rep04/30 → terminated at L3, Pf=1.8000e-03
+  rep04/30 done: Pf=1.8000e-03  levels=3  (8.5s rep, 34.9s total)
+  rep05/30 seed=4 ...
+    rep05/30 L1: threshold=1.8329
+    rep05/30 L2: threshold=0.7402
+    rep05/30 L3: threshold=-0.1327
+    rep05/30 → terminated at L3, Pf=1.5400e-03
+  rep05/30 done: Pf=1.5400e-03  levels=3  (8.5s rep, 43.4s total)
+  rep06/30 seed=5 ...
+    rep06/30 L1: threshold=1.7781
+    rep06/30 L2: threshold=0.6669
+    rep06/30 L3: threshold=-0.1310
+    rep06/30 → terminated at L3, Pf=1.6200e-03
+  rep06/30 done: Pf=1.6200e-03  levels=3  (8.6s rep, 52.0s total)
+  rep07/30 seed=6 ...
+    rep07/30 L1: threshold=1.7065
+    rep07/30 L2: threshold=0.6083
+    rep07/30 L3: threshold=0.0263
+    rep07/30 L4: threshold=-0.5885
+    rep07/30 → terminated at L4, Pf=8.3400e-04
+  rep07/30 done: Pf=8.3400e-04  levels=4  (8.8s rep, 60.8s total)
+  rep08/30 seed=7 ...
+    rep08/30 L1: threshold=1.8534
+    rep08/30 L2: threshold=0.8164
+    rep08/30 L3: threshold=-0.1508
+    rep08/30 → terminated at L3, Pf=1.2600e-03
+  rep08/30 done: Pf=1.2600e-03  levels=3  (8.5s rep, 69.3s total)
+  rep09/30 seed=8 ...
+    rep09/30 L1: threshold=1.7987
+    rep09/30 L2: threshold=0.8744
+    rep09/30 L3: threshold=0.1126
+    rep09/30 L4: threshold=-0.6024
+    rep09/30 → terminated at L4, Pf=6.9400e-04
+  rep09/30 done: Pf=6.9400e-04  levels=4  (8.9s rep, 78.2s total)
+  rep10/30 seed=9 ...
+    rep10/30 L1: threshold=1.6386
+    rep10/30 L2: threshold=0.6927
+    rep10/30 L3: threshold=-0.0995
+    rep10/30 → terminated at L3, Pf=1.8800e-03
+  rep10/30 done: Pf=1.8800e-03  levels=3  (8.9s rep, 87.1s total)
+  rep11/30 seed=10 ...
+    rep11/30 L1: threshold=1.6775
+    rep11/30 L2: threshold=0.7206
+    rep11/30 L3: threshold=-0.0054
+    rep11/30 → terminated at L3, Pf=1.1200e-03
+  rep11/30 done: Pf=1.1200e-03  levels=3  (8.4s rep, 95.5s total)
+  rep12/30 seed=11 ...
+    rep12/30 L1: threshold=1.6280
+    rep12/30 L2: threshold=0.5236
+    rep12/30 L3: threshold=-0.1013
+    rep12/30 → terminated at L3, Pf=2.3000e-03
+  rep12/30 done: Pf=2.3000e-03  levels=3  (8.4s rep, 103.9s total)
+  rep13/30 seed=12 ...
+    rep13/30 L1: threshold=1.8130
+    rep13/30 L2: threshold=0.8091
+    rep13/30 L3: threshold=-0.0824
+    rep13/30 → terminated at L3, Pf=1.2800e-03
+  rep13/30 done: Pf=1.2800e-03  levels=3  (8.4s rep, 112.4s total)
+  rep14/30 seed=13 ...
+    rep14/30 L1: threshold=1.5924
+    rep14/30 L2: threshold=0.6833
+    rep14/30 L3: threshold=-0.1301
+    rep14/30 → terminated at L3, Pf=1.2000e-03
+  rep14/30 done: Pf=1.2000e-03  levels=3  (8.5s rep, 120.9s total)
+  rep15/30 seed=14 ...
+    rep15/30 L1: threshold=1.6558
+    rep15/30 L2: threshold=0.5869
+    rep15/30 L3: threshold=-0.1696
+    rep15/30 → terminated at L3, Pf=1.7400e-03
+  rep15/30 done: Pf=1.7400e-03  levels=3  (8.6s rep, 129.5s total)
+  rep16/30 seed=15 ...
+    rep16/30 L1: threshold=1.7735
+    rep16/30 L2: threshold=0.6250
+    rep16/30 L3: threshold=-0.1640
+    rep16/30 → terminated at L3, Pf=1.5200e-03
+  rep16/30 done: Pf=1.5200e-03  levels=3  (8.4s rep, 137.8s total)
+  rep17/30 seed=16 ...
+    rep17/30 L1: threshold=1.7926
+    rep17/30 L2: threshold=0.8500
+    rep17/30 L3: threshold=0.0681
+    rep17/30 L4: threshold=-0.5764
+    rep17/30 → terminated at L4, Pf=8.0400e-04
+  rep17/30 done: Pf=8.0400e-04  levels=4  (8.9s rep, 146.7s total)
+  rep18/30 seed=17 ...
+    rep18/30 L1: threshold=1.7902
+    rep18/30 L2: threshold=0.7445
+    rep18/30 L3: threshold=0.1185
+    rep18/30 L4: threshold=-0.5619
+    rep18/30 → terminated at L4, Pf=6.7400e-04
+  rep18/30 done: Pf=6.7400e-04  levels=4  (8.8s rep, 155.5s total)
+  rep19/30 seed=18 ...
+    rep19/30 L1: threshold=1.7571
+    rep19/30 L2: threshold=0.7032
+    rep19/30 L3: threshold=-0.1483
+    rep19/30 → terminated at L3, Pf=1.1400e-03
+  rep19/30 done: Pf=1.1400e-03  levels=3  (8.5s rep, 164.0s total)
+  rep20/30 seed=19 ...
+    rep20/30 L1: threshold=1.7779
+    rep20/30 L2: threshold=0.7275
+    rep20/30 L3: threshold=-0.1164
+    rep20/30 → terminated at L3, Pf=2.0400e-03
+  rep20/30 done: Pf=2.0400e-03  levels=3  (8.5s rep, 172.5s total)
+  rep21/30 seed=20 ...
+    rep21/30 L1: threshold=1.7979
+    rep21/30 L2: threshold=0.7631
+    rep21/30 L3: threshold=0.1145
+    rep21/30 L4: threshold=-0.5547
+    rep21/30 → terminated at L4, Pf=7.9400e-04
+  rep21/30 done: Pf=7.9400e-04  levels=4  (8.9s rep, 181.3s total)
+  rep22/30 seed=21 ...
+    rep22/30 L1: threshold=1.8395
+    rep22/30 L2: threshold=0.7884
+    rep22/30 L3: threshold=-0.0496
+    rep22/30 → terminated at L3, Pf=1.1200e-03
+  rep22/30 done: Pf=1.1200e-03  levels=3  (8.4s rep, 189.7s total)
+  rep23/30 seed=22 ...
+    rep23/30 L1: threshold=1.7240
+    rep23/30 L2: threshold=0.6887
+    rep23/30 L3: threshold=-0.1927
+    rep23/30 → terminated at L3, Pf=1.4400e-03
+  rep23/30 done: Pf=1.4400e-03  levels=3  (8.4s rep, 198.1s total)
+  rep24/30 seed=23 ...
+    rep24/30 L1: threshold=1.8340
+    rep24/30 L2: threshold=0.7020
+    rep24/30 L3: threshold=-0.1857
+    rep24/30 → terminated at L3, Pf=1.8800e-03
+  rep24/30 done: Pf=1.8800e-03  levels=3  (8.4s rep, 206.5s total)
+  rep25/30 seed=24 ...
+    rep25/30 L1: threshold=1.6459
+    rep25/30 L2: threshold=0.6655
+    rep25/30 L3: threshold=0.0566
+    rep25/30 L4: threshold=-0.6865
+    rep25/30 → terminated at L4, Pf=9.0000e-04
+  rep25/30 done: Pf=9.0000e-04  levels=4  (8.8s rep, 215.3s total)
+  rep26/30 seed=25 ...
+    rep26/30 L1: threshold=1.8235
+    rep26/30 L2: threshold=0.7607
+    rep26/30 L3: threshold=0.0005
+    rep26/30 L4: threshold=-0.6118
+    rep26/30 → terminated at L4, Pf=1.0000e-03
+  rep26/30 done: Pf=1.0000e-03  levels=4  (8.7s rep, 224.0s total)
+  rep27/30 seed=26 ...
+    rep27/30 L1: threshold=1.6928
+    rep27/30 L2: threshold=0.6608
+    rep27/30 L3: threshold=-0.3380
+    rep27/30 → terminated at L3, Pf=1.9200e-03
+  rep27/30 done: Pf=1.9200e-03  levels=3  (8.5s rep, 232.5s total)
+  rep28/30 seed=27 ...
+    rep28/30 L1: threshold=1.7388
+    rep28/30 L2: threshold=0.6110
+    rep28/30 L3: threshold=-0.0711
+    rep28/30 → terminated at L3, Pf=1.4200e-03
+  rep28/30 done: Pf=1.4200e-03  levels=3  (8.4s rep, 240.9s total)
+  rep29/30 seed=28 ...
+    rep29/30 L1: threshold=1.7815
+    rep29/30 L2: threshold=0.7427
+    rep29/30 L3: threshold=0.0141
+    rep29/30 L4: threshold=-0.5049
+    rep29/30 → terminated at L4, Pf=9.2400e-04
+  rep29/30 done: Pf=9.2400e-04  levels=4  (9.1s rep, 250.0s total)
+  rep30/30 seed=29 ...
+    rep30/30 L1: threshold=1.8653
+    rep30/30 L2: threshold=0.6583
+    rep30/30 L3: threshold=0.0395
+    rep30/30 L4: threshold=-0.9356
+    rep30/30 → terminated at L4, Pf=6.5600e-04
+  rep30/30 done: Pf=6.5600e-04  levels=4  (8.7s rep, 258.8s total)
+
+[gaussian] yoshida+hnn  (30 reps)
+  rep01/30 seed=0 ...
+    rep01/30 L1: threshold=1.7186
+    rep01/30 L2: threshold=0.7488
+    rep01/30 L3: threshold=0.0247
+    rep01/30 L4: threshold=-0.4795
+    rep01/30 → terminated at L4, Pf=8.9800e-04
+  rep01/30 done: Pf=8.9800e-04  levels=4  (26.3s rep, 26.3s total)
+  rep02/30 seed=1 ...
+    rep02/30 L1: threshold=1.7306
+    rep02/30 L2: threshold=0.7230
+    rep02/30 L3: threshold=-0.2078
+    rep02/30 → terminated at L3, Pf=1.4400e-03
+  rep02/30 done: Pf=1.4400e-03  levels=3  (26.4s rep, 52.7s total)
+  rep03/30 seed=2 ...
+    rep03/30 L1: threshold=1.6986
+    rep03/30 L2: threshold=0.7308
+    rep03/30 L3: threshold=-0.0032
+    rep03/30 → terminated at L3, Pf=1.0000e-03
+  rep03/30 done: Pf=1.0000e-03  levels=3  (26.9s rep, 79.6s total)
+  rep04/30 seed=3 ...
+    rep04/30 L1: threshold=1.7154
+    rep04/30 L2: threshold=0.7183
+    rep04/30 L3: threshold=-0.1968
+    rep04/30 → terminated at L3, Pf=1.8000e-03
+  rep04/30 done: Pf=1.8000e-03  levels=3  (27.0s rep, 106.6s total)
+  rep05/30 seed=4 ...
+    rep05/30 L1: threshold=1.8249
+    rep05/30 L2: threshold=0.7030
+    rep05/30 L3: threshold=-0.1261
+    rep05/30 → terminated at L3, Pf=1.6600e-03
+  rep05/30 done: Pf=1.6600e-03  levels=3  (27.2s rep, 133.9s total)
+  rep06/30 seed=5 ...
+    rep06/30 L1: threshold=1.7807
+    rep06/30 L2: threshold=0.6694
+    rep06/30 L3: threshold=-0.1278
+    rep06/30 → terminated at L3, Pf=1.6600e-03
+  rep06/30 done: Pf=1.6600e-03  levels=3  (26.5s rep, 160.4s total)
+  rep07/30 seed=6 ...
+    rep07/30 L1: threshold=1.7119
+    rep07/30 L2: threshold=0.6077
+    rep07/30 L3: threshold=0.0248
+    rep07/30 L4: threshold=-0.5853
+    rep07/30 → terminated at L4, Pf=9.7400e-04
+  rep07/30 done: Pf=9.7400e-04  levels=4  (27.5s rep, 187.8s total)
+  rep08/30 seed=7 ...
+    rep08/30 L1: threshold=1.8568
+    rep08/30 L2: threshold=0.7940
+    rep08/30 L3: threshold=-0.1974
+    rep08/30 → terminated at L3, Pf=1.5400e-03
+  rep08/30 done: Pf=1.5400e-03  levels=3  (26.4s rep, 214.2s total)
+  rep09/30 seed=8 ...
+    rep09/30 L1: threshold=1.8009
+    rep09/30 L2: threshold=0.8752
+    rep09/30 L3: threshold=0.1178
+    rep09/30 L4: threshold=-0.5993
+    rep09/30 → terminated at L4, Pf=6.8200e-04
+  rep09/30 done: Pf=6.8200e-04  levels=4  (27.6s rep, 241.8s total)
+  rep10/30 seed=9 ...
+    rep10/30 L1: threshold=1.6400
+    rep10/30 L2: threshold=0.6764
+    rep10/30 L3: threshold=-0.0992
+    rep10/30 → terminated at L3, Pf=2.0200e-03
+  rep10/30 done: Pf=2.0200e-03  levels=3  (26.4s rep, 268.2s total)
+  rep11/30 seed=10 ...
+    rep11/30 L1: threshold=1.6805
+    rep11/30 L2: threshold=0.7226
+    rep11/30 L3: threshold=-0.0028
+    rep11/30 → terminated at L3, Pf=1.1200e-03
+  rep11/30 done: Pf=1.1200e-03  levels=3  (26.6s rep, 294.7s total)
+  rep12/30 seed=11 ...
+    rep12/30 L1: threshold=1.6299
+    rep12/30 L2: threshold=0.5210
+    rep12/30 L3: threshold=-0.0999
+    rep12/30 → terminated at L3, Pf=2.3200e-03
+  rep12/30 done: Pf=2.3200e-03  levels=3  (26.7s rep, 321.5s total)
+  rep13/30 seed=12 ...
+    rep13/30 L1: threshold=1.8136
+    rep13/30 L2: threshold=0.8135
+    rep13/30 L3: threshold=-0.0760
+    rep13/30 → terminated at L3, Pf=1.2800e-03
+  rep13/30 done: Pf=1.2800e-03  levels=3  (26.8s rep, 348.2s total)
+  rep14/30 seed=13 ...
+    rep14/30 L1: threshold=1.5840
+    rep14/30 L2: threshold=0.6758
+    rep14/30 L3: threshold=-0.1276
+    rep14/30 → terminated at L3, Pf=1.2000e-03
+  rep14/30 done: Pf=1.2000e-03  levels=3  (26.7s rep, 375.0s total)
+  rep15/30 seed=14 ...
+    rep15/30 L1: threshold=1.6571
+    rep15/30 L2: threshold=0.5615
+    rep15/30 L3: threshold=-0.1593
+    rep15/30 → terminated at L3, Pf=2.2400e-03
+  rep15/30 done: Pf=2.2400e-03  levels=3  (27.0s rep, 401.9s total)
+  rep16/30 seed=15 ...
+    rep16/30 L1: threshold=1.7731
+    rep16/30 L2: threshold=0.6136
+    rep16/30 L3: threshold=-0.1583
+    rep16/30 → terminated at L3, Pf=1.7400e-03
+  rep16/30 done: Pf=1.7400e-03  levels=3  (26.9s rep, 428.9s total)
+  rep17/30 seed=16 ...
+    rep17/30 L1: threshold=1.7730
+    rep17/30 L2: threshold=0.8336
+    rep17/30 L3: threshold=0.0730
+    rep17/30 L4: threshold=-0.5717
+    rep17/30 → terminated at L4, Pf=8.0000e-04
+  rep17/30 done: Pf=8.0000e-04  levels=4  (28.0s rep, 456.9s total)
+  rep18/30 seed=17 ...
+    rep18/30 L1: threshold=1.7930
+    rep18/30 L2: threshold=0.7447
+    rep18/30 L3: threshold=0.1202
+    rep18/30 L4: threshold=-0.5629
+    rep18/30 → terminated at L4, Pf=6.7400e-04
+  rep18/30 done: Pf=6.7400e-04  levels=4  (27.9s rep, 484.8s total)
+  rep19/30 seed=18 ...
+    rep19/30 L1: threshold=1.7591
+    rep19/30 L2: threshold=0.7068
+    rep19/30 L3: threshold=-0.1457
+    rep19/30 → terminated at L3, Pf=1.1400e-03
+  rep19/30 done: Pf=1.1400e-03  levels=3  (26.7s rep, 511.5s total)
+  rep20/30 seed=19 ...
+    rep20/30 L1: threshold=1.7725
+    rep20/30 L2: threshold=0.6992
+    rep20/30 L3: threshold=-0.1258
+    rep20/30 → terminated at L3, Pf=2.1800e-03
+  rep20/30 done: Pf=2.1800e-03  levels=3  (27.4s rep, 538.9s total)
+  rep21/30 seed=20 ...
+    rep21/30 L1: threshold=1.7985
+    rep21/30 L2: threshold=0.7686
+    rep21/30 L3: threshold=0.1185
+    rep21/30 L4: threshold=-0.5480
+    rep21/30 → terminated at L4, Pf=7.7400e-04
+  rep21/30 done: Pf=7.7400e-04  levels=4  (27.5s rep, 566.5s total)
+  rep22/30 seed=21 ...
+    rep22/30 L1: threshold=1.8418
+    rep22/30 L2: threshold=0.7924
+    rep22/30 L3: threshold=-0.0388
+    rep22/30 → terminated at L3, Pf=1.1200e-03
+  rep22/30 done: Pf=1.1200e-03  levels=3  (26.2s rep, 592.7s total)
+  rep23/30 seed=22 ...
+    rep23/30 L1: threshold=1.7090
+    rep23/30 L2: threshold=0.6912
+    rep23/30 L3: threshold=-0.1857
+    rep23/30 → terminated at L3, Pf=1.4400e-03
+  rep23/30 done: Pf=1.4400e-03  levels=3  (26.1s rep, 618.8s total)
+  rep24/30 seed=23 ...
+    rep24/30 L1: threshold=1.8340
+    rep24/30 L2: threshold=0.7038
+    rep24/30 L3: threshold=-0.1653
+    rep24/30 → terminated at L3, Pf=1.7600e-03
+  rep24/30 done: Pf=1.7600e-03  levels=3  (26.6s rep, 645.4s total)
+  rep25/30 seed=24 ...
+    rep25/30 L1: threshold=1.6452
+    rep25/30 L2: threshold=0.6690
+    rep25/30 L3: threshold=0.0584
+    rep25/30 L4: threshold=-0.6830
+    rep25/30 → terminated at L4, Pf=8.9400e-04
+  rep25/30 done: Pf=8.9400e-04  levels=4  (27.6s rep, 672.9s total)
+  rep26/30 seed=25 ...
+    rep26/30 L1: threshold=1.8193
+    rep26/30 L2: threshold=0.7612
+    rep26/30 L3: threshold=-0.0044
+    rep26/30 → terminated at L3, Pf=1.0400e-03
+  rep26/30 done: Pf=1.0400e-03  levels=3  (26.9s rep, 699.8s total)
+  rep27/30 seed=26 ...
+    rep27/30 L1: threshold=1.7182
+    rep27/30 L2: threshold=0.6655
+    rep27/30 L3: threshold=-0.3301
+    rep27/30 → terminated at L3, Pf=1.9200e-03
+  rep27/30 done: Pf=1.9200e-03  levels=3  (26.7s rep, 726.5s total)
+  rep28/30 seed=27 ...
+    rep28/30 L1: threshold=1.7429
+    rep28/30 L2: threshold=0.6145
+    rep28/30 L3: threshold=-0.0695
+    rep28/30 → terminated at L3, Pf=1.4200e-03
+  rep28/30 done: Pf=1.4200e-03  levels=3  (26.5s rep, 753.0s total)
+  rep29/30 seed=28 ...
+    rep29/30 L1: threshold=1.7813
+    rep29/30 L2: threshold=0.7471
+    rep29/30 L3: threshold=0.0168
+    rep29/30 L4: threshold=-0.4947
+    rep29/30 → terminated at L4, Pf=9.2400e-04
+  rep29/30 done: Pf=9.2400e-04  levels=4  (27.3s rep, 780.2s total)
+  rep30/30 seed=29 ...
+    rep30/30 L1: threshold=1.8599
+    rep30/30 L2: threshold=0.6518
+    rep30/30 L3: threshold=0.0445
+    rep30/30 L4: threshold=-0.9218
+    rep30/30 → terminated at L4, Pf=6.5600e-04
+  rep30/30 done: Pf=6.5600e-04  levels=4  (27.2s rep, 807.4s total)
+
+[banana] leapfrog+hnn  (30 reps)
+  rep01/30 seed=0 ...
+    rep01/30 L1: threshold=1.7387
+    rep01/30 L2: threshold=0.7271
+    rep01/30 L3: threshold=-0.0065
+    rep01/30 → terminated at L3, Pf=1.0400e-03
+  rep01/30 done: Pf=1.0400e-03  levels=3  (9.0s rep, 9.0s total)
+  rep02/30 seed=1 ...
+    rep02/30 L1: threshold=1.7109
+    rep02/30 L2: threshold=0.6741
+    rep02/30 L3: threshold=-0.3484
+    rep02/30 → terminated at L3, Pf=2.0600e-03
+  rep02/30 done: Pf=2.0600e-03  levels=3  (8.9s rep, 17.9s total)
+  rep03/30 seed=2 ...
+    rep03/30 L1: threshold=1.6605
+    rep03/30 L2: threshold=0.6396
+    rep03/30 L3: threshold=0.0483
+    rep03/30 L4: threshold=-0.3035
+    rep03/30 → terminated at L4, Pf=8.4000e-04
+  rep03/30 done: Pf=8.4000e-04  levels=4  (9.3s rep, 27.2s total)
+  rep04/30 seed=3 ...
+    rep04/30 L1: threshold=1.7037
+    rep04/30 L2: threshold=0.6351
+    rep04/30 L3: threshold=-0.0122
+    rep04/30 → terminated at L3, Pf=1.1000e-03
+  rep04/30 done: Pf=1.1000e-03  levels=3  (8.6s rep, 35.8s total)
+  rep05/30 seed=4 ...
+    rep05/30 L1: threshold=1.8029
+    rep05/30 L2: threshold=0.7894
+    rep05/30 L3: threshold=-0.0770
+    rep05/30 → terminated at L3, Pf=1.3400e-03
+  rep05/30 done: Pf=1.3400e-03  levels=3  (9.0s rep, 44.8s total)
+  rep06/30 seed=5 ...
+    rep06/30 L1: threshold=1.7064
+    rep06/30 L2: threshold=0.5766
+    rep06/30 L3: threshold=-0.1812
+    rep06/30 → terminated at L3, Pf=1.8400e-03
+  rep06/30 done: Pf=1.8400e-03  levels=3  (9.0s rep, 53.8s total)
+  rep07/30 seed=6 ...
+    rep07/30 L1: threshold=1.6583
+    rep07/30 L2: threshold=0.6170
+    rep07/30 L3: threshold=-0.1133
+    rep07/30 → terminated at L3, Pf=1.6800e-03
+  rep07/30 done: Pf=1.6800e-03  levels=3  (8.6s rep, 62.4s total)
+  rep08/30 seed=7 ...
+    rep08/30 L1: threshold=1.8667
+    rep08/30 L2: threshold=0.8385
+    rep08/30 L3: threshold=-0.0803
+    rep08/30 → terminated at L3, Pf=1.1600e-03
+  rep08/30 done: Pf=1.1600e-03  levels=3  (9.1s rep, 71.5s total)
+  rep09/30 seed=8 ...
+    rep09/30 L1: threshold=1.7846
+    rep09/30 L2: threshold=0.7658
+    rep09/30 L3: threshold=-0.0139
+    rep09/30 → terminated at L3, Pf=1.3200e-03
+  rep09/30 done: Pf=1.3200e-03  levels=3  (8.6s rep, 80.1s total)
+  rep10/30 seed=9 ...
+    rep10/30 L1: threshold=1.6347
+    rep10/30 L2: threshold=0.5610
+    rep10/30 L3: threshold=-0.3463
+    rep10/30 → terminated at L3, Pf=2.7200e-03
+  rep10/30 done: Pf=2.7200e-03  levels=3  (8.4s rep, 88.5s total)
+  rep11/30 seed=10 ...
+    rep11/30 L1: threshold=1.7139
+    rep11/30 L2: threshold=0.7210
+    rep11/30 L3: threshold=0.1042
+    rep11/30 L4: threshold=-0.2780
+    rep11/30 → terminated at L4, Pf=4.3800e-04
+  rep11/30 done: Pf=4.3800e-04  levels=4  (8.8s rep, 97.3s total)
+  rep12/30 seed=11 ...
+    rep12/30 L1: threshold=1.6041
+    rep12/30 L2: threshold=0.4903
+    rep12/30 L3: threshold=-0.2205
+    rep12/30 → terminated at L3, Pf=2.4200e-03
+  rep12/30 done: Pf=2.4200e-03  levels=3  (8.5s rep, 105.8s total)
+  rep13/30 seed=12 ...
+    rep13/30 L1: threshold=1.7684
+    rep13/30 L2: threshold=0.8071
+    rep13/30 L3: threshold=0.0925
+    rep13/30 L4: threshold=-0.5761
+    rep13/30 → terminated at L4, Pf=7.7000e-04
+  rep13/30 done: Pf=7.7000e-04  levels=4  (8.9s rep, 114.8s total)
+  rep14/30 seed=13 ...
+    rep14/30 L1: threshold=1.6491
+    rep14/30 L2: threshold=0.6083
+    rep14/30 L3: threshold=-0.1632
+    rep14/30 → terminated at L3, Pf=1.5400e-03
+  rep14/30 done: Pf=1.5400e-03  levels=3  (8.5s rep, 123.2s total)
+  rep15/30 seed=14 ...
+    rep15/30 L1: threshold=1.6586
+    rep15/30 L2: threshold=0.5304
+    rep15/30 L3: threshold=-0.1394
+    rep15/30 → terminated at L3, Pf=1.4600e-03
+  rep15/30 done: Pf=1.4600e-03  levels=3  (8.5s rep, 131.7s total)
+  rep16/30 seed=15 ...
+    rep16/30 L1: threshold=1.7618
+    rep16/30 L2: threshold=0.7430
+    rep16/30 L3: threshold=-0.0398
+    rep16/30 → terminated at L3, Pf=1.5000e-03
+  rep16/30 done: Pf=1.5000e-03  levels=3  (8.5s rep, 140.2s total)
+  rep17/30 seed=16 ...
+    rep17/30 L1: threshold=1.7784
+    rep17/30 L2: threshold=0.7920
+    rep17/30 L3: threshold=0.0295
+    rep17/30 L4: threshold=-0.5843
+    rep17/30 → terminated at L4, Pf=8.1600e-04
+  rep17/30 done: Pf=8.1600e-04  levels=4  (9.0s rep, 149.2s total)
+  rep18/30 seed=17 ...
+    rep18/30 L1: threshold=1.7866
+    rep18/30 L2: threshold=0.6589
+    rep18/30 L3: threshold=-0.0422
+    rep18/30 → terminated at L3, Pf=1.2800e-03
+  rep18/30 done: Pf=1.2800e-03  levels=3  (8.4s rep, 157.6s total)
+  rep19/30 seed=18 ...
+    rep19/30 L1: threshold=1.7597
+    rep19/30 L2: threshold=0.7868
+    rep19/30 L3: threshold=-0.0059
+    rep19/30 → terminated at L3, Pf=1.0200e-03
+  rep19/30 done: Pf=1.0200e-03  levels=3  (8.5s rep, 166.1s total)
+  rep20/30 seed=19 ...
+    rep20/30 L1: threshold=1.8083
+    rep20/30 L2: threshold=0.7850
+    rep20/30 L3: threshold=-0.0373
+    rep20/30 → terminated at L3, Pf=1.1000e-03
+  rep20/30 done: Pf=1.1000e-03  levels=3  (8.6s rep, 174.6s total)
+  rep21/30 seed=20 ...
+    rep21/30 L1: threshold=1.7876
+    rep21/30 L2: threshold=0.8494
+    rep21/30 L3: threshold=0.1142
+    rep21/30 L4: threshold=-0.3620
+    rep21/30 → terminated at L4, Pf=3.6200e-04
+  rep21/30 done: Pf=3.6200e-04  levels=4  (8.8s rep, 183.4s total)
+  rep22/30 seed=21 ...
+    rep22/30 L1: threshold=1.7719
+    rep22/30 L2: threshold=0.6509
+    rep22/30 L3: threshold=-0.0598
+    rep22/30 → terminated at L3, Pf=1.1800e-03
+  rep22/30 done: Pf=1.1800e-03  levels=3  (8.6s rep, 192.1s total)
+  rep23/30 seed=22 ...
+    rep23/30 L1: threshold=1.7842
+    rep23/30 L2: threshold=0.7490
+    rep23/30 L3: threshold=-0.0602
+    rep23/30 → terminated at L3, Pf=1.4800e-03
+  rep23/30 done: Pf=1.4800e-03  levels=3  (8.5s rep, 200.5s total)
+  rep24/30 seed=23 ...
+    rep24/30 L1: threshold=1.8296
+    rep24/30 L2: threshold=0.7543
+    rep24/30 L3: threshold=-0.1907
+    rep24/30 → terminated at L3, Pf=1.5200e-03
+  rep24/30 done: Pf=1.5200e-03  levels=3  (8.9s rep, 209.4s total)
+  rep25/30 seed=24 ...
+    rep25/30 L1: threshold=1.7687
+    rep25/30 L2: threshold=0.8649
+    rep25/30 L3: threshold=0.1964
+    rep25/30 L4: threshold=-0.7480
+    rep25/30 → terminated at L4, Pf=7.9400e-04
+  rep25/30 done: Pf=7.9400e-04  levels=4  (9.5s rep, 219.0s total)
+  rep26/30 seed=25 ...
+    rep26/30 L1: threshold=1.7453
+    rep26/30 L2: threshold=0.7279
+    rep26/30 L3: threshold=-0.1712
+    rep26/30 → terminated at L3, Pf=1.8600e-03
+  rep26/30 done: Pf=1.8600e-03  levels=3  (9.1s rep, 228.1s total)
+  rep27/30 seed=26 ...
+    rep27/30 L1: threshold=1.7075
+    rep27/30 L2: threshold=0.5844
+    rep27/30 L3: threshold=-0.2649
+    rep27/30 → terminated at L3, Pf=2.4600e-03
+  rep27/30 done: Pf=2.4600e-03  levels=3  (9.1s rep, 237.2s total)
+  rep28/30 seed=27 ...
+    rep28/30 L1: threshold=1.7466
+    rep28/30 L2: threshold=0.5683
+    rep28/30 L3: threshold=-0.1815
+    rep28/30 → terminated at L3, Pf=2.0000e-03
+  rep28/30 done: Pf=2.0000e-03  levels=3  (9.2s rep, 246.4s total)
+  rep29/30 seed=28 ...
+    rep29/30 L1: threshold=1.7519
+    rep29/30 L2: threshold=0.6269
+    rep29/30 L3: threshold=-0.0485
+    rep29/30 → terminated at L3, Pf=1.5800e-03
+  rep29/30 done: Pf=1.5800e-03  levels=3  (9.2s rep, 255.6s total)
+  rep30/30 seed=29 ...
+    rep30/30 L1: threshold=1.8181
+    rep30/30 L2: threshold=0.6788
+    rep30/30 L3: threshold=-0.0426
+    rep30/30 → terminated at L3, Pf=1.1000e-03
+  rep30/30 done: Pf=1.1000e-03  levels=3  (9.2s rep, 264.8s total)
+
+[banana] yoshida+hnn  (30 reps)
+  rep01/30 seed=0 ...
+    rep01/30 L1: threshold=1.7433
+    rep01/30 L2: threshold=0.7904
+    rep01/30 L3: threshold=0.0470
+    rep01/30 L4: threshold=-0.7521
+    rep01/30 → terminated at L4, Pf=9.4200e-04
+  rep01/30 done: Pf=9.4200e-04  levels=4  (28.1s rep, 28.1s total)
+  rep02/30 seed=1 ...
+    rep02/30 L1: threshold=1.7150
+    rep02/30 L2: threshold=0.6799
+    rep02/30 L3: threshold=-0.3314
+    rep02/30 → terminated at L3, Pf=2.0800e-03
+  rep02/30 done: Pf=2.0800e-03  levels=3  (26.4s rep, 54.5s total)
+  rep03/30 seed=2 ...
+    rep03/30 L1: threshold=1.6654
+    rep03/30 L2: threshold=0.6848
+    rep03/30 L3: threshold=0.0527
+    rep03/30 L4: threshold=-0.3670
+    rep03/30 → terminated at L4, Pf=8.1600e-04
+  rep03/30 done: Pf=8.1600e-04  levels=4  (27.3s rep, 81.8s total)
+  rep04/30 seed=3 ...
+    rep04/30 L1: threshold=1.7071
+    rep04/30 L2: threshold=0.6646
+    rep04/30 L3: threshold=-0.2309
+    rep04/30 → terminated at L3, Pf=1.4400e-03
+  rep04/30 done: Pf=1.4400e-03  levels=3  (26.5s rep, 108.3s total)
+  rep05/30 seed=4 ...
+    rep05/30 L1: threshold=1.8044
+    rep05/30 L2: threshold=0.8009
+    rep05/30 L3: threshold=0.0049
+    rep05/30 L4: threshold=-0.8314
+    rep05/30 → terminated at L4, Pf=9.0400e-04
+  rep05/30 done: Pf=9.0400e-04  levels=4  (27.5s rep, 135.8s total)
+  rep06/30 seed=5 ...
+    rep06/30 L1: threshold=1.7109
+    rep06/30 L2: threshold=0.5643
+    rep06/30 L3: threshold=-0.1394
+    rep06/30 → terminated at L3, Pf=1.8800e-03
+  rep06/30 done: Pf=1.8800e-03  levels=3  (26.3s rep, 162.0s total)
+  rep07/30 seed=6 ...
+    rep07/30 L1: threshold=1.6625
+    rep07/30 L2: threshold=0.6168
+    rep07/30 L3: threshold=-0.0612
+    rep07/30 → terminated at L3, Pf=1.6600e-03
+  rep07/30 done: Pf=1.6600e-03  levels=3  (26.2s rep, 188.2s total)
+  rep08/30 seed=7 ...
+    rep08/30 L1: threshold=1.8689
+    rep08/30 L2: threshold=0.8524
+    rep08/30 L3: threshold=0.0982
+    rep08/30 L4: threshold=-0.7349
+    rep08/30 → terminated at L4, Pf=8.8800e-04
+  rep08/30 done: Pf=8.8800e-04  levels=4  (27.6s rep, 215.8s total)
+  rep09/30 seed=8 ...
+    rep09/30 L1: threshold=1.7656
+    rep09/30 L2: threshold=0.7212
+    rep09/30 L3: threshold=0.1259
+    rep09/30 L4: threshold=-0.4987
+    rep09/30 → terminated at L4, Pf=6.9400e-04
+  rep09/30 done: Pf=6.9400e-04  levels=4  (27.5s rep, 243.2s total)
+  rep10/30 seed=9 ...
+    rep10/30 L1: threshold=1.6336
+    rep10/30 L2: threshold=0.5464
+    rep10/30 L3: threshold=-0.3400
+    rep10/30 → terminated at L3, Pf=2.1600e-03
+  rep10/30 done: Pf=2.1600e-03  levels=3  (28.3s rep, 271.6s total)
+  rep11/30 seed=10 ...
+    rep11/30 L1: threshold=1.7145
+    rep11/30 L2: threshold=0.7221
+    rep11/30 L3: threshold=0.1099
+    rep11/30 L4: threshold=-0.6433
+    rep11/30 → terminated at L4, Pf=5.9000e-04
+  rep11/30 done: Pf=5.9000e-04  levels=4  (28.2s rep, 299.8s total)
+  rep12/30 seed=11 ...
+    rep12/30 L1: threshold=1.6067
+    rep12/30 L2: threshold=0.5133
+    rep12/30 L3: threshold=-0.2134
+    rep12/30 → terminated at L3, Pf=2.1200e-03
+  rep12/30 done: Pf=2.1200e-03  levels=3  (26.3s rep, 326.0s total)
+  rep13/30 seed=12 ...
+    rep13/30 L1: threshold=1.7700
+    rep13/30 L2: threshold=0.8008
+    rep13/30 L3: threshold=0.0868
+    rep13/30 L4: threshold=-0.5543
+    rep13/30 → terminated at L4, Pf=7.0400e-04
+  rep13/30 done: Pf=7.0400e-04  levels=4  (27.4s rep, 353.4s total)
+  rep14/30 seed=13 ...
+    rep14/30 L1: threshold=1.6504
+    rep14/30 L2: threshold=0.5793
+    rep14/30 L3: threshold=-0.2499
+    rep14/30 → terminated at L3, Pf=1.8000e-03
+  rep14/30 done: Pf=1.8000e-03  levels=3  (26.3s rep, 379.7s total)
+  rep15/30 seed=14 ...
+    rep15/30 L1: threshold=1.6445
+    rep15/30 L2: threshold=0.5668
+    rep15/30 L3: threshold=-0.0564
+    rep15/30 → terminated at L3, Pf=1.2200e-03
+  rep15/30 done: Pf=1.2200e-03  levels=3  (26.1s rep, 405.8s total)
+  rep16/30 seed=15 ...
+    rep16/30 L1: threshold=1.7636
+    rep16/30 L2: threshold=0.7594
+    rep16/30 L3: threshold=0.0043
+    rep16/30 L4: threshold=-0.4056
+    rep16/30 → terminated at L4, Pf=9.8000e-04
+  rep16/30 done: Pf=9.8000e-04  levels=4  (27.2s rep, 433.0s total)
+  rep17/30 seed=16 ...
+    rep17/30 L1: threshold=1.7736
+    rep17/30 L2: threshold=0.7557
+    rep17/30 L3: threshold=0.0366
+    rep17/30 L4: threshold=-0.4716
+    rep17/30 → terminated at L4, Pf=7.8800e-04
+  rep17/30 done: Pf=7.8800e-04  levels=4  (27.3s rep, 460.4s total)
+  rep18/30 seed=17 ...
+    rep18/30 L1: threshold=1.7884
+    rep18/30 L2: threshold=0.6617
+    rep18/30 L3: threshold=-0.1568
+    rep18/30 → terminated at L3, Pf=1.4200e-03
+  rep18/30 done: Pf=1.4200e-03  levels=3  (26.2s rep, 486.6s total)
+  rep19/30 seed=18 ...
+    rep19/30 L1: threshold=1.7621
+    rep19/30 L2: threshold=0.7351
+    rep19/30 L3: threshold=-0.1240
+    rep19/30 → terminated at L3, Pf=1.5000e-03
+  rep19/30 done: Pf=1.5000e-03  levels=3  (26.3s rep, 512.9s total)
+  rep20/30 seed=19 ...
+    rep20/30 L1: threshold=1.8126
+    rep20/30 L2: threshold=0.7765
+    rep20/30 L3: threshold=0.0123
+    rep20/30 L4: threshold=-0.8641
+    rep20/30 → terminated at L4, Pf=9.8800e-04
+  rep20/30 done: Pf=9.8800e-04  levels=4  (27.7s rep, 540.5s total)
+  rep21/30 seed=20 ...
+    rep21/30 L1: threshold=1.7550
+    rep21/30 L2: threshold=0.8512
+    rep21/30 L3: threshold=0.1211
+    rep21/30 L4: threshold=-0.4442
+    rep21/30 → terminated at L4, Pf=3.8600e-04
+  rep21/30 done: Pf=3.8600e-04  levels=4  (27.5s rep, 568.0s total)
+  rep22/30 seed=21 ...
+    rep22/30 L1: threshold=1.7863
+    rep22/30 L2: threshold=0.6652
+    rep22/30 L3: threshold=-0.0559
+    rep22/30 → terminated at L3, Pf=1.0600e-03
+  rep22/30 done: Pf=1.0600e-03  levels=3  (27.2s rep, 595.2s total)
+  rep23/30 seed=22 ...
+    rep23/30 L1: threshold=1.7871
+    rep23/30 L2: threshold=0.7568
+    rep23/30 L3: threshold=-0.0200
+    rep23/30 → terminated at L3, Pf=1.2200e-03
+  rep23/30 done: Pf=1.2200e-03  levels=3  (26.3s rep, 621.5s total)
+  rep24/30 seed=23 ...
+    rep24/30 L1: threshold=1.8315
+    rep24/30 L2: threshold=0.7050
+    rep24/30 L3: threshold=-0.1889
+    rep24/30 → terminated at L3, Pf=1.5800e-03
+  rep24/30 done: Pf=1.5800e-03  levels=3  (26.2s rep, 647.7s total)
+  rep25/30 seed=24 ...
+    rep25/30 L1: threshold=1.7683
+    rep25/30 L2: threshold=0.8117
+    rep25/30 L3: threshold=-0.1164
+    rep25/30 → terminated at L3, Pf=1.2800e-03
+  rep25/30 done: Pf=1.2800e-03  levels=3  (26.2s rep, 673.9s total)
+  rep26/30 seed=25 ...
+    rep26/30 L1: threshold=1.7434
+    rep26/30 L2: threshold=0.7395
+    rep26/30 L3: threshold=-0.0433
+    rep26/30 → terminated at L3, Pf=1.2200e-03
+  rep26/30 done: Pf=1.2200e-03  levels=3  (26.2s rep, 700.1s total)
+  rep27/30 seed=26 ...
+    rep27/30 L1: threshold=1.7063
+    rep27/30 L2: threshold=0.5875
+    rep27/30 L3: threshold=-0.2352
+    rep27/30 → terminated at L3, Pf=2.7800e-03
+  rep27/30 done: Pf=2.7800e-03  levels=3  (26.2s rep, 726.2s total)
+  rep28/30 seed=27 ...
+    rep28/30 L1: threshold=1.7513
+    rep28/30 L2: threshold=0.5712
+    rep28/30 L3: threshold=-0.1752
+    rep28/30 → terminated at L3, Pf=1.9400e-03
+  rep28/30 done: Pf=1.9400e-03  levels=3  (26.3s rep, 752.5s total)
+  rep29/30 seed=28 ...
+    rep29/30 L1: threshold=1.7545
+    rep29/30 L2: threshold=0.6125
+    rep29/30 L3: threshold=-0.0436
+    rep29/30 → terminated at L3, Pf=1.6600e-03
+  rep29/30 done: Pf=1.6600e-03  levels=3  (26.2s rep, 778.7s total)
+  rep30/30 seed=29 ...
+    rep30/30 L1: threshold=1.8094
+    rep30/30 L2: threshold=0.6920
+    rep30/30 L3: threshold=0.0053
+    rep30/30 L4: threshold=-0.3838
+    rep30/30 → terminated at L4, Pf=9.0000e-04
+  rep30/30 done: Pf=9.0000e-04  levels=4  (27.2s rep, 805.9s total)
+
+Total wall time: 2136.9s
+
+────────────────────────────────────────────────────────────────────────────────
+Config                 Target        mean_Pf     Pf_ref    COV   est_vf/run   lv
+────────────────────────────────────────────────────────────────────────────────
+leapfrog+hnn           gaussian   1.2940e-03 1.3499e-03  0.343    2.132e+06  3.3
+yoshida+hnn            gaussian   1.3439e-03 1.3499e-03  0.362    9.134e+06  3.3
+leapfrog+hnn           banana     1.3927e-03 1.3499e-03  0.401    2.130e+06  3.2
+yoshida+hnn            banana     1.3200e-03 1.3499e-03  0.416    9.138e+06  3.4
+────────────────────────────────────────────────────────────────────────────────
+
+Mechanism table (mean frac per conditional level, averaged over reps):
+
+  leapfrog+hnn / gaussian:
+   lv   geom_rej   energy_rej   accept
+  L1      0.637        0.001    0.362
+  L2      0.848        0.001    0.151
+  L3      0.923        0.001    0.076
+
+  yoshida+hnn / gaussian:
+   lv   geom_rej   energy_rej   accept
+  L1      0.637        0.001    0.363
+  L2      0.849        0.001    0.151
+  L3      0.923        0.000    0.077
+
+  leapfrog+hnn / banana:
+   lv   geom_rej   energy_rej   accept
+  L1      0.626        0.008    0.367
+  L2      0.829        0.007    0.164
+  L3      0.900        0.007    0.094
+
+  yoshida+hnn / banana:
+   lv   geom_rej   energy_rej   accept
+  L1      0.625        0.007    0.367
+  L2      0.828        0.007    0.165
+  L3      0.910        0.007    0.083
+
+[Saving outputs]
+  Saved sus_pf_distribution.png
+  Saved sus_mechanism_bars.png
+  Saved sus_stage2_results.pt
+  Appended Stage 2 to record_yoshida_hnn.md
+
+Done. All outputs in results\smoke_yoshida_hnn

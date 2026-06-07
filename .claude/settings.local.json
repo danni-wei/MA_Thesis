@@ -11,7 +11,26 @@
       "Bash(python sus_high_dim.py)",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_linear\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_linear\\\\\", \"\"\\) })",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_banana\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_banana\\\\\", \"\"\\) })",
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_highdim\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_highdim\\\\\", \"\"\\) })"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_highdim\\\\\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\leapfrog_vs_yoshida_highdim\\\\\", \"\"\\) })",
+      "Bash(conda run -n ma_thesis python -c ' *)",
+      "Bash(conda env *)",
+      "Bash(conda run -n Thesis2 python -c ' *)",
+      "Bash(\"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" _check_ck.py)",
+      "Bash(del _check_ck.py)",
+      "Bash(rm \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\_check_ck.py\")",
+      "Bash('C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe' -c ' *)",
+      "Bash(\"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" _run_smoke.py)",
+      "Bash(KMP_DUPLICATE_LIB_OK=TRUE \"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" _run_smoke.py)",
+      "Bash(\"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" _check_v15.py)",
+      "Bash(\"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" _run_v15.py)",
+      "Bash(\"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" _run_v16.py)",
+      "Bash(python _run_v2stage2.py)",
+      "Bash(C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe _run_v2stage2.py)",
+      "Bash(xxd \"C:/Users/User/AppData/Local/Temp/claude/C--Users-User-Documents-01-DW-Thesis-02-Code-MA-Thesis/1ddbdc1b-74cc-4528-a410-8b60d1e4df9f/tasks/bvtlaswk0.output\")",
+      "PowerShell(Stop-Process *)",
+      "PowerShell($env:PYTHONUNBUFFERED = \"1\"; cd \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\"; & \"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" -u _run_v2stage2.py)",
+      "PowerShell($env:PYTHONUNBUFFERED = \"1\"; $env:PYTHONIOENCODING = \"utf-8\"; cd \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\"; & \"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" -u _run_v2stage2.py)",
+      "PowerShell($env:PYTHONUNBUFFERED = \"1\"; $env:PYTHONIOENCODING = \"utf-8\"; cd \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\"; & \"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" -u _run_v2stage2.py --full)"
     ]
   }
 }

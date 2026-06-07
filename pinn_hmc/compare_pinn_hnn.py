@@ -395,3 +395,78 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# ── Full vector-field integrators for Yoshida composition ────────────────────
+
+def leapfrog_hnn_one_step(
+    model: HamiltonianNN,
+    q: torch.Tensor,
+    p: torch.Tensor,
+    step_size: float,
+) -> "tuple[torch.Tensor, torch.Tensor, int]":
+    """
+    One symmetric (half-kick → drift → half-kick) step of the full HNN vector
+    field at step size `step_size`.  Does NOT negate p (use as Yoshida sub-step).
+
+    Structure:
+        p_half  = p  + (h/2) * (-dH/dq)(q, p)          [hnn_vf call 1]
+        q_new   = q  + h     *  (dH/dp)(q, p_half)      [hnn_vf call 2]
+        p_new   = p_half + (h/2) * (-dH/dq)(q_new, p_half)  [hnn_vf call 3]
+
+    The first p-kick evaluates at (q, p) — the *pre-kick* momentum.  For
+    separable H_true = U(q) + K(p), dH/dq = dU/dq is p-independent, making
+    the step exactly symmetric.  For H_theta ≈ H_true, it is approximately
+    symmetric.
+
+    Returns (q_new, p_new, n_vf_calls=3).
+    """
+    _, dpdt = hnn_vector_field(model, q, p)          # call 1 — uses dpdt only
+    p = p + 0.5 * step_size * dpdt                  # half p-kick
+
+    dqdt, _ = hnn_vector_field(model, q, p)          # call 2 — uses dqdt only
+    q = q + step_size * dqdt                         # q-drift
+
+    _, dpdt = hnn_vector_field(model, q, p)          # call 3 — uses dpdt only
+    p = p + 0.5 * step_size * dpdt                  # half p-kick
+
+    return q, p, 3
+
+
+def yoshida4_hnn(
+    model: HamiltonianNN,
+    q0: torch.Tensor,
+    p0: torch.Tensor,
+    step_size: float,
+    n_steps: int,
+) -> "tuple[torch.Tensor, torch.Tensor, int]":
+    """
+    Yoshida 4th-order symplectic integrator using leapfrog_hnn_one_step as
+    the 2nd-order symmetric base.
+
+    Composition weights: w1 = 1/(2-2^(1/3)), w0 = -2^(1/3)/(2-2^(1/3)) ≈ -1.7024
+    Each Yoshida step = Φ(w1*h) ∘ Φ(w0*h) ∘ Φ(w1*h)
+
+    hnn_vector_field calls per proposal:
+        3 calls/sub-step × 3 sub-steps × n_steps = 9 * n_steps
+    (no adjacent half-kick merging; correctness prioritised over speed)
+
+    Returns (q_new, -p_new, n_vf_calls).
+    """
+    cbrt2 = 2.0 ** (1.0 / 3.0)
+    w1 = 1.0 / (2.0 - cbrt2)
+    w0 = -cbrt2 / (2.0 - cbrt2)   # ≈ -1.7024
+
+    q = q0.clone()
+    p = p0.clone()
+    total_vf = 0
+
+    for _ in range(n_steps):
+        q, p, n = leapfrog_hnn_one_step(model, q, p, w1 * step_size)
+        total_vf += n
+        q, p, n = leapfrog_hnn_one_step(model, q, p, w0 * step_size)
+        total_vf += n
+        q, p, n = leapfrog_hnn_one_step(model, q, p, w1 * step_size)
+        total_vf += n
+
+    return q, -p, total_vf
