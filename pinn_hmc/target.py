@@ -172,6 +172,18 @@ class EllipticalLimitState:
         term2 = (x * sin_t + y * cos_t) / self.c2
         return r**2 - term1**2 - term2**2
 
+    def grad_G(self, q: torch.Tensor, r: float) -> torch.Tensor:
+        """Analytic ∇g w.r.t. q.  Shape matches q: [..., 2]."""
+        if q.shape[-1] != 2:
+            raise ValueError(f"Expected q[..., 2], got {tuple(q.shape)}")
+        x, y = q[..., 0], q[..., 1]
+        cos_t, sin_t = self._cos_t, self._sin_t
+        u = x * cos_t - y * sin_t          # rotated coord 1
+        v = x * sin_t + y * cos_t          # rotated coord 2
+        dg_dx = -2.0 * u * cos_t / self.c1**2 - 2.0 * v * sin_t / self.c2**2
+        dg_dy =  2.0 * u * sin_t / self.c1**2 - 2.0 * v * cos_t / self.c2**2
+        return torch.stack([dg_dx, dg_dy], dim=-1)
+
     def is_failure(self, q: torch.Tensor, r: float) -> torch.Tensor:
         """True where g(q, r) ≤ 0 (failure domain)."""
         return self.evaluate(q, r) <= 0

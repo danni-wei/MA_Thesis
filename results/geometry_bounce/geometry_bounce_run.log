@@ -1,0 +1,1440 @@
+======================================================================
+Geometry-bounce experiment  n_rep=30  tag=full
+DT_A=0.1  N_STEPS_A=10  T_F=1.0
+SUS_N=1000  SUS_P0=0.1  SUS_BURN_IN=200
+ctrl: c_cfl=0.5  dt_seed=DT_A=0.1  dt_min=0.001  dt_max=0.5
+======================================================================
+
+[Exp 0] Truncated Gaussian sanity check
+  arm=A ...
+  arm=B ...
+  arm=C ...
+
+  Exp 0 summary:
+  arm   leak_rate     KS_x1     KS_x2   bounces_mean   frac_bounced    grad_U       G
+    A      0.0186    0.0104    0.0059          0.000          0.000    550000       0
+    B      0.0188    0.0073    0.0066          0.000          0.000    355694  355694
+    C      0.0000    0.0043    0.0070          0.023          0.023    352111  367058
+
+======================================================================
+Exp 1: beta=3.5  rho=0.0
+
+[Exp 1  beta=3.5_rho=0.0  n_rep=30]
+
+[arm=A  beta=3.5_rho=0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=A L1: threshold=3.0965
+    rep01/30 arm=A L2: threshold=1.6578
+    rep01/30 arm=A L3: threshold=0.4835
+    rep01/30 arm=A L4: threshold=-0.4022
+    rep01/30 arm=A → done L4  Pf=3.1600e-04
+  rep01/30 done: Pf=3.1600e-04  beta=3.4175  lv=4  (11.4s  tot=11.4s)
+  rep02/30 seed=1
+    rep02/30 arm=A L1: threshold=3.1642
+    rep02/30 arm=A L2: threshold=1.7285
+    rep02/30 arm=A L3: threshold=0.7721
+    rep02/30 arm=A L4: threshold=-0.2711
+    rep02/30 arm=A → done L4  Pf=2.0800e-04
+  rep02/30 done: Pf=2.0800e-04  beta=3.5297  lv=4  (11.2s  tot=22.6s)
+  rep03/30 seed=2
+    rep03/30 arm=A L1: threshold=3.1395
+    rep03/30 arm=A L2: threshold=1.6128
+    rep03/30 arm=A L3: threshold=0.5274
+    rep03/30 arm=A L4: threshold=-0.3868
+    rep03/30 arm=A → done L4  Pf=1.6000e-04
+  rep03/30 done: Pf=1.6000e-04  beta=3.5985  lv=4  (11.5s  tot=34.1s)
+  rep04/30 seed=3
+    rep04/30 arm=A L1: threshold=3.2195
+    rep04/30 arm=A L2: threshold=1.7149
+    rep04/30 arm=A L3: threshold=0.5922
+    rep04/30 arm=A L4: threshold=-0.3724
+    rep04/30 arm=A → done L4  Pf=2.7600e-04
+  rep04/30 done: Pf=2.7600e-04  beta=3.4542  lv=4  (11.5s  tot=45.6s)
+  rep05/30 seed=4
+    rep05/30 arm=A L1: threshold=3.0369
+    rep05/30 arm=A L2: threshold=1.7430
+    rep05/30 arm=A L3: threshold=0.6716
+    rep05/30 arm=A L4: threshold=-0.1670
+    rep05/30 arm=A → done L4  Pf=1.7400e-04
+  rep05/30 done: Pf=1.7400e-04  beta=3.5767  lv=4  (11.6s  tot=57.2s)
+  rep06/30 seed=5
+    rep06/30 arm=A L1: threshold=3.0155
+    rep06/30 arm=A L2: threshold=1.5998
+    rep06/30 arm=A L3: threshold=0.5116
+    rep06/30 arm=A L4: threshold=-0.3424
+    rep06/30 arm=A → done L4  Pf=3.6100e-04
+  rep06/30 done: Pf=3.6100e-04  beta=3.3811  lv=4  (10.9s  tot=68.1s)
+  rep07/30 seed=6
+    rep07/30 arm=A L1: threshold=3.2668
+    rep07/30 arm=A L2: threshold=1.6623
+    rep07/30 arm=A L3: threshold=0.5985
+    rep07/30 arm=A L4: threshold=-0.4406
+    rep07/30 arm=A → done L4  Pf=2.5800e-04
+  rep07/30 done: Pf=2.5800e-04  beta=3.4723  lv=4  (11.7s  tot=79.8s)
+  rep08/30 seed=7
+    rep08/30 arm=A L1: threshold=3.1025
+    rep08/30 arm=A L2: threshold=1.6243
+    rep08/30 arm=A L3: threshold=0.6231
+    rep08/30 arm=A L4: threshold=-0.3037
+    rep08/30 arm=A → done L4  Pf=3.2900e-04
+  rep08/30 done: Pf=3.2900e-04  beta=3.4065  lv=4  (11.6s  tot=91.5s)
+  rep09/30 seed=8
+    rep09/30 arm=A L1: threshold=3.0203
+    rep09/30 arm=A L2: threshold=1.6178
+    rep09/30 arm=A L3: threshold=0.6530
+    rep09/30 arm=A L4: threshold=-0.2318
+    rep09/30 arm=A → done L4  Pf=1.8500e-04
+  rep09/30 done: Pf=1.8500e-04  beta=3.5606  lv=4  (11.5s  tot=103.0s)
+  rep10/30 seed=9
+    rep10/30 arm=A L1: threshold=3.0412
+    rep10/30 arm=A L2: threshold=1.5294
+    rep10/30 arm=A L3: threshold=0.4716
+    rep10/30 arm=A L4: threshold=-0.6805
+    rep10/30 arm=A → done L4  Pf=4.3800e-04
+  rep10/30 done: Pf=4.3800e-04  beta=3.3276  lv=4  (11.9s  tot=114.9s)
+  rep11/30 seed=10
+    rep11/30 arm=A L1: threshold=3.0848
+    rep11/30 arm=A L2: threshold=1.5526
+    rep11/30 arm=A L3: threshold=0.7563
+    rep11/30 arm=A L4: threshold=-0.1397
+    rep11/30 arm=A → done L4  Pf=1.4000e-04
+  rep11/30 done: Pf=1.4000e-04  beta=3.6331  lv=4  (11.4s  tot=126.4s)
+  rep12/30 seed=11
+    rep12/30 arm=A L1: threshold=3.0429
+    rep12/30 arm=A L2: threshold=1.5524
+    rep12/30 arm=A L3: threshold=0.4837
+    rep12/30 arm=A L4: threshold=-0.0152
+    rep12/30 arm=A → done L4  Pf=1.3100e-04
+  rep12/30 done: Pf=1.3100e-04  beta=3.6502  lv=4  (11.6s  tot=138.0s)
+  rep13/30 seed=12
+    rep13/30 arm=A L1: threshold=3.0897
+    rep13/30 arm=A L2: threshold=1.5060
+    rep13/30 arm=A L3: threshold=0.5338
+    rep13/30 arm=A L4: threshold=-0.5072
+    rep13/30 arm=A → done L4  Pf=2.1600e-04
+  rep13/30 done: Pf=2.1600e-04  beta=3.5197  lv=4  (11.5s  tot=149.6s)
+  rep14/30 seed=13
+    rep14/30 arm=A L1: threshold=3.1139
+    rep14/30 arm=A L2: threshold=1.6632
+    rep14/30 arm=A L3: threshold=0.6603
+    rep14/30 arm=A L4: threshold=-0.2836
+    rep14/30 arm=A → done L4  Pf=1.7700e-04
+  rep14/30 done: Pf=1.7700e-04  beta=3.5722  lv=4  (11.5s  tot=161.1s)
+  rep15/30 seed=14
+    rep15/30 arm=A L1: threshold=3.2059
+    rep15/30 arm=A L2: threshold=1.7474
+    rep15/30 arm=A L3: threshold=0.8271
+    rep15/30 arm=A L4: threshold=-0.1416
+    rep15/30 arm=A → done L4  Pf=1.1700e-04
+  rep15/30 done: Pf=1.1700e-04  beta=3.6792  lv=4  (11.4s  tot=172.5s)
+  rep16/30 seed=15
+    rep16/30 arm=A L1: threshold=3.1766
+    rep16/30 arm=A L2: threshold=1.6325
+    rep16/30 arm=A L3: threshold=0.6128
+    rep16/30 arm=A L4: threshold=-0.3294
+    rep16/30 arm=A → done L4  Pf=2.7300e-04
+  rep16/30 done: Pf=2.7300e-04  beta=3.4571  lv=4  (11.5s  tot=184.0s)
+  rep17/30 seed=16
+    rep17/30 arm=A L1: threshold=2.9764
+    rep17/30 arm=A L2: threshold=1.3031
+    rep17/30 arm=A L3: threshold=0.1584
+    rep17/30 arm=A L4: threshold=-0.6744
+    rep17/30 arm=A → done L4  Pf=4.7800e-04
+  rep17/30 done: Pf=4.7800e-04  beta=3.3032  lv=4  (11.5s  tot=195.5s)
+  rep18/30 seed=17
+    rep18/30 arm=A L1: threshold=3.0951
+    rep18/30 arm=A L2: threshold=1.5998
+    rep18/30 arm=A L3: threshold=0.6020
+    rep18/30 arm=A L4: threshold=-0.2470
+    rep18/30 arm=A → done L4  Pf=2.5700e-04
+  rep18/30 done: Pf=2.5700e-04  beta=3.4734  lv=4  (11.4s  tot=207.0s)
+  rep19/30 seed=18
+    rep19/30 arm=A L1: threshold=3.1978
+    rep19/30 arm=A L2: threshold=1.7823
+    rep19/30 arm=A L3: threshold=0.3877
+    rep19/30 arm=A L4: threshold=-0.0734
+    rep19/30 arm=A → done L4  Pf=2.3000e-04
+  rep19/30 done: Pf=2.3000e-04  beta=3.5030  lv=4  (11.3s  tot=218.3s)
+  rep20/30 seed=19
+    rep20/30 arm=A L1: threshold=3.0046
+    rep20/30 arm=A L2: threshold=1.4892
+    rep20/30 arm=A L3: threshold=0.4758
+    rep20/30 arm=A L4: threshold=-0.3686
+    rep20/30 arm=A → done L4  Pf=2.8700e-04
+  rep20/30 done: Pf=2.8700e-04  beta=3.4436  lv=4  (11.5s  tot=229.8s)
+  rep21/30 seed=20
+    rep21/30 arm=A L1: threshold=3.2099
+    rep21/30 arm=A L2: threshold=1.7360
+    rep21/30 arm=A L3: threshold=0.6897
+    rep21/30 arm=A L4: threshold=-0.2024
+    rep21/30 arm=A → done L4  Pf=1.3300e-04
+  rep21/30 done: Pf=1.3300e-04  beta=3.6463  lv=4  (11.6s  tot=241.4s)
+  rep22/30 seed=21
+    rep22/30 arm=A L1: threshold=3.0760
+    rep22/30 arm=A L2: threshold=1.6342
+    rep22/30 arm=A L3: threshold=0.5157
+    rep22/30 arm=A L4: threshold=-0.5846
+    rep22/30 arm=A → done L4  Pf=3.3200e-04
+  rep22/30 done: Pf=3.3200e-04  beta=3.4040  lv=4  (11.6s  tot=253.0s)
+  rep23/30 seed=22
+    rep23/30 arm=A L1: threshold=3.1743
+    rep23/30 arm=A L2: threshold=1.6266
+    rep23/30 arm=A L3: threshold=0.5504
+    rep23/30 arm=A L4: threshold=-0.2125
+    rep23/30 arm=A → done L4  Pf=2.7500e-04
+  rep23/30 done: Pf=2.7500e-04  beta=3.4551  lv=4  (11.5s  tot=264.5s)
+  rep24/30 seed=23
+    rep24/30 arm=A L1: threshold=3.1121
+    rep24/30 arm=A L2: threshold=1.5758
+    rep24/30 arm=A L3: threshold=0.4863
+    rep24/30 arm=A L4: threshold=-0.4735
+    rep24/30 arm=A → done L4  Pf=2.8000e-04
+  rep24/30 done: Pf=2.8000e-04  beta=3.4503  lv=4  (11.6s  tot=276.1s)
+  rep25/30 seed=24
+    rep25/30 arm=A L1: threshold=3.1241
+    rep25/30 arm=A L2: threshold=1.7653
+    rep25/30 arm=A L3: threshold=0.6082
+    rep25/30 arm=A L4: threshold=-0.3924
+    rep25/30 arm=A → done L4  Pf=2.6600e-04
+  rep25/30 done: Pf=2.6600e-04  beta=3.4641  lv=4  (11.5s  tot=287.7s)
+  rep26/30 seed=25
+    rep26/30 arm=A L1: threshold=3.1564
+    rep26/30 arm=A L2: threshold=1.6834
+    rep26/30 arm=A L3: threshold=0.5222
+    rep26/30 arm=A L4: threshold=-0.4497
+    rep26/30 arm=A → done L4  Pf=3.4800e-04
+  rep26/30 done: Pf=3.4800e-04  beta=3.3911  lv=4  (11.5s  tot=299.2s)
+  rep27/30 seed=26
+    rep27/30 arm=A L1: threshold=3.0811
+    rep27/30 arm=A L2: threshold=1.6959
+    rep27/30 arm=A L3: threshold=0.8250
+    rep27/30 arm=A L4: threshold=-0.1418
+    rep27/30 arm=A → done L4  Pf=1.2700e-04
+  rep27/30 done: Pf=1.2700e-04  beta=3.6582  lv=4  (11.5s  tot=310.7s)
+  rep28/30 seed=27
+    rep28/30 arm=A L1: threshold=3.1042
+    rep28/30 arm=A L2: threshold=1.6164
+    rep28/30 arm=A L3: threshold=0.6197
+    rep28/30 arm=A L4: threshold=0.0138
+    rep28/30 arm=A L5: threshold=-1.2169
+    rep28/30 arm=A → done L5  Pf=9.1500e-05
+  rep28/30 done: Pf=9.1500e-05  beta=3.7414  lv=5  (11.5s  tot=322.2s)
+  rep29/30 seed=28
+    rep29/30 arm=A L1: threshold=3.1799
+    rep29/30 arm=A L2: threshold=1.6378
+    rep29/30 arm=A L3: threshold=0.4140
+    rep29/30 arm=A L4: threshold=-0.2244
+    rep29/30 arm=A → done L4  Pf=3.0100e-04
+  rep29/30 done: Pf=3.0100e-04  beta=3.4307  lv=4  (11.6s  tot=333.7s)
+  rep30/30 seed=29
+    rep30/30 arm=A L1: threshold=3.1893
+    rep30/30 arm=A L2: threshold=1.6711
+    rep30/30 arm=A L3: threshold=0.6664
+    rep30/30 arm=A L4: threshold=-0.0879
+    rep30/30 arm=A → done L4  Pf=1.7100e-04
+  rep30/30 done: Pf=1.7100e-04  beta=3.5812  lv=4  (11.6s  tot=345.4s)
+
+[arm=B  beta=3.5_rho=0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=B L1: threshold=3.0899
+    rep01/30 arm=B L2: threshold=1.6528
+    rep01/30 arm=B L3: threshold=0.4721
+    rep01/30 arm=B L4: threshold=-0.4066
+    rep01/30 arm=B → done L4  Pf=3.1600e-04
+  rep01/30 done: Pf=3.1600e-04  beta=3.4175  lv=4  (37.4s  tot=37.4s)
+  rep02/30 seed=1
+    rep02/30 arm=B L1: threshold=3.1578
+    rep02/30 arm=B L2: threshold=1.7245
+    rep02/30 arm=B L3: threshold=0.7666
+    rep02/30 arm=B L4: threshold=-0.2751
+    rep02/30 arm=B → done L4  Pf=2.0800e-04
+  rep02/30 done: Pf=2.0800e-04  beta=3.5297  lv=4  (41.4s  tot=78.9s)
+  rep03/30 seed=2
+    rep03/30 arm=B L1: threshold=3.1364
+    rep03/30 arm=B L2: threshold=1.6219
+    rep03/30 arm=B L3: threshold=0.5353
+    rep03/30 arm=B L4: threshold=-0.3919
+    rep03/30 arm=B → done L4  Pf=1.6000e-04
+  rep03/30 done: Pf=1.6000e-04  beta=3.5985  lv=4  (39.7s  tot=118.6s)
+  rep04/30 seed=3
+    rep04/30 arm=B L1: threshold=3.2155
+    rep04/30 arm=B L2: threshold=1.7123
+    rep04/30 arm=B L3: threshold=0.5867
+    rep04/30 arm=B L4: threshold=-0.3739
+    rep04/30 arm=B → done L4  Pf=2.7600e-04
+  rep04/30 done: Pf=2.7600e-04  beta=3.4542  lv=4  (41.9s  tot=160.4s)
+  rep05/30 seed=4
+    rep05/30 arm=B L1: threshold=3.0414
+    rep05/30 arm=B L2: threshold=1.7493
+    rep05/30 arm=B L3: threshold=0.6700
+    rep05/30 arm=B L4: threshold=-0.1524
+    rep05/30 arm=B → done L4  Pf=1.7000e-04
+  rep05/30 done: Pf=1.7000e-04  beta=3.5827  lv=4  (40.4s  tot=200.8s)
+  rep06/30 seed=5
+    rep06/30 arm=B L1: threshold=3.0079
+    rep06/30 arm=B L2: threshold=1.6212
+    rep06/30 arm=B L3: threshold=0.5066
+    rep06/30 arm=B L4: threshold=-0.3468
+    rep06/30 arm=B → done L4  Pf=3.5100e-04
+  rep06/30 done: Pf=3.5100e-04  beta=3.3888  lv=4  (38.7s  tot=239.6s)
+  rep07/30 seed=6
+    rep07/30 arm=B L1: threshold=3.2572
+    rep07/30 arm=B L2: threshold=1.6573
+    rep07/30 arm=B L3: threshold=0.5933
+    rep07/30 arm=B L4: threshold=-0.4463
+    rep07/30 arm=B → done L4  Pf=2.5800e-04
+  rep07/30 done: Pf=2.5800e-04  beta=3.4723  lv=4  (40.1s  tot=279.6s)
+  rep08/30 seed=7
+    rep08/30 arm=B L1: threshold=3.1011
+    rep08/30 arm=B L2: threshold=1.6252
+    rep08/30 arm=B L3: threshold=0.6196
+    rep08/30 arm=B L4: threshold=-0.3070
+    rep08/30 arm=B → done L4  Pf=3.2900e-04
+  rep08/30 done: Pf=3.2900e-04  beta=3.4065  lv=4  (39.1s  tot=318.7s)
+  rep09/30 seed=8
+    rep09/30 arm=B L1: threshold=3.0120
+    rep09/30 arm=B L2: threshold=1.6184
+    rep09/30 arm=B L3: threshold=0.6518
+    rep09/30 arm=B L4: threshold=-0.2356
+    rep09/30 arm=B → done L4  Pf=1.8500e-04
+  rep09/30 done: Pf=1.8500e-04  beta=3.5606  lv=4  (38.7s  tot=357.4s)
+  rep10/30 seed=9
+    rep10/30 arm=B L1: threshold=3.0364
+    rep10/30 arm=B L2: threshold=1.5199
+    rep10/30 arm=B L3: threshold=0.4669
+    rep10/30 arm=B L4: threshold=-0.6850
+    rep10/30 arm=B → done L4  Pf=4.3800e-04
+  rep10/30 done: Pf=4.3800e-04  beta=3.3276  lv=4  (41.8s  tot=399.3s)
+  rep11/30 seed=10
+    rep11/30 arm=B L1: threshold=3.0806
+    rep11/30 arm=B L2: threshold=1.5603
+    rep11/30 arm=B L3: threshold=0.7754
+    rep11/30 arm=B L4: threshold=-0.1317
+    rep11/30 arm=B → done L4  Pf=1.3100e-04
+  rep11/30 done: Pf=1.3100e-04  beta=3.6502  lv=4  (40.6s  tot=439.9s)
+  rep12/30 seed=11
+    rep12/30 arm=B L1: threshold=3.0345
+    rep12/30 arm=B L2: threshold=1.5478
+    rep12/30 arm=B L3: threshold=0.4692
+    rep12/30 arm=B L4: threshold=-0.0218
+    rep12/30 arm=B → done L4  Pf=1.3100e-04
+  rep12/30 done: Pf=1.3100e-04  beta=3.6502  lv=4  (41.1s  tot=481.0s)
+  rep13/30 seed=12
+    rep13/30 arm=B L1: threshold=3.0816
+    rep13/30 arm=B L2: threshold=1.4927
+    rep13/30 arm=B L3: threshold=0.5275
+    rep13/30 arm=B L4: threshold=-0.5130
+    rep13/30 arm=B → done L4  Pf=2.1600e-04
+  rep13/30 done: Pf=2.1600e-04  beta=3.5197  lv=4  (37.9s  tot=518.9s)
+  rep14/30 seed=13
+    rep14/30 arm=B L1: threshold=3.1104
+    rep14/30 arm=B L2: threshold=1.6595
+    rep14/30 arm=B L3: threshold=0.6562
+    rep14/30 arm=B L4: threshold=-0.2880
+    rep14/30 arm=B → done L4  Pf=1.7700e-04
+  rep14/30 done: Pf=1.7700e-04  beta=3.5722  lv=4  (41.1s  tot=560.0s)
+  rep15/30 seed=14
+    rep15/30 arm=B L1: threshold=3.2003
+    rep15/30 arm=B L2: threshold=1.7400
+    rep15/30 arm=B L3: threshold=0.8225
+    rep15/30 arm=B L4: threshold=-0.1474
+    rep15/30 arm=B → done L4  Pf=1.1700e-04
+  rep15/30 done: Pf=1.1700e-04  beta=3.6792  lv=4  (41.4s  tot=601.4s)
+  rep16/30 seed=15
+    rep16/30 arm=B L1: threshold=3.1709
+    rep16/30 arm=B L2: threshold=1.6289
+    rep16/30 arm=B L3: threshold=0.6089
+    rep16/30 arm=B L4: threshold=-0.3335
+    rep16/30 arm=B → done L4  Pf=2.7800e-04
+  rep16/30 done: Pf=2.7800e-04  beta=3.4522  lv=4  (40.7s  tot=642.1s)
+  rep17/30 seed=16
+    rep17/30 arm=B L1: threshold=2.9800
+    rep17/30 arm=B L2: threshold=1.3382
+    rep17/30 arm=B L3: threshold=0.2930
+    rep17/30 arm=B L4: threshold=-0.6284
+    rep17/30 arm=B → done L4  Pf=4.4600e-04
+  rep17/30 done: Pf=4.4600e-04  beta=3.3225  lv=4  (41.3s  tot=683.4s)
+  rep18/30 seed=17
+    rep18/30 arm=B L1: threshold=3.0957
+    rep18/30 arm=B L2: threshold=1.5948
+    rep18/30 arm=B L3: threshold=0.5940
+    rep18/30 arm=B L4: threshold=-0.2515
+    rep18/30 arm=B → done L4  Pf=2.5700e-04
+  rep18/30 done: Pf=2.5700e-04  beta=3.4734  lv=4  (40.2s  tot=723.6s)
+  rep19/30 seed=18
+    rep19/30 arm=B L1: threshold=3.1940
+    rep19/30 arm=B L2: threshold=1.7799
+    rep19/30 arm=B L3: threshold=0.4033
+    rep19/30 arm=B L4: threshold=-0.0692
+    rep19/30 arm=B → done L4  Pf=2.3000e-04
+  rep19/30 done: Pf=2.3000e-04  beta=3.5030  lv=4  (40.3s  tot=763.8s)
+  rep20/30 seed=19
+    rep20/30 arm=B L1: threshold=3.0006
+    rep20/30 arm=B L2: threshold=1.4951
+    rep20/30 arm=B L3: threshold=0.4743
+    rep20/30 arm=B L4: threshold=-0.3736
+    rep20/30 arm=B → done L4  Pf=2.7600e-04
+  rep20/30 done: Pf=2.7600e-04  beta=3.4542  lv=4  (42.0s  tot=805.8s)
+  rep21/30 seed=20
+    rep21/30 arm=B L1: threshold=3.2234
+    rep21/30 arm=B L2: threshold=1.7692
+    rep21/30 arm=B L3: threshold=0.6856
+    rep21/30 arm=B L4: threshold=-0.2431
+    rep21/30 arm=B → done L4  Pf=1.3700e-04
+  rep21/30 done: Pf=1.3700e-04  beta=3.6387  lv=4  (39.0s  tot=844.8s)
+  rep22/30 seed=21
+    rep22/30 arm=B L1: threshold=3.0956
+    rep22/30 arm=B L2: threshold=1.6714
+    rep22/30 arm=B L3: threshold=0.5290
+    rep22/30 arm=B L4: threshold=-0.5350
+    rep22/30 arm=B → done L4  Pf=3.2200e-04
+  rep22/30 done: Pf=3.2200e-04  beta=3.4124  lv=4  (40.0s  tot=884.8s)
+  rep23/30 seed=22
+    rep23/30 arm=B L1: threshold=3.1649
+    rep23/30 arm=B L2: threshold=1.6194
+    rep23/30 arm=B L3: threshold=0.5451
+    rep23/30 arm=B L4: threshold=-0.2175
+    rep23/30 arm=B → done L4  Pf=2.7500e-04
+  rep23/30 done: Pf=2.7500e-04  beta=3.4551  lv=4  (40.2s  tot=924.9s)
+  rep24/30 seed=23
+    rep24/30 arm=B L1: threshold=3.1057
+    rep24/30 arm=B L2: threshold=1.5701
+    rep24/30 arm=B L3: threshold=0.4813
+    rep24/30 arm=B L4: threshold=-0.4770
+    rep24/30 arm=B → done L4  Pf=3.6700e-04
+  rep24/30 done: Pf=3.6700e-04  beta=3.3766  lv=4  (40.0s  tot=964.9s)
+  rep25/30 seed=24
+    rep25/30 arm=B L1: threshold=3.1234
+    rep25/30 arm=B L2: threshold=1.7573
+    rep25/30 arm=B L3: threshold=0.6044
+    rep25/30 arm=B L4: threshold=-0.3974
+    rep25/30 arm=B → done L4  Pf=2.6600e-04
+  rep25/30 done: Pf=2.6600e-04  beta=3.4641  lv=4  (37.4s  tot=1002.3s)
+  rep26/30 seed=25
+    rep26/30 arm=B L1: threshold=3.1590
+    rep26/30 arm=B L2: threshold=1.6643
+    rep26/30 arm=B L3: threshold=0.5413
+    rep26/30 arm=B L4: threshold=-0.4552
+    rep26/30 arm=B → done L4  Pf=3.4600e-04
+  rep26/30 done: Pf=3.4600e-04  beta=3.3927  lv=4  (37.8s  tot=1040.1s)
+  rep27/30 seed=26
+    rep27/30 arm=B L1: threshold=3.0809
+    rep27/30 arm=B L2: threshold=1.6971
+    rep27/30 arm=B L3: threshold=0.8191
+    rep27/30 arm=B L4: threshold=-0.1388
+    rep27/30 arm=B → done L4  Pf=1.2700e-04
+  rep27/30 done: Pf=1.2700e-04  beta=3.6582  lv=4  (37.7s  tot=1077.8s)
+  rep28/30 seed=27
+    rep28/30 arm=B L1: threshold=3.0976
+    rep28/30 arm=B L2: threshold=1.6123
+    rep28/30 arm=B L3: threshold=0.6140
+    rep28/30 arm=B L4: threshold=0.0073
+    rep28/30 arm=B L5: threshold=-1.2212
+    rep28/30 arm=B → done L5  Pf=9.1900e-05
+  rep28/30 done: Pf=9.1900e-05  beta=3.7403  lv=5  (39.4s  tot=1117.2s)
+  rep29/30 seed=28
+    rep29/30 arm=B L1: threshold=3.1757
+    rep29/30 arm=B L2: threshold=1.6316
+    rep29/30 arm=B L3: threshold=0.4080
+    rep29/30 arm=B L4: threshold=-0.2307
+    rep29/30 arm=B → done L4  Pf=3.0100e-04
+  rep29/30 done: Pf=3.0100e-04  beta=3.4307  lv=4  (37.8s  tot=1155.0s)
+  rep30/30 seed=29
+    rep30/30 arm=B L1: threshold=3.1951
+    rep30/30 arm=B L2: threshold=1.6840
+    rep30/30 arm=B L3: threshold=0.6561
+    rep30/30 arm=B L4: threshold=-0.0901
+    rep30/30 arm=B → done L4  Pf=1.7100e-04
+  rep30/30 done: Pf=1.7100e-04  beta=3.5812  lv=4  (37.6s  tot=1192.6s)
+
+[arm=C  beta=3.5_rho=0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=C L1: threshold=3.0899
+    rep01/30 arm=C L2: threshold=1.6391
+    rep01/30 arm=C L3: threshold=0.5721
+    rep01/30 arm=C L4: threshold=-0.2915
+    rep01/30 arm=C → done L4  Pf=2.4900e-04
+  rep01/30 done: Pf=2.4900e-04  beta=3.4818  lv=4  (38.8s  tot=38.8s)
+  rep02/30 seed=1
+    rep02/30 arm=C L1: threshold=3.1578
+    rep02/30 arm=C L2: threshold=1.7144
+    rep02/30 arm=C L3: threshold=0.6863
+    rep02/30 arm=C L4: threshold=-0.1835
+    rep02/30 arm=C → done L4  Pf=1.6600e-04
+  rep02/30 done: Pf=1.6600e-04  beta=3.5890  lv=4  (38.0s  tot=76.8s)
+  rep03/30 seed=2
+    rep03/30 arm=C L1: threshold=3.1364
+    rep03/30 arm=C L2: threshold=1.6168
+    rep03/30 arm=C L3: threshold=0.5451
+    rep03/30 arm=C L4: threshold=-0.2964
+    rep03/30 arm=C → done L4  Pf=2.4800e-04
+  rep03/30 done: Pf=2.4800e-04  beta=3.4829  lv=4  (37.6s  tot=114.3s)
+  rep04/30 seed=3
+    rep04/30 arm=C L1: threshold=3.2155
+    rep04/30 arm=C L2: threshold=1.7675
+    rep04/30 arm=C L3: threshold=0.6621
+    rep04/30 arm=C L4: threshold=-0.2257
+    rep04/30 arm=C → done L4  Pf=1.8700e-04
+  rep04/30 done: Pf=1.8700e-04  beta=3.5578  lv=4  (37.4s  tot=151.8s)
+  rep05/30 seed=4
+    rep05/30 arm=C L1: threshold=3.0414
+    rep05/30 arm=C L2: threshold=1.6843
+    rep05/30 arm=C L3: threshold=0.6842
+    rep05/30 arm=C L4: threshold=-0.2508
+    rep05/30 arm=C → done L4  Pf=1.8400e-04
+  rep05/30 done: Pf=1.8400e-04  beta=3.5620  lv=4  (37.8s  tot=189.6s)
+  rep06/30 seed=5
+    rep06/30 arm=C L1: threshold=3.0079
+    rep06/30 arm=C L2: threshold=1.5533
+    rep06/30 arm=C L3: threshold=0.3660
+    rep06/30 arm=C L4: threshold=-0.5224
+    rep06/30 arm=C → done L4  Pf=4.5800e-04
+  rep06/30 done: Pf=4.5800e-04  beta=3.3151  lv=4  (37.6s  tot=227.2s)
+  rep07/30 seed=6
+    rep07/30 arm=C L1: threshold=3.2572
+    rep07/30 arm=C L2: threshold=1.7596
+    rep07/30 arm=C L3: threshold=0.6278
+    rep07/30 arm=C L4: threshold=-0.2323
+    rep07/30 arm=C → done L4  Pf=1.7000e-04
+  rep07/30 done: Pf=1.7000e-04  beta=3.5827  lv=4  (38.1s  tot=265.2s)
+  rep08/30 seed=7
+    rep08/30 arm=C L1: threshold=3.1011
+    rep08/30 arm=C L2: threshold=1.5689
+    rep08/30 arm=C L3: threshold=0.5907
+    rep08/30 arm=C L4: threshold=-0.3332
+    rep08/30 arm=C → done L4  Pf=2.6000e-04
+  rep08/30 done: Pf=2.6000e-04  beta=3.4702  lv=4  (37.8s  tot=303.0s)
+  rep09/30 seed=8
+    rep09/30 arm=C L1: threshold=3.0120
+    rep09/30 arm=C L2: threshold=1.6258
+    rep09/30 arm=C L3: threshold=0.5460
+    rep09/30 arm=C L4: threshold=-0.2478
+    rep09/30 arm=C → done L4  Pf=2.3600e-04
+  rep09/30 done: Pf=2.3600e-04  beta=3.4962  lv=4  (37.9s  tot=340.9s)
+  rep10/30 seed=9
+    rep10/30 arm=C L1: threshold=3.0364
+    rep10/30 arm=C L2: threshold=1.5329
+    rep10/30 arm=C L3: threshold=0.4529
+    rep10/30 arm=C L4: threshold=-0.4910
+    rep10/30 arm=C → done L4  Pf=4.0200e-04
+  rep10/30 done: Pf=4.0200e-04  beta=3.3514  lv=4  (38.0s  tot=378.8s)
+  rep11/30 seed=10
+    rep11/30 arm=C L1: threshold=3.0806
+    rep11/30 arm=C L2: threshold=1.5860
+    rep11/30 arm=C L3: threshold=0.5087
+    rep11/30 arm=C L4: threshold=-0.4662
+    rep11/30 arm=C → done L4  Pf=3.1000e-04
+  rep11/30 done: Pf=3.1000e-04  beta=3.4227  lv=4  (37.5s  tot=416.3s)
+  rep12/30 seed=11
+    rep12/30 arm=C L1: threshold=3.0345
+    rep12/30 arm=C L2: threshold=1.6159
+    rep12/30 arm=C L3: threshold=0.5617
+    rep12/30 arm=C L4: threshold=-0.2648
+    rep12/30 arm=C → done L4  Pf=2.3100e-04
+  rep12/30 done: Pf=2.3100e-04  beta=3.5019  lv=4  (37.5s  tot=453.9s)
+  rep13/30 seed=12
+    rep13/30 arm=C L1: threshold=3.0816
+    rep13/30 arm=C L2: threshold=1.5157
+    rep13/30 arm=C L3: threshold=0.4585
+    rep13/30 arm=C L4: threshold=-0.3401
+    rep13/30 arm=C → done L4  Pf=2.5700e-04
+  rep13/30 done: Pf=2.5700e-04  beta=3.4734  lv=4  (37.8s  tot=491.7s)
+  rep14/30 seed=13
+    rep14/30 arm=C L1: threshold=3.1104
+    rep14/30 arm=C L2: threshold=1.6262
+    rep14/30 arm=C L3: threshold=0.4825
+    rep14/30 arm=C L4: threshold=-0.4562
+    rep14/30 arm=C → done L4  Pf=3.3800e-04
+  rep14/30 done: Pf=3.3800e-04  beta=3.3991  lv=4  (37.2s  tot=528.9s)
+  rep15/30 seed=14
+    rep15/30 arm=C L1: threshold=3.2003
+    rep15/30 arm=C L2: threshold=1.7540
+    rep15/30 arm=C L3: threshold=0.6802
+    rep15/30 arm=C L4: threshold=-0.1044
+    rep15/30 arm=C → done L4  Pf=1.5000e-04
+  rep15/30 done: Pf=1.5000e-04  beta=3.6153  lv=4  (37.5s  tot=566.4s)
+  rep16/30 seed=15
+    rep16/30 arm=C L1: threshold=3.1709
+    rep16/30 arm=C L2: threshold=1.5804
+    rep16/30 arm=C L3: threshold=0.4868
+    rep16/30 arm=C L4: threshold=-0.4554
+    rep16/30 arm=C → done L4  Pf=3.0300e-04
+  rep16/30 done: Pf=3.0300e-04  beta=3.4289  lv=4  (38.8s  tot=605.3s)
+  rep17/30 seed=16
+    rep17/30 arm=C L1: threshold=2.9800
+    rep17/30 arm=C L2: threshold=1.4963
+    rep17/30 arm=C L3: threshold=0.3661
+    rep17/30 arm=C L4: threshold=-0.4579
+    rep17/30 arm=C → done L4  Pf=3.3400e-04
+  rep17/30 done: Pf=3.3400e-04  beta=3.4024  lv=4  (37.1s  tot=642.4s)
+  rep18/30 seed=17
+    rep18/30 arm=C L1: threshold=3.0957
+    rep18/30 arm=C L2: threshold=1.5961
+    rep18/30 arm=C L3: threshold=0.5461
+    rep18/30 arm=C L4: threshold=-0.3537
+    rep18/30 arm=C → done L4  Pf=2.7700e-04
+  rep18/30 done: Pf=2.7700e-04  beta=3.4532  lv=4  (37.5s  tot=679.9s)
+  rep19/30 seed=18
+    rep19/30 arm=C L1: threshold=3.1940
+    rep19/30 arm=C L2: threshold=1.7325
+    rep19/30 arm=C L3: threshold=0.6394
+    rep19/30 arm=C L4: threshold=-0.1661
+    rep19/30 arm=C → done L4  Pf=1.7100e-04
+  rep19/30 done: Pf=1.7100e-04  beta=3.5812  lv=4  (37.2s  tot=717.0s)
+  rep20/30 seed=19
+    rep20/30 arm=C L1: threshold=3.0006
+    rep20/30 arm=C L2: threshold=1.5521
+    rep20/30 arm=C L3: threshold=0.4582
+    rep20/30 arm=C L4: threshold=-0.4503
+    rep20/30 arm=C → done L4  Pf=3.7200e-04
+  rep20/30 done: Pf=3.7200e-04  beta=3.3728  lv=4  (38.1s  tot=755.1s)
+  rep21/30 seed=20
+    rep21/30 arm=C L1: threshold=3.2234
+    rep21/30 arm=C L2: threshold=1.6860
+    rep21/30 arm=C L3: threshold=0.5566
+    rep21/30 arm=C L4: threshold=-0.4274
+    rep21/30 arm=C → done L4  Pf=2.4700e-04
+  rep21/30 done: Pf=2.4700e-04  beta=3.4840  lv=4  (36.9s  tot=792.0s)
+  rep22/30 seed=21
+    rep22/30 arm=C L1: threshold=3.0956
+    rep22/30 arm=C L2: threshold=1.6307
+    rep22/30 arm=C L3: threshold=0.5558
+    rep22/30 arm=C L4: threshold=-0.3721
+    rep22/30 arm=C → done L4  Pf=2.1400e-04
+  rep22/30 done: Pf=2.1400e-04  beta=3.5222  lv=4  (36.1s  tot=828.1s)
+  rep23/30 seed=22
+    rep23/30 arm=C L1: threshold=3.1649
+    rep23/30 arm=C L2: threshold=1.6649
+    rep23/30 arm=C L3: threshold=0.6253
+    rep23/30 arm=C L4: threshold=-0.2702
+    rep23/30 arm=C → done L4  Pf=1.9000e-04
+  rep23/30 done: Pf=1.9000e-04  beta=3.5536  lv=4  (35.7s  tot=863.8s)
+  rep24/30 seed=23
+    rep24/30 arm=C L1: threshold=3.1057
+    rep24/30 arm=C L2: threshold=1.5846
+    rep24/30 arm=C L3: threshold=0.5982
+    rep24/30 arm=C L4: threshold=-0.2735
+    rep24/30 arm=C → done L4  Pf=2.2300e-04
+  rep24/30 done: Pf=2.2300e-04  beta=3.5113  lv=4  (35.5s  tot=899.3s)
+  rep25/30 seed=24
+    rep25/30 arm=C L1: threshold=3.1234
+    rep25/30 arm=C L2: threshold=1.7198
+    rep25/30 arm=C L3: threshold=0.5704
+    rep25/30 arm=C L4: threshold=-0.3564
+    rep25/30 arm=C → done L4  Pf=2.7900e-04
+  rep25/30 done: Pf=2.7900e-04  beta=3.4512  lv=4  (35.8s  tot=935.1s)
+  rep26/30 seed=25
+    rep26/30 arm=C L1: threshold=3.1590
+    rep26/30 arm=C L2: threshold=1.7080
+    rep26/30 arm=C L3: threshold=0.6759
+    rep26/30 arm=C L4: threshold=-0.3198
+    rep26/30 arm=C → done L4  Pf=2.2200e-04
+  rep26/30 done: Pf=2.2200e-04  beta=3.5124  lv=4  (36.1s  tot=971.1s)
+  rep27/30 seed=26
+    rep27/30 arm=C L1: threshold=3.0809
+    rep27/30 arm=C L2: threshold=1.6470
+    rep27/30 arm=C L3: threshold=0.6261
+    rep27/30 arm=C L4: threshold=-0.2853
+    rep27/30 arm=C → done L4  Pf=2.5000e-04
+  rep27/30 done: Pf=2.5000e-04  beta=3.4808  lv=4  (35.6s  tot=1006.8s)
+  rep28/30 seed=27
+    rep28/30 arm=C L1: threshold=3.0976
+    rep28/30 arm=C L2: threshold=1.6044
+    rep28/30 arm=C L3: threshold=0.5635
+    rep28/30 arm=C L4: threshold=-0.2076
+    rep28/30 arm=C → done L4  Pf=1.6700e-04
+  rep28/30 done: Pf=1.6700e-04  beta=3.5874  lv=4  (35.7s  tot=1042.5s)
+  rep29/30 seed=28
+    rep29/30 arm=C L1: threshold=3.1757
+    rep29/30 arm=C L2: threshold=1.6996
+    rep29/30 arm=C L3: threshold=0.5889
+    rep29/30 arm=C L4: threshold=-0.3097
+    rep29/30 arm=C → done L4  Pf=2.2400e-04
+  rep29/30 done: Pf=2.2400e-04  beta=3.5101  lv=4  (36.2s  tot=1078.7s)
+  rep30/30 seed=29
+    rep30/30 arm=C L1: threshold=3.1951
+    rep30/30 arm=C L2: threshold=1.6884
+    rep30/30 arm=C L3: threshold=0.6408
+    rep30/30 arm=C L4: threshold=-0.3494
+    rep30/30 arm=C → done L4  Pf=2.7000e-04
+  rep30/30 done: Pf=2.7000e-04  beta=3.4601  lv=4  (36.3s  tot=1115.0s)
+
+======================================================================
+Exp 1: beta=4.0  rho=0.75
+
+[Exp 1  beta=4.0_rho=0.75  n_rep=30]
+
+[arm=A  beta=4.0_rho=0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=A L1: threshold=4.9875
+    rep01/30 arm=A L2: threshold=3.0714
+    rep01/30 arm=A L3: threshold=1.5891
+    rep01/30 arm=A L4: threshold=0.6218
+    rep01/30 arm=A L5: threshold=-0.3581
+    rep01/30 arm=A → done L5  Pf=2.8400e-05
+  rep01/30 done: Pf=2.8400e-05  beta=4.0257  lv=5  (11.1s  tot=11.1s)
+  rep02/30 seed=1
+    rep02/30 arm=A L1: threshold=5.1439
+    rep02/30 arm=A L2: threshold=3.2352
+    rep02/30 arm=A L3: threshold=1.9805
+    rep02/30 arm=A L4: threshold=0.7731
+    rep02/30 arm=A L5: threshold=-0.2578
+    rep02/30 arm=A → done L5  Pf=1.9200e-05
+  rep02/30 done: Pf=1.9200e-05  beta=4.1169  lv=5  (11.0s  tot=22.1s)
+  rep03/30 seed=2
+    rep03/30 arm=A L1: threshold=5.0261
+    rep03/30 arm=A L2: threshold=3.1301
+    rep03/30 arm=A L3: threshold=1.7312
+    rep03/30 arm=A L4: threshold=0.6878
+    rep03/30 arm=A L5: threshold=-0.4929
+    rep03/30 arm=A → done L5  Pf=2.7100e-05
+  rep03/30 done: Pf=2.7100e-05  beta=4.0367  lv=5  (11.3s  tot=33.4s)
+  rep04/30 seed=3
+    rep04/30 arm=A L1: threshold=5.1810
+    rep04/30 arm=A L2: threshold=3.1071
+    rep04/30 arm=A L3: threshold=1.6164
+    rep04/30 arm=A L4: threshold=0.5048
+    rep04/30 arm=A L5: threshold=-0.6464
+    rep04/30 arm=A → done L5  Pf=3.0100e-05
+  rep04/30 done: Pf=3.0100e-05  beta=4.0120  lv=5  (11.1s  tot=44.5s)
+  rep05/30 seed=4
+    rep05/30 arm=A L1: threshold=4.9749
+    rep05/30 arm=A L2: threshold=3.1423
+    rep05/30 arm=A L3: threshold=1.8384
+    rep05/30 arm=A L4: threshold=0.6251
+    rep05/30 arm=A L5: threshold=-0.3701
+    rep05/30 arm=A → done L5  Pf=2.0800e-05
+  rep05/30 done: Pf=2.0800e-05  beta=4.0984  lv=5  (11.1s  tot=55.6s)
+  rep06/30 seed=5
+    rep06/30 arm=A L1: threshold=4.8839
+    rep06/30 arm=A L2: threshold=3.0938
+    rep06/30 arm=A L3: threshold=1.5511
+    rep06/30 arm=A L4: threshold=0.4066
+    rep06/30 arm=A L5: threshold=-0.7328
+    rep06/30 arm=A → done L5  Pf=5.5100e-05
+  rep06/30 done: Pf=5.5100e-05  beta=3.8670  lv=5  (11.0s  tot=66.5s)
+  rep07/30 seed=6
+    rep07/30 arm=A L1: threshold=5.1155
+    rep07/30 arm=A L2: threshold=3.1258
+    rep07/30 arm=A L3: threshold=1.7442
+    rep07/30 arm=A L4: threshold=0.5998
+    rep07/30 arm=A L5: threshold=-0.3291
+    rep07/30 arm=A → done L5  Pf=2.4500e-05
+  rep07/30 done: Pf=2.4500e-05  beta=4.0603  lv=5  (11.0s  tot=77.5s)
+  rep08/30 seed=7
+    rep08/30 arm=A L1: threshold=5.0426
+    rep08/30 arm=A L2: threshold=3.0936
+    rep08/30 arm=A L3: threshold=1.7077
+    rep08/30 arm=A L4: threshold=0.5241
+    rep08/30 arm=A L5: threshold=-0.6469
+    rep08/30 arm=A → done L5  Pf=3.1900e-05
+  rep08/30 done: Pf=3.1900e-05  beta=3.9983  lv=5  (11.0s  tot=88.5s)
+  rep09/30 seed=8
+    rep09/30 arm=A L1: threshold=4.9363
+    rep09/30 arm=A L2: threshold=3.0163
+    rep09/30 arm=A L3: threshold=1.6084
+    rep09/30 arm=A L4: threshold=0.4938
+    rep09/30 arm=A L5: threshold=-0.3248
+    rep09/30 arm=A → done L5  Pf=2.4700e-05
+  rep09/30 done: Pf=2.4700e-05  beta=4.0584  lv=5  (11.4s  tot=99.9s)
+  rep10/30 seed=9
+    rep10/30 arm=A L1: threshold=4.9534
+    rep10/30 arm=A L2: threshold=3.0630
+    rep10/30 arm=A L3: threshold=1.8160
+    rep10/30 arm=A L4: threshold=0.4899
+    rep10/30 arm=A L5: threshold=-0.3924
+    rep10/30 arm=A → done L5  Pf=2.8900e-05
+  rep10/30 done: Pf=2.8900e-05  beta=4.0216  lv=5  (11.3s  tot=111.2s)
+  rep11/30 seed=10
+    rep11/30 arm=A L1: threshold=5.1357
+    rep11/30 arm=A L2: threshold=3.0570
+    rep11/30 arm=A L3: threshold=1.7319
+    rep11/30 arm=A L4: threshold=0.4747
+    rep11/30 arm=A L5: threshold=-0.4772
+    rep11/30 arm=A → done L5  Pf=3.1200e-05
+  rep11/30 done: Pf=3.1200e-05  beta=4.0035  lv=5  (11.0s  tot=122.2s)
+  rep12/30 seed=11
+    rep12/30 arm=A L1: threshold=4.9276
+    rep12/30 arm=A L2: threshold=3.0623
+    rep12/30 arm=A L3: threshold=1.7781
+    rep12/30 arm=A L4: threshold=0.8747
+    rep12/30 arm=A L5: threshold=-0.0227
+    rep12/30 arm=A → done L5  Pf=1.1200e-05
+  rep12/30 done: Pf=1.1200e-05  beta=4.2395  lv=5  (11.1s  tot=133.3s)
+  rep13/30 seed=12
+    rep13/30 arm=A L1: threshold=5.0453
+    rep13/30 arm=A L2: threshold=3.0225
+    rep13/30 arm=A L3: threshold=1.6392
+    rep13/30 arm=A L4: threshold=0.5052
+    rep13/30 arm=A L5: threshold=-0.5553
+    rep13/30 arm=A → done L5  Pf=4.4200e-05
+  rep13/30 done: Pf=4.4200e-05  beta=3.9204  lv=5  (11.0s  tot=144.4s)
+  rep14/30 seed=13
+    rep14/30 arm=A L1: threshold=5.0979
+    rep14/30 arm=A L2: threshold=3.1271
+    rep14/30 arm=A L3: threshold=1.7220
+    rep14/30 arm=A L4: threshold=0.5515
+    rep14/30 arm=A L5: threshold=-0.5160
+    rep14/30 arm=A → done L5  Pf=2.6900e-05
+  rep14/30 done: Pf=2.6900e-05  beta=4.0385  lv=5  (11.1s  tot=155.5s)
+  rep15/30 seed=14
+    rep15/30 arm=A L1: threshold=5.1808
+    rep15/30 arm=A L2: threshold=3.2365
+    rep15/30 arm=A L3: threshold=2.0449
+    rep15/30 arm=A L4: threshold=0.7430
+    rep15/30 arm=A L5: threshold=-0.0167
+    rep15/30 arm=A → done L5  Pf=1.1300e-05
+  rep15/30 done: Pf=1.1300e-05  beta=4.2375  lv=5  (11.1s  tot=166.5s)
+  rep16/30 seed=15
+    rep16/30 arm=A L1: threshold=5.0949
+    rep16/30 arm=A L2: threshold=2.9584
+    rep16/30 arm=A L3: threshold=1.3322
+    rep16/30 arm=A L4: threshold=-0.0190
+    rep16/30 arm=A → done L4  Pf=1.0200e-04
+  rep16/30 done: Pf=1.0200e-04  beta=3.7140  lv=4  (11.0s  tot=177.6s)
+  rep17/30 seed=16
+    rep17/30 arm=A L1: threshold=4.9438
+    rep17/30 arm=A L2: threshold=2.7629
+    rep17/30 arm=A L3: threshold=1.3717
+    rep17/30 arm=A L4: threshold=0.2400
+    rep17/30 arm=A L5: threshold=-0.5351
+    rep17/30 arm=A → done L5  Pf=5.2700e-05
+  rep17/30 done: Pf=5.2700e-05  beta=3.8778  lv=5  (11.2s  tot=188.7s)
+  rep18/30 seed=17
+    rep18/30 arm=A L1: threshold=5.0816
+    rep18/30 arm=A L2: threshold=2.9642
+    rep18/30 arm=A L3: threshold=1.6530
+    rep18/30 arm=A L4: threshold=0.3653
+    rep18/30 arm=A L5: threshold=-0.4453
+    rep18/30 arm=A → done L5  Pf=4.8600e-05
+  rep18/30 done: Pf=4.8600e-05  beta=3.8975  lv=5  (11.1s  tot=199.8s)
+  rep19/30 seed=18
+    rep19/30 arm=A L1: threshold=5.1092
+    rep19/30 arm=A L2: threshold=3.2240
+    rep19/30 arm=A L3: threshold=1.7412
+    rep19/30 arm=A L4: threshold=0.5498
+    rep19/30 arm=A L5: threshold=-0.3122
+    rep19/30 arm=A → done L5  Pf=2.5900e-05
+  rep19/30 done: Pf=2.5900e-05  beta=4.0474  lv=5  (11.0s  tot=210.8s)
+  rep20/30 seed=19
+    rep20/30 arm=A L1: threshold=4.8316
+    rep20/30 arm=A L2: threshold=2.7833
+    rep20/30 arm=A L3: threshold=1.3775
+    rep20/30 arm=A L4: threshold=0.1147
+    rep20/30 arm=A L5: threshold=-0.6678
+    rep20/30 arm=A → done L5  Pf=7.2000e-05
+  rep20/30 done: Pf=7.2000e-05  beta=3.8012  lv=5  (11.1s  tot=221.9s)
+  rep21/30 seed=20
+    rep21/30 arm=A L1: threshold=5.0788
+    rep21/30 arm=A L2: threshold=3.1596
+    rep21/30 arm=A L3: threshold=1.7582
+    rep21/30 arm=A L4: threshold=0.5872
+    rep21/30 arm=A L5: threshold=-0.6671
+    rep21/30 arm=A → done L5  Pf=3.7000e-05
+  rep21/30 done: Pf=3.7000e-05  beta=3.9630  lv=5  (11.3s  tot=233.2s)
+  rep22/30 seed=21
+    rep22/30 arm=A L1: threshold=4.9975
+    rep22/30 arm=A L2: threshold=3.0870
+    rep22/30 arm=A L3: threshold=1.6581
+    rep22/30 arm=A L4: threshold=0.3778
+    rep22/30 arm=A L5: threshold=-0.6132
+    rep22/30 arm=A → done L5  Pf=4.1100e-05
+  rep22/30 done: Pf=4.1100e-05  beta=3.9379  lv=5  (11.1s  tot=244.4s)
+  rep23/30 seed=22
+    rep23/30 arm=A L1: threshold=5.1986
+    rep23/30 arm=A L2: threshold=3.1225
+    rep23/30 arm=A L3: threshold=1.8195
+    rep23/30 arm=A L4: threshold=0.6813
+    rep23/30 arm=A L5: threshold=-0.2806
+    rep23/30 arm=A → done L5  Pf=2.4000e-05
+  rep23/30 done: Pf=2.4000e-05  beta=4.0652  lv=5  (11.0s  tot=255.4s)
+  rep24/30 seed=23
+    rep24/30 arm=A L1: threshold=5.0279
+    rep24/30 arm=A L2: threshold=2.8872
+    rep24/30 arm=A L3: threshold=1.4507
+    rep24/30 arm=A L4: threshold=0.2260
+    rep24/30 arm=A L5: threshold=-0.5395
+    rep24/30 arm=A → done L5  Pf=6.0900e-05
+  rep24/30 done: Pf=6.0900e-05  beta=3.8425  lv=5  (11.1s  tot=266.4s)
+  rep25/30 seed=24
+    rep25/30 arm=A L1: threshold=5.1296
+    rep25/30 arm=A L2: threshold=3.1881
+    rep25/30 arm=A L3: threshold=1.6620
+    rep25/30 arm=A L4: threshold=0.5897
+    rep25/30 arm=A L5: threshold=-0.4936
+    rep25/30 arm=A → done L5  Pf=2.9700e-05
+  rep25/30 done: Pf=2.9700e-05  beta=4.0152  lv=5  (11.1s  tot=277.5s)
+  rep26/30 seed=25
+    rep26/30 arm=A L1: threshold=5.1065
+    rep26/30 arm=A L2: threshold=3.1882
+    rep26/30 arm=A L3: threshold=1.7739
+    rep26/30 arm=A L4: threshold=0.4971
+    rep26/30 arm=A L5: threshold=-0.4872
+    rep26/30 arm=A → done L5  Pf=3.6900e-05
+  rep26/30 done: Pf=3.6900e-05  beta=3.9637  lv=5  (11.0s  tot=288.5s)
+  rep27/30 seed=26
+    rep27/30 arm=A L1: threshold=5.0457
+    rep27/30 arm=A L2: threshold=3.1607
+    rep27/30 arm=A L3: threshold=1.8762
+    rep27/30 arm=A L4: threshold=0.6370
+    rep27/30 arm=A L5: threshold=-0.4862
+    rep27/30 arm=A → done L5  Pf=2.7600e-05
+  rep27/30 done: Pf=2.7600e-05  beta=4.0324  lv=5  (11.0s  tot=299.6s)
+  rep28/30 seed=27
+    rep28/30 arm=A L1: threshold=5.0820
+    rep28/30 arm=A L2: threshold=3.1508
+    rep28/30 arm=A L3: threshold=1.8375
+    rep28/30 arm=A L4: threshold=0.6813
+    rep28/30 arm=A L5: threshold=-0.2322
+    rep28/30 arm=A → done L5  Pf=2.1100e-05
+  rep28/30 done: Pf=2.1100e-05  beta=4.0951  lv=5  (11.0s  tot=310.6s)
+  rep29/30 seed=28
+    rep29/30 arm=A L1: threshold=5.0810
+    rep29/30 arm=A L2: threshold=3.1544
+    rep29/30 arm=A L3: threshold=1.7018
+    rep29/30 arm=A L4: threshold=0.5158
+    rep29/30 arm=A L5: threshold=-0.4321
+    rep29/30 arm=A → done L5  Pf=3.8800e-05
+  rep29/30 done: Pf=3.8800e-05  beta=3.9517  lv=5  (11.0s  tot=321.6s)
+  rep30/30 seed=29
+    rep30/30 arm=A L1: threshold=5.1273
+    rep30/30 arm=A L2: threshold=3.0780
+    rep30/30 arm=A L3: threshold=1.6554
+    rep30/30 arm=A L4: threshold=0.5405
+    rep30/30 arm=A L5: threshold=-0.5669
+    rep30/30 arm=A → done L5  Pf=3.6700e-05
+  rep30/30 done: Pf=3.6700e-05  beta=3.9650  lv=5  (11.5s  tot=333.2s)
+
+[arm=B  beta=4.0_rho=0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=B L1: threshold=4.9857
+    rep01/30 arm=B L2: threshold=3.0665
+    rep01/30 arm=B L3: threshold=1.5870
+    rep01/30 arm=B L4: threshold=0.6188
+    rep01/30 arm=B L5: threshold=-0.3613
+    rep01/30 arm=B → done L5  Pf=2.8500e-05
+  rep01/30 done: Pf=2.8500e-05  beta=4.0249  lv=5  (46.7s  tot=46.7s)
+  rep02/30 seed=1
+    rep02/30 arm=B L1: threshold=5.1407
+    rep02/30 arm=B L2: threshold=3.2323
+    rep02/30 arm=B L3: threshold=1.9769
+    rep02/30 arm=B L4: threshold=0.7705
+    rep02/30 arm=B L5: threshold=-0.2607
+    rep02/30 arm=B → done L5  Pf=1.9600e-05
+  rep02/30 done: Pf=1.9600e-05  beta=4.1121  lv=5  (45.9s  tot=92.6s)
+  rep03/30 seed=2
+    rep03/30 arm=B L1: threshold=5.0404
+    rep03/30 arm=B L2: threshold=3.1303
+    rep03/30 arm=B L3: threshold=1.7324
+    rep03/30 arm=B L4: threshold=0.6857
+    rep03/30 arm=B L5: threshold=-0.4949
+    rep03/30 arm=B → done L5  Pf=2.7100e-05
+  rep03/30 done: Pf=2.7100e-05  beta=4.0367  lv=5  (45.7s  tot=138.3s)
+  rep04/30 seed=3
+    rep04/30 arm=B L1: threshold=5.1802
+    rep04/30 arm=B L2: threshold=3.1088
+    rep04/30 arm=B L3: threshold=1.6428
+    rep04/30 arm=B L4: threshold=0.5019
+    rep04/30 arm=B L5: threshold=-0.6481
+    rep04/30 arm=B → done L5  Pf=3.0100e-05
+  rep04/30 done: Pf=3.0100e-05  beta=4.0120  lv=5  (45.7s  tot=184.0s)
+  rep05/30 seed=4
+    rep05/30 arm=B L1: threshold=4.9833
+    rep05/30 arm=B L2: threshold=3.1406
+    rep05/30 arm=B L3: threshold=1.8328
+    rep05/30 arm=B L4: threshold=0.6228
+    rep05/30 arm=B L5: threshold=-0.3651
+    rep05/30 arm=B → done L5  Pf=2.0800e-05
+  rep05/30 done: Pf=2.0800e-05  beta=4.0984  lv=5  (45.8s  tot=229.8s)
+  rep06/30 seed=5
+    rep06/30 arm=B L1: threshold=4.8827
+    rep06/30 arm=B L2: threshold=3.0917
+    rep06/30 arm=B L3: threshold=1.5480
+    rep06/30 arm=B L4: threshold=0.4050
+    rep06/30 arm=B L5: threshold=-0.7367
+    rep06/30 arm=B → done L5  Pf=5.5100e-05
+  rep06/30 done: Pf=5.5100e-05  beta=3.8670  lv=5  (48.2s  tot=278.0s)
+  rep07/30 seed=6
+    rep07/30 arm=B L1: threshold=5.1271
+    rep07/30 arm=B L2: threshold=3.1179
+    rep07/30 arm=B L3: threshold=1.7465
+    rep07/30 arm=B L4: threshold=0.6154
+    rep07/30 arm=B L5: threshold=-0.3307
+    rep07/30 arm=B → done L5  Pf=2.4500e-05
+  rep07/30 done: Pf=2.4500e-05  beta=4.0603  lv=5  (61.2s  tot=339.2s)
+  rep08/30 seed=7
+    rep08/30 arm=B L1: threshold=5.0385
+    rep08/30 arm=B L2: threshold=3.0918
+    rep08/30 arm=B L3: threshold=1.7043
+    rep08/30 arm=B L4: threshold=0.5166
+    rep08/30 arm=B L5: threshold=-0.6489
+    rep08/30 arm=B → done L5  Pf=3.2100e-05
+  rep08/30 done: Pf=3.2100e-05  beta=3.9968  lv=5  (53.0s  tot=392.1s)
+  rep09/30 seed=8
+    rep09/30 arm=B L1: threshold=4.9464
+    rep09/30 arm=B L2: threshold=3.0134
+    rep09/30 arm=B L3: threshold=1.6378
+    rep09/30 arm=B L4: threshold=0.4770
+    rep09/30 arm=B L5: threshold=-0.3316
+    rep09/30 arm=B → done L5  Pf=2.5200e-05
+  rep09/30 done: Pf=2.5200e-05  beta=4.0538  lv=5  (46.1s  tot=438.3s)
+  rep10/30 seed=9
+    rep10/30 arm=B L1: threshold=4.9526
+    rep10/30 arm=B L2: threshold=3.0594
+    rep10/30 arm=B L3: threshold=1.8126
+    rep10/30 arm=B L4: threshold=0.4893
+    rep10/30 arm=B L5: threshold=-0.3945
+    rep10/30 arm=B → done L5  Pf=2.8900e-05
+  rep10/30 done: Pf=2.8900e-05  beta=4.0216  lv=5  (46.1s  tot=484.4s)
+  rep11/30 seed=10
+    rep11/30 arm=B L1: threshold=5.1338
+    rep11/30 arm=B L2: threshold=3.0724
+    rep11/30 arm=B L3: threshold=1.7541
+    rep11/30 arm=B L4: threshold=0.5042
+    rep11/30 arm=B L5: threshold=-0.4812
+    rep11/30 arm=B → done L5  Pf=2.9100e-05
+  rep11/30 done: Pf=2.9100e-05  beta=4.0200  lv=5  (46.0s  tot=530.4s)
+  rep12/30 seed=11
+    rep12/30 arm=B L1: threshold=4.9472
+    rep12/30 arm=B L2: threshold=3.0595
+    rep12/30 arm=B L3: threshold=1.7753
+    rep12/30 arm=B L4: threshold=0.8731
+    rep12/30 arm=B L5: threshold=-0.0245
+    rep12/30 arm=B → done L5  Pf=1.1400e-05
+  rep12/30 done: Pf=1.1400e-05  beta=4.2355  lv=5  (44.9s  tot=575.3s)
+  rep13/30 seed=12
+    rep13/30 arm=B L1: threshold=5.0464
+    rep13/30 arm=B L2: threshold=3.0172
+    rep13/30 arm=B L3: threshold=1.6382
+    rep13/30 arm=B L4: threshold=0.5003
+    rep13/30 arm=B L5: threshold=-0.5624
+    rep13/30 arm=B → done L5  Pf=4.4800e-05
+  rep13/30 done: Pf=4.4800e-05  beta=3.9172  lv=5  (45.0s  tot=620.3s)
+  rep14/30 seed=13
+    rep14/30 arm=B L1: threshold=5.0982
+    rep14/30 arm=B L2: threshold=3.1291
+    rep14/30 arm=B L3: threshold=1.7049
+    rep14/30 arm=B L4: threshold=0.4984
+    rep14/30 arm=B L5: threshold=-0.5129
+    rep14/30 arm=B → done L5  Pf=2.8000e-05
+  rep14/30 done: Pf=2.8000e-05  beta=4.0291  lv=5  (46.0s  tot=666.3s)
+  rep15/30 seed=14
+    rep15/30 arm=B L1: threshold=5.1803
+    rep15/30 arm=B L2: threshold=3.2346
+    rep15/30 arm=B L3: threshold=2.0416
+    rep15/30 arm=B L4: threshold=0.7404
+    rep15/30 arm=B L5: threshold=-0.0211
+    rep15/30 arm=B → done L5  Pf=1.1300e-05
+  rep15/30 done: Pf=1.1300e-05  beta=4.2375  lv=5  (45.2s  tot=711.6s)
+  rep16/30 seed=15
+    rep16/30 arm=B L1: threshold=5.1051
+    rep16/30 arm=B L2: threshold=2.9571
+    rep16/30 arm=B L3: threshold=1.3575
+    rep16/30 arm=B L4: threshold=0.0628
+    rep16/30 arm=B L5: threshold=-0.9411
+    rep16/30 arm=B → done L5  Pf=9.3500e-05
+  rep16/30 done: Pf=9.3500e-05  beta=3.7360  lv=5  (45.4s  tot=757.0s)
+  rep17/30 seed=16
+    rep17/30 arm=B L1: threshold=4.9397
+    rep17/30 arm=B L2: threshold=2.7616
+    rep17/30 arm=B L3: threshold=1.3720
+    rep17/30 arm=B L4: threshold=0.2349
+    rep17/30 arm=B L5: threshold=-0.5368
+    rep17/30 arm=B → done L5  Pf=5.3700e-05
+  rep17/30 done: Pf=5.3700e-05  beta=3.8732  lv=5  (44.6s  tot=801.6s)
+  rep18/30 seed=17
+    rep18/30 arm=B L1: threshold=5.0809
+    rep18/30 arm=B L2: threshold=2.9623
+    rep18/30 arm=B L3: threshold=1.6507
+    rep18/30 arm=B L4: threshold=0.3613
+    rep18/30 arm=B L5: threshold=-0.4467
+    rep18/30 arm=B → done L5  Pf=4.8600e-05
+  rep18/30 done: Pf=4.8600e-05  beta=3.8975  lv=5  (44.6s  tot=846.2s)
+  rep19/30 seed=18
+    rep19/30 arm=B L1: threshold=5.0972
+    rep19/30 arm=B L2: threshold=3.2173
+    rep19/30 arm=B L3: threshold=1.7308
+    rep19/30 arm=B L4: threshold=0.5290
+    rep19/30 arm=B L5: threshold=-0.3703
+    rep19/30 arm=B → done L5  Pf=2.7300e-05
+  rep19/30 done: Pf=2.7300e-05  beta=4.0350  lv=5  (44.4s  tot=890.6s)
+  rep20/30 seed=19
+    rep20/30 arm=B L1: threshold=4.8287
+    rep20/30 arm=B L2: threshold=2.7719
+    rep20/30 arm=B L3: threshold=1.3595
+    rep20/30 arm=B L4: threshold=0.0945
+    rep20/30 arm=B L5: threshold=-0.6704
+    rep20/30 arm=B → done L5  Pf=7.1100e-05
+  rep20/30 done: Pf=7.1100e-05  beta=3.8043  lv=5  (44.6s  tot=935.2s)
+  rep21/30 seed=20
+    rep21/30 arm=B L1: threshold=5.0780
+    rep21/30 arm=B L2: threshold=3.1568
+    rep21/30 arm=B L3: threshold=1.7560
+    rep21/30 arm=B L4: threshold=0.5851
+    rep21/30 arm=B L5: threshold=-0.6687
+    rep21/30 arm=B → done L5  Pf=3.7400e-05
+  rep21/30 done: Pf=3.7400e-05  beta=3.9605  lv=5  (44.8s  tot=980.0s)
+  rep22/30 seed=21
+    rep22/30 arm=B L1: threshold=4.9947
+    rep22/30 arm=B L2: threshold=3.0837
+    rep22/30 arm=B L3: threshold=1.6555
+    rep22/30 arm=B L4: threshold=0.3746
+    rep22/30 arm=B L5: threshold=-0.6151
+    rep22/30 arm=B → done L5  Pf=4.1100e-05
+  rep22/30 done: Pf=4.1100e-05  beta=3.9379  lv=5  (44.6s  tot=1024.6s)
+  rep23/30 seed=22
+    rep23/30 arm=B L1: threshold=5.1983
+    rep23/30 arm=B L2: threshold=3.1189
+    rep23/30 arm=B L3: threshold=1.8166
+    rep23/30 arm=B L4: threshold=0.6785
+    rep23/30 arm=B L5: threshold=-0.2838
+    rep23/30 arm=B → done L5  Pf=2.4000e-05
+  rep23/30 done: Pf=2.4000e-05  beta=4.0652  lv=5  (44.7s  tot=1069.3s)
+  rep24/30 seed=23
+    rep24/30 arm=B L1: threshold=5.0349
+    rep24/30 arm=B L2: threshold=2.9106
+    rep24/30 arm=B L3: threshold=1.4327
+    rep24/30 arm=B L4: threshold=0.2239
+    rep24/30 arm=B L5: threshold=-0.5411
+    rep24/30 arm=B → done L5  Pf=6.3400e-05
+  rep24/30 done: Pf=6.3400e-05  beta=3.8326  lv=5  (45.0s  tot=1114.3s)
+  rep25/30 seed=24
+    rep25/30 arm=B L1: threshold=5.1285
+    rep25/30 arm=B L2: threshold=3.1818
+    rep25/30 arm=B L3: threshold=1.6595
+    rep25/30 arm=B L4: threshold=0.5876
+    rep25/30 arm=B L5: threshold=-0.4957
+    rep25/30 arm=B → done L5  Pf=2.9700e-05
+  rep25/30 done: Pf=2.9700e-05  beta=4.0152  lv=5  (44.7s  tot=1159.1s)
+  rep26/30 seed=25
+    rep26/30 arm=B L1: threshold=5.1056
+    rep26/30 arm=B L2: threshold=3.1868
+    rep26/30 arm=B L3: threshold=1.6816
+    rep26/30 arm=B L4: threshold=0.3726
+    rep26/30 arm=B L5: threshold=-0.5362
+    rep26/30 arm=B → done L5  Pf=4.2800e-05
+  rep26/30 done: Pf=4.2800e-05  beta=3.9282  lv=5  (45.1s  tot=1204.2s)
+  rep27/30 seed=26
+    rep27/30 arm=B L1: threshold=5.0440
+    rep27/30 arm=B L2: threshold=3.1572
+    rep27/30 arm=B L3: threshold=1.8740
+    rep27/30 arm=B L4: threshold=0.6365
+    rep27/30 arm=B L5: threshold=-0.4893
+    rep27/30 arm=B → done L5  Pf=2.7600e-05
+  rep27/30 done: Pf=2.7600e-05  beta=4.0324  lv=5  (44.5s  tot=1248.7s)
+  rep28/30 seed=27
+    rep28/30 arm=B L1: threshold=5.0802
+    rep28/30 arm=B L2: threshold=3.1501
+    rep28/30 arm=B L3: threshold=1.7719
+    rep28/30 arm=B L4: threshold=0.6600
+    rep28/30 arm=B L5: threshold=-0.2609
+    rep28/30 arm=B → done L5  Pf=2.1500e-05
+  rep28/30 done: Pf=2.1500e-05  beta=4.0907  lv=5  (45.2s  tot=1293.9s)
+  rep29/30 seed=28
+    rep29/30 arm=B L1: threshold=5.0829
+    rep29/30 arm=B L2: threshold=3.1531
+    rep29/30 arm=B L3: threshold=1.7000
+    rep29/30 arm=B L4: threshold=0.5097
+    rep29/30 arm=B L5: threshold=-0.4338
+    rep29/30 arm=B → done L5  Pf=3.9000e-05
+  rep29/30 done: Pf=3.9000e-05  beta=3.9505  lv=5  (44.6s  tot=1338.5s)
+  rep30/30 seed=29
+    rep30/30 arm=B L1: threshold=5.1222
+    rep30/30 arm=B L2: threshold=3.0756
+    rep30/30 arm=B L3: threshold=1.6792
+    rep30/30 arm=B L4: threshold=0.6074
+    rep30/30 arm=B L5: threshold=-0.4696
+    rep30/30 arm=B → done L5  Pf=3.5400e-05
+  rep30/30 done: Pf=3.5400e-05  beta=3.9736  lv=5  (44.8s  tot=1383.3s)
+
+[arm=C  beta=4.0_rho=0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=C L1: threshold=4.9857
+    rep01/30 arm=C L2: threshold=2.9768
+    rep01/30 arm=C L3: threshold=1.5890
+    rep01/30 arm=C L4: threshold=0.5134
+    rep01/30 arm=C L5: threshold=-0.4315
+    rep01/30 arm=C → done L5  Pf=2.9000e-05
+  rep01/30 done: Pf=2.9000e-05  beta=4.0208  lv=5  (44.9s  tot=44.9s)
+  rep02/30 seed=1
+    rep02/30 arm=C L1: threshold=5.1407
+    rep02/30 arm=C L2: threshold=3.2255
+    rep02/30 arm=C L3: threshold=1.8668
+    rep02/30 arm=C L4: threshold=0.6941
+    rep02/30 arm=C L5: threshold=-0.3961
+    rep02/30 arm=C → done L5  Pf=2.4400e-05
+  rep02/30 done: Pf=2.4400e-05  beta=4.0613  lv=5  (45.1s  tot=90.0s)
+  rep03/30 seed=2
+    rep03/30 arm=C L1: threshold=5.0404
+    rep03/30 arm=C L2: threshold=3.1067
+    rep03/30 arm=C L3: threshold=1.7049
+    rep03/30 arm=C L4: threshold=0.5337
+    rep03/30 arm=C L5: threshold=-0.4981
+    rep03/30 arm=C → done L5  Pf=3.2700e-05
+  rep03/30 done: Pf=3.2700e-05  beta=3.9924  lv=5  (53.6s  tot=143.6s)
+  rep04/30 seed=3
+    rep04/30 arm=C L1: threshold=5.1802
+    rep04/30 arm=C L2: threshold=3.2854
+    rep04/30 arm=C L3: threshold=1.8204
+    rep04/30 arm=C L4: threshold=0.6648
+    rep04/30 arm=C L5: threshold=-0.3482
+    rep04/30 arm=C → done L5  Pf=2.2500e-05
+  rep04/30 done: Pf=2.2500e-05  beta=4.0802  lv=5  (47.4s  tot=191.0s)
+  rep05/30 seed=4
+    rep05/30 arm=C L1: threshold=4.9833
+    rep05/30 arm=C L2: threshold=3.1746
+    rep05/30 arm=C L3: threshold=1.8504
+    rep05/30 arm=C L4: threshold=0.6282
+    rep05/30 arm=C L5: threshold=-0.3817
+    rep05/30 arm=C → done L5  Pf=2.4600e-05
+  rep05/30 done: Pf=2.4600e-05  beta=4.0594  lv=5  (45.2s  tot=236.3s)
+  rep06/30 seed=5
+    rep06/30 arm=C L1: threshold=4.8827
+    rep06/30 arm=C L2: threshold=2.9529
+    rep06/30 arm=C L3: threshold=1.4976
+    rep06/30 arm=C L4: threshold=0.2978
+    rep06/30 arm=C L5: threshold=-0.6375
+    rep06/30 arm=C → done L5  Pf=5.0400e-05
+  rep06/30 done: Pf=5.0400e-05  beta=3.8887  lv=5  (45.1s  tot=281.3s)
+  rep07/30 seed=6
+    rep07/30 arm=C L1: threshold=5.1271
+    rep07/30 arm=C L2: threshold=3.1222
+    rep07/30 arm=C L3: threshold=1.6930
+    rep07/30 arm=C L4: threshold=0.5879
+    rep07/30 arm=C L5: threshold=-0.3929
+    rep07/30 arm=C → done L5  Pf=2.6400e-05
+  rep07/30 done: Pf=2.6400e-05  beta=4.0429  lv=5  (45.3s  tot=326.6s)
+  rep08/30 seed=7
+    rep08/30 arm=C L1: threshold=5.0385
+    rep08/30 arm=C L2: threshold=3.0037
+    rep08/30 arm=C L3: threshold=1.6777
+    rep08/30 arm=C L4: threshold=0.5305
+    rep08/30 arm=C L5: threshold=-0.4883
+    rep08/30 arm=C → done L5  Pf=3.2700e-05
+  rep08/30 done: Pf=3.2700e-05  beta=3.9924  lv=5  (44.9s  tot=371.5s)
+  rep09/30 seed=8
+    rep09/30 arm=C L1: threshold=4.9464
+    rep09/30 arm=C L2: threshold=3.1121
+    rep09/30 arm=C L3: threshold=1.6560
+    rep09/30 arm=C L4: threshold=0.5092
+    rep09/30 arm=C L5: threshold=-0.3580
+    rep09/30 arm=C → done L5  Pf=2.3800e-05
+  rep09/30 done: Pf=2.3800e-05  beta=4.0671  lv=5  (45.0s  tot=416.5s)
+  rep10/30 seed=9
+    rep10/30 arm=C L1: threshold=4.9526
+    rep10/30 arm=C L2: threshold=3.0392
+    rep10/30 arm=C L3: threshold=1.6291
+    rep10/30 arm=C L4: threshold=0.4419
+    rep10/30 arm=C L5: threshold=-0.4756
+    rep10/30 arm=C → done L5  Pf=3.2800e-05
+  rep10/30 done: Pf=3.2800e-05  beta=3.9917  lv=5  (45.0s  tot=461.5s)
+  rep11/30 seed=10
+    rep11/30 arm=C L1: threshold=5.1338
+    rep11/30 arm=C L2: threshold=3.0878
+    rep11/30 arm=C L3: threshold=1.6163
+    rep11/30 arm=C L4: threshold=0.4281
+    rep11/30 arm=C L5: threshold=-0.6169
+    rep11/30 arm=C → done L5  Pf=4.5200e-05
+  rep11/30 done: Pf=4.5200e-05  beta=3.9150  lv=5  (44.9s  tot=506.4s)
+  rep12/30 seed=11
+    rep12/30 arm=C L1: threshold=4.9472
+    rep12/30 arm=C L2: threshold=3.1142
+    rep12/30 arm=C L3: threshold=1.7285
+    rep12/30 arm=C L4: threshold=0.6514
+    rep12/30 arm=C L5: threshold=-0.3372
+    rep12/30 arm=C → done L5  Pf=2.2500e-05
+  rep12/30 done: Pf=2.2500e-05  beta=4.0802  lv=5  (45.2s  tot=551.7s)
+  rep13/30 seed=12
+    rep13/30 arm=C L1: threshold=5.0464
+    rep13/30 arm=C L2: threshold=3.0178
+    rep13/30 arm=C L3: threshold=1.6154
+    rep13/30 arm=C L4: threshold=0.4348
+    rep13/30 arm=C L5: threshold=-0.6440
+    rep13/30 arm=C → done L5  Pf=4.0700e-05
+  rep13/30 done: Pf=4.0700e-05  beta=3.9402  lv=5  (44.9s  tot=596.6s)
+  rep14/30 seed=13
+    rep14/30 arm=C L1: threshold=5.0982
+    rep14/30 arm=C L2: threshold=3.1267
+    rep14/30 arm=C L3: threshold=1.6296
+    rep14/30 arm=C L4: threshold=0.5167
+    rep14/30 arm=C L5: threshold=-0.4936
+    rep14/30 arm=C → done L5  Pf=3.2800e-05
+  rep14/30 done: Pf=3.2800e-05  beta=3.9917  lv=5  (44.9s  tot=641.5s)
+  rep15/30 seed=14
+    rep15/30 arm=C L1: threshold=5.1803
+    rep15/30 arm=C L2: threshold=3.2474
+    rep15/30 arm=C L3: threshold=1.8673
+    rep15/30 arm=C L4: threshold=0.7476
+    rep15/30 arm=C L5: threshold=-0.2149
+    rep15/30 arm=C → done L5  Pf=1.7500e-05
+  rep15/30 done: Pf=1.7500e-05  beta=4.1382  lv=5  (45.0s  tot=686.4s)
+  rep16/30 seed=15
+    rep16/30 arm=C L1: threshold=5.1051
+    rep16/30 arm=C L2: threshold=2.9372
+    rep16/30 arm=C L3: threshold=1.4288
+    rep16/30 arm=C L4: threshold=0.2494
+    rep16/30 arm=C L5: threshold=-0.7538
+    rep16/30 arm=C → done L5  Pf=5.2600e-05
+  rep16/30 done: Pf=5.2600e-05  beta=3.8783  lv=5  (44.9s  tot=731.4s)
+  rep17/30 seed=16
+    rep17/30 arm=C L1: threshold=4.9397
+    rep17/30 arm=C L2: threshold=2.9220
+    rep17/30 arm=C L3: threshold=1.5249
+    rep17/30 arm=C L4: threshold=0.4330
+    rep17/30 arm=C L5: threshold=-0.5356
+    rep17/30 arm=C → done L5  Pf=3.4200e-05
+  rep17/30 done: Pf=3.4200e-05  beta=3.9818  lv=5  (45.1s  tot=776.5s)
+  rep18/30 seed=17
+    rep18/30 arm=C L1: threshold=5.0809
+    rep18/30 arm=C L2: threshold=3.1078
+    rep18/30 arm=C L3: threshold=1.7261
+    rep18/30 arm=C L4: threshold=0.5642
+    rep18/30 arm=C L5: threshold=-0.4250
+    rep18/30 arm=C → done L5  Pf=3.1300e-05
+  rep18/30 done: Pf=3.1300e-05  beta=4.0028  lv=5  (45.2s  tot=821.7s)
+  rep19/30 seed=18
+    rep19/30 arm=C L1: threshold=5.0972
+    rep19/30 arm=C L2: threshold=3.1365
+    rep19/30 arm=C L3: threshold=1.7116
+    rep19/30 arm=C L4: threshold=0.5300
+    rep19/30 arm=C L5: threshold=-0.4547
+    rep19/30 arm=C → done L5  Pf=2.7800e-05
+  rep19/30 done: Pf=2.7800e-05  beta=4.0307  lv=5  (45.0s  tot=866.6s)
+  rep20/30 seed=19
+    rep20/30 arm=C L1: threshold=4.8287
+    rep20/30 arm=C L2: threshold=2.8552
+    rep20/30 arm=C L3: threshold=1.4320
+    rep20/30 arm=C L4: threshold=0.2883
+    rep20/30 arm=C L5: threshold=-0.7311
+    rep20/30 arm=C → done L5  Pf=5.5900e-05
+  rep20/30 done: Pf=5.5900e-05  beta=3.8634  lv=5  (45.2s  tot=911.9s)
+  rep21/30 seed=20
+    rep21/30 arm=C L1: threshold=5.0780
+    rep21/30 arm=C L2: threshold=3.1297
+    rep21/30 arm=C L3: threshold=1.7562
+    rep21/30 arm=C L4: threshold=0.4737
+    rep21/30 arm=C L5: threshold=-0.5212
+    rep21/30 arm=C → done L5  Pf=3.5600e-05
+  rep21/30 done: Pf=3.5600e-05  beta=3.9722  lv=5  (45.1s  tot=957.0s)
+  rep22/30 seed=21
+    rep22/30 arm=C L1: threshold=4.9947
+    rep22/30 arm=C L2: threshold=3.0503
+    rep22/30 arm=C L3: threshold=1.6989
+    rep22/30 arm=C L4: threshold=0.4602
+    rep22/30 arm=C L5: threshold=-0.5016
+    rep22/30 arm=C → done L5  Pf=3.3100e-05
+  rep22/30 done: Pf=3.3100e-05  beta=3.9895  lv=5  (45.0s  tot=1002.0s)
+  rep23/30 seed=22
+    rep23/30 arm=C L1: threshold=5.1983
+    rep23/30 arm=C L2: threshold=3.1714
+    rep23/30 arm=C L3: threshold=1.7639
+    rep23/30 arm=C L4: threshold=0.6112
+    rep23/30 arm=C L5: threshold=-0.4057
+    rep23/30 arm=C → done L5  Pf=2.5500e-05
+  rep23/30 done: Pf=2.5500e-05  beta=4.0510  lv=5  (45.1s  tot=1047.0s)
+  rep24/30 seed=23
+    rep24/30 arm=C L1: threshold=5.0349
+    rep24/30 arm=C L2: threshold=3.0836
+    rep24/30 arm=C L3: threshold=1.6234
+    rep24/30 arm=C L4: threshold=0.4730
+    rep24/30 arm=C L5: threshold=-0.5485
+    rep24/30 arm=C → done L5  Pf=3.1400e-05
+  rep24/30 done: Pf=3.1400e-05  beta=4.0020  lv=5  (45.3s  tot=1092.3s)
+  rep25/30 seed=24
+    rep25/30 arm=C L1: threshold=5.1285
+    rep25/30 arm=C L2: threshold=3.2459
+    rep25/30 arm=C L3: threshold=1.7880
+    rep25/30 arm=C L4: threshold=0.5539
+    rep25/30 arm=C L5: threshold=-0.5395
+    rep25/30 arm=C → done L5  Pf=3.1900e-05
+  rep25/30 done: Pf=3.1900e-05  beta=3.9983  lv=5  (45.1s  tot=1137.4s)
+  rep26/30 seed=25
+    rep26/30 arm=C L1: threshold=5.1056
+    rep26/30 arm=C L2: threshold=3.2434
+    rep26/30 arm=C L3: threshold=1.8558
+    rep26/30 arm=C L4: threshold=0.5618
+    rep26/30 arm=C L5: threshold=-0.4188
+    rep26/30 arm=C → done L5  Pf=2.9600e-05
+  rep26/30 done: Pf=2.9600e-05  beta=4.0160  lv=5  (45.0s  tot=1182.3s)
+  rep27/30 seed=26
+    rep27/30 arm=C L1: threshold=5.0440
+    rep27/30 arm=C L2: threshold=3.1724
+    rep27/30 arm=C L3: threshold=1.7133
+    rep27/30 arm=C L4: threshold=0.4945
+    rep27/30 arm=C L5: threshold=-0.5096
+    rep27/30 arm=C → done L5  Pf=3.7000e-05
+  rep27/30 done: Pf=3.7000e-05  beta=3.9630  lv=5  (45.2s  tot=1227.5s)
+  rep28/30 seed=27
+    rep28/30 arm=C L1: threshold=5.0802
+    rep28/30 arm=C L2: threshold=3.1528
+    rep28/30 arm=C L3: threshold=1.8316
+    rep28/30 arm=C L4: threshold=0.7275
+    rep28/30 arm=C L5: threshold=-0.2540
+    rep28/30 arm=C → done L5  Pf=1.8600e-05
+  rep28/30 done: Pf=1.8600e-05  beta=4.1242  lv=5  (45.4s  tot=1272.9s)
+  rep29/30 seed=28
+    rep29/30 arm=C L1: threshold=5.0829
+    rep29/30 arm=C L2: threshold=3.1176
+    rep29/30 arm=C L3: threshold=1.7211
+    rep29/30 arm=C L4: threshold=0.5892
+    rep29/30 arm=C L5: threshold=-0.5251
+    rep29/30 arm=C → done L5  Pf=3.1300e-05
+  rep29/30 done: Pf=3.1300e-05  beta=4.0028  lv=5  (45.1s  tot=1317.9s)
+  rep30/30 seed=29
+    rep30/30 arm=C L1: threshold=5.1222
+    rep30/30 arm=C L2: threshold=3.1777
+    rep30/30 arm=C L3: threshold=1.7348
+    rep30/30 arm=C L4: threshold=0.5123
+    rep30/30 arm=C L5: threshold=-0.5804
+    rep30/30 arm=C → done L5  Pf=3.5300e-05
+  rep30/30 done: Pf=3.5300e-05  beta=3.9743  lv=5  (45.0s  tot=1362.9s)
+
+Total wall time: 5759.3s
+
+────────────────────────────────────────────────────────────────────────────────
+Config       label                 beta_hat  beta_ref    bias  COV_beta  grad_U/run     G/run    lv
+────────────────────────────────────────────────────────────────────────────────
+  arm A        beta=3.5_rho=0.0        3.5061    3.5000 +0.0061     0.031   2.230e+06 0.000e+00   4.0
+  arm B        beta=3.5_rho=0.0        3.5055    3.5000 +0.0055     0.031   1.442e+06 1.442e+06   4.0
+  arm C        beta=3.5_rho=0.0        3.4871    3.5000 -0.0129     0.021   1.430e+06 1.469e+06   4.0
+  arm A        beta=4.0_rho=0.75       3.9968    4.0000 -0.0032     0.028   2.239e+06 0.000e+00   5.0
+  arm B        beta=4.0_rho=0.75       3.9952    4.0000 -0.0048     0.027   1.845e+06 1.845e+06   5.0
+  arm C        beta=4.0_rho=0.75       4.0038    4.0000 +0.0038     0.016   1.833e+06 1.877e+06   5.0
+────────────────────────────────────────────────────────────────────────────────
+
+Mechanism table — per-level fractions (mean over reps):
+  arm  label               lv   geom_rej  ener_rej   accept  cond_ener  bounces_mean  bounce_traj
+  A    beta=3.5_rho=0.0   L1      0.655     0.000    0.344      0.001         0.000        0.000
+  A    beta=3.5_rho=0.0   L2      0.855     0.000    0.145      0.002         0.000        0.000
+  A    beta=3.5_rho=0.0   L3      0.934     0.000    0.066      0.003         0.000        0.000
+  A    beta=3.5_rho=0.0   L4      0.957     0.000    0.043      0.000         0.000        0.000
+  B    beta=3.5_rho=0.0   L1      0.656     0.001    0.343      0.003         0.000        0.000
+  B    beta=3.5_rho=0.0   L2      0.854     0.001    0.145      0.004         0.000        0.000
+  B    beta=3.5_rho=0.0   L3      0.934     0.000    0.066      0.004         0.000        0.000
+  B    beta=3.5_rho=0.0   L4      0.958     0.000    0.042      0.000         0.000        0.000
+  C    beta=3.5_rho=0.0   L1      0.000     0.003    0.997      0.003         0.703        0.655
+  C    beta=3.5_rho=0.0   L2      0.003     0.002    0.994      0.002         1.057        0.853
+  C    beta=3.5_rho=0.0   L3      0.006     0.002    0.991      0.002         1.325        0.934
+  A    beta=4.0_rho=0.75  L1      0.515     0.002    0.483      0.003         0.000        0.000
+  A    beta=4.0_rho=0.75  L2      0.713     0.001    0.286      0.004         0.000        0.000
+  A    beta=4.0_rho=0.75  L3      0.818     0.000    0.181      0.002         0.000        0.000
+  A    beta=4.0_rho=0.75  L4      0.883     0.000    0.117      0.002         0.000        0.000
+  B    beta=4.0_rho=0.75  L1      0.515     0.002    0.483      0.004         0.000        0.000
+  B    beta=4.0_rho=0.75  L2      0.713     0.001    0.285      0.005         0.000        0.000
+  B    beta=4.0_rho=0.75  L3      0.818     0.000    0.181      0.003         0.000        0.000
+  B    beta=4.0_rho=0.75  L4      0.885     0.000    0.115      0.002         0.000        0.000
+  C    beta=4.0_rho=0.75  L1      0.000     0.004    0.996      0.004         0.535        0.515
+  C    beta=4.0_rho=0.75  L2      0.001     0.003    0.996      0.003         0.809        0.712
+  C    beta=4.0_rho=0.75  L3      0.003     0.004    0.993      0.004         1.007        0.817
+  C    beta=4.0_rho=0.75  L4      0.005     0.002    0.992      0.002         1.187        0.883
+
+[Saving outputs]
+  Saved mechanism_bars_beta3.5_rho0.0.png
+  Saved mechanism_bars_beta4.0_rho0.75.png
+  Saved beta_boxplot_beta3.5_rho0.0.png
+  Saved beta_boxplot_beta4.0_rho0.75.png
+  Saved exp1_raw.npz
+  Saved exp0_results.json
+  Wrote results\geometry_bounce\record_geometry_bounce.md
+
+Done.  All outputs in results\geometry_bounce

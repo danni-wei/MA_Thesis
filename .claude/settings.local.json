@@ -32,7 +32,22 @@
       "PowerShell($env:PYTHONUNBUFFERED = \"1\"; $env:PYTHONIOENCODING = \"utf-8\"; cd \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\"; & \"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" -u _run_v2stage2.py)",
       "PowerShell($env:PYTHONUNBUFFERED = \"1\"; $env:PYTHONIOENCODING = \"utf-8\"; cd \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\"; & \"C:\\\\Users\\\\User\\\\miniconda3\\\\envs\\\\Thesis2\\\\python.exe\" -u _run_v2stage2.py --full)",
       "Bash(conda run *)",
-      "Bash(del *)"
+      "Bash(del *)",
+      "Bash(python -u _run_v3_geometry_bounce.py --skip-exp0)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -m pinn_hmc.experiment_sus_stage2)",
+      "Bash(python -u _run_v2stage2.py)",
+      "Bash(where python *)",
+      "Bash(C:\\\\Program Files\\\\Python310\\\\python.exe *)",
+      "Bash(\"C:\\\\Program Files\\\\Python310\\\\python.exe\" -u _run_v3_geometry_bounce.py --skip-exp0)",
+      "Bash(\"C:\\\\Program Files\\\\Python310\\\\python.exe\" -u _run_v3_geometry_bounce.py)",
+      "PowerShell(& \"C:\\\\Users\\\\User\\\\miniconda3\\\\python.exe\" -c \"import matplotlib; print\\(matplotlib.__version__\\)\")",
+      "PowerShell(& \"C:\\\\Users\\\\User\\\\miniconda3\\\\python.exe\" -c \"import sys; print\\(sys.executable, sys.version\\)\")",
+      "PowerShell($base = \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\"; $files = @\\(\"record_geometry_bounce.md\", \"full_run.log\", \"full_run.err\"\\); foreach \\($f in $files\\) { $p = \"$base\\\\$f\"; if \\(Test-Path $p\\) { $i = Get-Item $p; Write-Host \"$f | EXISTS | $\\($i.Length\\) bytes | $\\($i.LastWriteTime\\)\" } else { Write-Host \"$f | MISSING\" } }; $resultsDir = \"$base\\\\results\\\\geometry_bounce\"; if \\(Test-Path $resultsDir\\) { Get-ChildItem $resultsDir -Recurse -File | Sort-Object LastWriteTime -Descending | Select-Object -First 20 | ForEach-Object { Write-Host \"$\\($_.FullName.Replace\\($base,''\\)\\) | $\\($_.Length\\) bytes | $\\($_.LastWriteTime\\)\" } } else { Write-Host \"results\\\\geometry_bounce\\\\ | MISSING\" })",
+      "PowerShell(Get-WmiObject *)",
+      "PowerShell($p = \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\geometry_bounce\\\\EXPERIMENT_SUMMARY.md\"; if \\(Test-Path $p\\) { $i = Get-Item $p; Write-Host \"EXISTS | $\\($i.Length\\) bytes | $\\($i.LastWriteTime\\)\" } else { Write-Host \"DOES NOT EXIST\" })",
+      "PowerShell($p = \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\geometry_bounce\\\\EXPERIMENT_SUMMARY.md\"; $i = Get-Item $p; Write-Host \"Size: $\\($i.Length\\) bytes  |  Written: $\\($i.LastWriteTime\\)\")",
+      "PowerShell($p = \"C:\\\\Users\\\\User\\\\Documents\\\\01_DW_Thesis\\\\02_Code\\\\MA_Thesis\\\\results\\\\geometry_bounce\\\\COST_ACCOUNTING.md\"; $i = Get-Item $p; Write-Host \"Size: $\\($i.Length\\) bytes  |  Written: $\\($i.LastWriteTime\\)\")"
     ]
   }
 }
