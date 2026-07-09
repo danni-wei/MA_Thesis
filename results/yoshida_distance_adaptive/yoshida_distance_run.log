@@ -1,0 +1,1874 @@
+======================================================================
+Yoshida-distance adaptive leapfrog  n_rep=30  tag=full
+tau=0.85  eps=[0.001, 0.01, 0.1]  exponent=1/3  DT_A=0.1  T_F=1.0
+SUS_N=1000  SUS_P0=0.1  SUS_BURN_IN=200
+Cost conventions: optimized (3 Yoshida evals/step) AND unoptimized (6 Yoshida evals/step)
+======================================================================
+
+======================================================================
+Config: beta=3.5  rho=0.0  Pf_ref=2.3263e-04
+
+--- ARM A (baseline) ---
+
+[arm=A  eps=0e+00  b3.5_r0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=A(eps=0e+00) L1: threshold=3.0965
+    rep01/30 arm=A(eps=0e+00) L2: threshold=1.6578
+    rep01/30 arm=A(eps=0e+00) L3: threshold=0.4835
+    rep01/30 arm=A(eps=0e+00) L4: threshold=-0.4022
+    rep01/30 arm=A(eps=0e+00) → done L4  Pf=3.1600e-04
+  rep01/30 done: Pf=3.1600e-04  beta=3.4175  lv=4  (10.7s  tot=10.7s)
+  rep02/30 seed=1
+    rep02/30 arm=A(eps=0e+00) L1: threshold=3.1642
+    rep02/30 arm=A(eps=0e+00) L2: threshold=1.7285
+    rep02/30 arm=A(eps=0e+00) L3: threshold=0.7721
+    rep02/30 arm=A(eps=0e+00) L4: threshold=-0.2711
+    rep02/30 arm=A(eps=0e+00) → done L4  Pf=2.0800e-04
+  rep02/30 done: Pf=2.0800e-04  beta=3.5297  lv=4  (10.7s  tot=21.5s)
+  rep03/30 seed=2
+    rep03/30 arm=A(eps=0e+00) L1: threshold=3.1395
+    rep03/30 arm=A(eps=0e+00) L2: threshold=1.6128
+    rep03/30 arm=A(eps=0e+00) L3: threshold=0.5274
+    rep03/30 arm=A(eps=0e+00) L4: threshold=-0.3868
+    rep03/30 arm=A(eps=0e+00) → done L4  Pf=1.6000e-04
+  rep03/30 done: Pf=1.6000e-04  beta=3.5985  lv=4  (10.7s  tot=32.2s)
+  rep04/30 seed=3
+    rep04/30 arm=A(eps=0e+00) L1: threshold=3.2195
+    rep04/30 arm=A(eps=0e+00) L2: threshold=1.7149
+    rep04/30 arm=A(eps=0e+00) L3: threshold=0.5922
+    rep04/30 arm=A(eps=0e+00) L4: threshold=-0.3724
+    rep04/30 arm=A(eps=0e+00) → done L4  Pf=2.7600e-04
+  rep04/30 done: Pf=2.7600e-04  beta=3.4542  lv=4  (10.6s  tot=42.8s)
+  rep05/30 seed=4
+    rep05/30 arm=A(eps=0e+00) L1: threshold=3.0369
+    rep05/30 arm=A(eps=0e+00) L2: threshold=1.7430
+    rep05/30 arm=A(eps=0e+00) L3: threshold=0.6716
+    rep05/30 arm=A(eps=0e+00) L4: threshold=-0.1670
+    rep05/30 arm=A(eps=0e+00) → done L4  Pf=1.7400e-04
+  rep05/30 done: Pf=1.7400e-04  beta=3.5767  lv=4  (10.6s  tot=53.4s)
+  rep06/30 seed=5
+    rep06/30 arm=A(eps=0e+00) L1: threshold=3.0155
+    rep06/30 arm=A(eps=0e+00) L2: threshold=1.5998
+    rep06/30 arm=A(eps=0e+00) L3: threshold=0.5116
+    rep06/30 arm=A(eps=0e+00) L4: threshold=-0.3424
+    rep06/30 arm=A(eps=0e+00) → done L4  Pf=3.6100e-04
+  rep06/30 done: Pf=3.6100e-04  beta=3.3811  lv=4  (10.6s  tot=64.0s)
+  rep07/30 seed=6
+    rep07/30 arm=A(eps=0e+00) L1: threshold=3.2668
+    rep07/30 arm=A(eps=0e+00) L2: threshold=1.6623
+    rep07/30 arm=A(eps=0e+00) L3: threshold=0.5985
+    rep07/30 arm=A(eps=0e+00) L4: threshold=-0.4406
+    rep07/30 arm=A(eps=0e+00) → done L4  Pf=2.5800e-04
+  rep07/30 done: Pf=2.5800e-04  beta=3.4723  lv=4  (10.9s  tot=74.8s)
+  rep08/30 seed=7
+    rep08/30 arm=A(eps=0e+00) L1: threshold=3.1025
+    rep08/30 arm=A(eps=0e+00) L2: threshold=1.6243
+    rep08/30 arm=A(eps=0e+00) L3: threshold=0.6231
+    rep08/30 arm=A(eps=0e+00) L4: threshold=-0.3037
+    rep08/30 arm=A(eps=0e+00) → done L4  Pf=3.2900e-04
+  rep08/30 done: Pf=3.2900e-04  beta=3.4065  lv=4  (13.5s  tot=88.3s)
+  rep09/30 seed=8
+    rep09/30 arm=A(eps=0e+00) L1: threshold=3.0203
+    rep09/30 arm=A(eps=0e+00) L2: threshold=1.6178
+    rep09/30 arm=A(eps=0e+00) L3: threshold=0.6530
+    rep09/30 arm=A(eps=0e+00) L4: threshold=-0.2318
+    rep09/30 arm=A(eps=0e+00) → done L4  Pf=1.8500e-04
+  rep09/30 done: Pf=1.8500e-04  beta=3.5606  lv=4  (10.7s  tot=99.0s)
+  rep10/30 seed=9
+    rep10/30 arm=A(eps=0e+00) L1: threshold=3.0412
+    rep10/30 arm=A(eps=0e+00) L2: threshold=1.5294
+    rep10/30 arm=A(eps=0e+00) L3: threshold=0.4716
+    rep10/30 arm=A(eps=0e+00) L4: threshold=-0.6805
+    rep10/30 arm=A(eps=0e+00) → done L4  Pf=4.3800e-04
+  rep10/30 done: Pf=4.3800e-04  beta=3.3276  lv=4  (10.7s  tot=109.8s)
+  rep11/30 seed=10
+    rep11/30 arm=A(eps=0e+00) L1: threshold=3.0848
+    rep11/30 arm=A(eps=0e+00) L2: threshold=1.5526
+    rep11/30 arm=A(eps=0e+00) L3: threshold=0.7563
+    rep11/30 arm=A(eps=0e+00) L4: threshold=-0.1397
+    rep11/30 arm=A(eps=0e+00) → done L4  Pf=1.4000e-04
+  rep11/30 done: Pf=1.4000e-04  beta=3.6331  lv=4  (10.7s  tot=120.5s)
+  rep12/30 seed=11
+    rep12/30 arm=A(eps=0e+00) L1: threshold=3.0429
+    rep12/30 arm=A(eps=0e+00) L2: threshold=1.5524
+    rep12/30 arm=A(eps=0e+00) L3: threshold=0.4837
+    rep12/30 arm=A(eps=0e+00) L4: threshold=-0.0152
+    rep12/30 arm=A(eps=0e+00) → done L4  Pf=1.3100e-04
+  rep12/30 done: Pf=1.3100e-04  beta=3.6502  lv=4  (11.0s  tot=131.4s)
+  rep13/30 seed=12
+    rep13/30 arm=A(eps=0e+00) L1: threshold=3.0897
+    rep13/30 arm=A(eps=0e+00) L2: threshold=1.5060
+    rep13/30 arm=A(eps=0e+00) L3: threshold=0.5338
+    rep13/30 arm=A(eps=0e+00) L4: threshold=-0.5072
+    rep13/30 arm=A(eps=0e+00) → done L4  Pf=2.1600e-04
+  rep13/30 done: Pf=2.1600e-04  beta=3.5197  lv=4  (10.8s  tot=142.2s)
+  rep14/30 seed=13
+    rep14/30 arm=A(eps=0e+00) L1: threshold=3.1139
+    rep14/30 arm=A(eps=0e+00) L2: threshold=1.6632
+    rep14/30 arm=A(eps=0e+00) L3: threshold=0.6603
+    rep14/30 arm=A(eps=0e+00) L4: threshold=-0.2836
+    rep14/30 arm=A(eps=0e+00) → done L4  Pf=1.7700e-04
+  rep14/30 done: Pf=1.7700e-04  beta=3.5722  lv=4  (10.7s  tot=152.9s)
+  rep15/30 seed=14
+    rep15/30 arm=A(eps=0e+00) L1: threshold=3.2059
+    rep15/30 arm=A(eps=0e+00) L2: threshold=1.7474
+    rep15/30 arm=A(eps=0e+00) L3: threshold=0.8271
+    rep15/30 arm=A(eps=0e+00) L4: threshold=-0.1416
+    rep15/30 arm=A(eps=0e+00) → done L4  Pf=1.1700e-04
+  rep15/30 done: Pf=1.1700e-04  beta=3.6792  lv=4  (10.7s  tot=163.6s)
+  rep16/30 seed=15
+    rep16/30 arm=A(eps=0e+00) L1: threshold=3.1766
+    rep16/30 arm=A(eps=0e+00) L2: threshold=1.6325
+    rep16/30 arm=A(eps=0e+00) L3: threshold=0.6128
+    rep16/30 arm=A(eps=0e+00) L4: threshold=-0.3294
+    rep16/30 arm=A(eps=0e+00) → done L4  Pf=2.7300e-04
+  rep16/30 done: Pf=2.7300e-04  beta=3.4571  lv=4  (11.0s  tot=174.7s)
+  rep17/30 seed=16
+    rep17/30 arm=A(eps=0e+00) L1: threshold=2.9764
+    rep17/30 arm=A(eps=0e+00) L2: threshold=1.3031
+    rep17/30 arm=A(eps=0e+00) L3: threshold=0.1584
+    rep17/30 arm=A(eps=0e+00) L4: threshold=-0.6744
+    rep17/30 arm=A(eps=0e+00) → done L4  Pf=4.7800e-04
+  rep17/30 done: Pf=4.7800e-04  beta=3.3032  lv=4  (10.8s  tot=185.5s)
+  rep18/30 seed=17
+    rep18/30 arm=A(eps=0e+00) L1: threshold=3.0951
+    rep18/30 arm=A(eps=0e+00) L2: threshold=1.5998
+    rep18/30 arm=A(eps=0e+00) L3: threshold=0.6020
+    rep18/30 arm=A(eps=0e+00) L4: threshold=-0.2470
+    rep18/30 arm=A(eps=0e+00) → done L4  Pf=2.5700e-04
+  rep18/30 done: Pf=2.5700e-04  beta=3.4734  lv=4  (10.8s  tot=196.3s)
+  rep19/30 seed=18
+    rep19/30 arm=A(eps=0e+00) L1: threshold=3.1978
+    rep19/30 arm=A(eps=0e+00) L2: threshold=1.7823
+    rep19/30 arm=A(eps=0e+00) L3: threshold=0.3877
+    rep19/30 arm=A(eps=0e+00) L4: threshold=-0.0734
+    rep19/30 arm=A(eps=0e+00) → done L4  Pf=2.3000e-04
+  rep19/30 done: Pf=2.3000e-04  beta=3.5030  lv=4  (10.7s  tot=207.1s)
+  rep20/30 seed=19
+    rep20/30 arm=A(eps=0e+00) L1: threshold=3.0046
+    rep20/30 arm=A(eps=0e+00) L2: threshold=1.4892
+    rep20/30 arm=A(eps=0e+00) L3: threshold=0.4758
+    rep20/30 arm=A(eps=0e+00) L4: threshold=-0.3686
+    rep20/30 arm=A(eps=0e+00) → done L4  Pf=2.8700e-04
+  rep20/30 done: Pf=2.8700e-04  beta=3.4436  lv=4  (10.7s  tot=217.8s)
+  rep21/30 seed=20
+    rep21/30 arm=A(eps=0e+00) L1: threshold=3.2099
+    rep21/30 arm=A(eps=0e+00) L2: threshold=1.7360
+    rep21/30 arm=A(eps=0e+00) L3: threshold=0.6897
+    rep21/30 arm=A(eps=0e+00) L4: threshold=-0.2024
+    rep21/30 arm=A(eps=0e+00) → done L4  Pf=1.3300e-04
+  rep21/30 done: Pf=1.3300e-04  beta=3.6463  lv=4  (11.0s  tot=228.8s)
+  rep22/30 seed=21
+    rep22/30 arm=A(eps=0e+00) L1: threshold=3.0760
+    rep22/30 arm=A(eps=0e+00) L2: threshold=1.6342
+    rep22/30 arm=A(eps=0e+00) L3: threshold=0.5157
+    rep22/30 arm=A(eps=0e+00) L4: threshold=-0.5846
+    rep22/30 arm=A(eps=0e+00) → done L4  Pf=3.3200e-04
+  rep22/30 done: Pf=3.3200e-04  beta=3.4040  lv=4  (10.7s  tot=239.6s)
+  rep23/30 seed=22
+    rep23/30 arm=A(eps=0e+00) L1: threshold=3.1743
+    rep23/30 arm=A(eps=0e+00) L2: threshold=1.6266
+    rep23/30 arm=A(eps=0e+00) L3: threshold=0.5504
+    rep23/30 arm=A(eps=0e+00) L4: threshold=-0.2125
+    rep23/30 arm=A(eps=0e+00) → done L4  Pf=2.7500e-04
+  rep23/30 done: Pf=2.7500e-04  beta=3.4551  lv=4  (10.8s  tot=250.3s)
+  rep24/30 seed=23
+    rep24/30 arm=A(eps=0e+00) L1: threshold=3.1121
+    rep24/30 arm=A(eps=0e+00) L2: threshold=1.5758
+    rep24/30 arm=A(eps=0e+00) L3: threshold=0.4863
+    rep24/30 arm=A(eps=0e+00) L4: threshold=-0.4735
+    rep24/30 arm=A(eps=0e+00) → done L4  Pf=2.8000e-04
+  rep24/30 done: Pf=2.8000e-04  beta=3.4503  lv=4  (10.7s  tot=261.1s)
+  rep25/30 seed=24
+    rep25/30 arm=A(eps=0e+00) L1: threshold=3.1241
+    rep25/30 arm=A(eps=0e+00) L2: threshold=1.7653
+    rep25/30 arm=A(eps=0e+00) L3: threshold=0.6082
+    rep25/30 arm=A(eps=0e+00) L4: threshold=-0.3924
+    rep25/30 arm=A(eps=0e+00) → done L4  Pf=2.6600e-04
+  rep25/30 done: Pf=2.6600e-04  beta=3.4641  lv=4  (10.8s  tot=271.8s)
+  rep26/30 seed=25
+    rep26/30 arm=A(eps=0e+00) L1: threshold=3.1564
+    rep26/30 arm=A(eps=0e+00) L2: threshold=1.6834
+    rep26/30 arm=A(eps=0e+00) L3: threshold=0.5222
+    rep26/30 arm=A(eps=0e+00) L4: threshold=-0.4497
+    rep26/30 arm=A(eps=0e+00) → done L4  Pf=3.4800e-04
+  rep26/30 done: Pf=3.4800e-04  beta=3.3911  lv=4  (11.3s  tot=283.1s)
+  rep27/30 seed=26
+    rep27/30 arm=A(eps=0e+00) L1: threshold=3.0811
+    rep27/30 arm=A(eps=0e+00) L2: threshold=1.6959
+    rep27/30 arm=A(eps=0e+00) L3: threshold=0.8250
+    rep27/30 arm=A(eps=0e+00) L4: threshold=-0.1418
+    rep27/30 arm=A(eps=0e+00) → done L4  Pf=1.2700e-04
+  rep27/30 done: Pf=1.2700e-04  beta=3.6582  lv=4  (11.4s  tot=294.5s)
+  rep28/30 seed=27
+    rep28/30 arm=A(eps=0e+00) L1: threshold=3.1042
+    rep28/30 arm=A(eps=0e+00) L2: threshold=1.6164
+    rep28/30 arm=A(eps=0e+00) L3: threshold=0.6197
+    rep28/30 arm=A(eps=0e+00) L4: threshold=0.0138
+    rep28/30 arm=A(eps=0e+00) L5: threshold=-1.2169
+    rep28/30 arm=A(eps=0e+00) → done L5  Pf=9.1500e-05
+  rep28/30 done: Pf=9.1500e-05  beta=3.7414  lv=5  (12.7s  tot=307.2s)
+  rep29/30 seed=28
+    rep29/30 arm=A(eps=0e+00) L1: threshold=3.1799
+    rep29/30 arm=A(eps=0e+00) L2: threshold=1.6378
+    rep29/30 arm=A(eps=0e+00) L3: threshold=0.4140
+    rep29/30 arm=A(eps=0e+00) L4: threshold=-0.2244
+    rep29/30 arm=A(eps=0e+00) → done L4  Pf=3.0100e-04
+  rep29/30 done: Pf=3.0100e-04  beta=3.4307  lv=4  (13.3s  tot=320.5s)
+  rep30/30 seed=29
+    rep30/30 arm=A(eps=0e+00) L1: threshold=3.1893
+    rep30/30 arm=A(eps=0e+00) L2: threshold=1.6711
+    rep30/30 arm=A(eps=0e+00) L3: threshold=0.6664
+    rep30/30 arm=A(eps=0e+00) L4: threshold=-0.0879
+    rep30/30 arm=A(eps=0e+00) → done L4  Pf=1.7100e-04
+  rep30/30 done: Pf=1.7100e-04  beta=3.5812  lv=4  (12.5s  tot=333.0s)
+
+--- ARM D  eps=1e-03 ---
+
+[arm=D  eps=1e-03  b3.5_r0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=D(eps=1e-03) L1: threshold=3.0945
+    rep01/30 arm=D(eps=1e-03) L2: threshold=1.6565
+    rep01/30 arm=D(eps=1e-03) L3: threshold=0.4812
+    rep01/30 arm=D(eps=1e-03) L4: threshold=-0.4035
+    rep01/30 arm=D(eps=1e-03) → done L4  Pf=3.1600e-04
+  rep01/30 done: Pf=3.1600e-04  beta=3.4175  lv=4  (87.1s  tot=87.1s)
+  rep02/30 seed=1
+    rep02/30 arm=D(eps=1e-03) L1: threshold=3.1629
+    rep02/30 arm=D(eps=1e-03) L2: threshold=1.7273
+    rep02/30 arm=D(eps=1e-03) L3: threshold=0.7708
+    rep02/30 arm=D(eps=1e-03) L4: threshold=-0.2724
+    rep02/30 arm=D(eps=1e-03) → done L4  Pf=2.0800e-04
+  rep02/30 done: Pf=2.0800e-04  beta=3.5297  lv=4  (83.3s  tot=170.4s)
+  rep03/30 seed=2
+    rep03/30 arm=D(eps=1e-03) L1: threshold=3.1365
+    rep03/30 arm=D(eps=1e-03) L2: threshold=1.6113
+    rep03/30 arm=D(eps=1e-03) L3: threshold=0.5262
+    rep03/30 arm=D(eps=1e-03) L4: threshold=-0.3882
+    rep03/30 arm=D(eps=1e-03) → done L4  Pf=1.6000e-04
+  rep03/30 done: Pf=1.6000e-04  beta=3.5985  lv=4  (83.0s  tot=253.3s)
+  rep04/30 seed=3
+    rep04/30 arm=D(eps=1e-03) L1: threshold=3.2185
+    rep04/30 arm=D(eps=1e-03) L2: threshold=1.7138
+    rep04/30 arm=D(eps=1e-03) L3: threshold=0.5905
+    rep04/30 arm=D(eps=1e-03) L4: threshold=-0.3731
+    rep04/30 arm=D(eps=1e-03) → done L4  Pf=2.7600e-04
+  rep04/30 done: Pf=2.7600e-04  beta=3.4542  lv=4  (81.9s  tot=335.2s)
+  rep05/30 seed=4
+    rep05/30 arm=D(eps=1e-03) L1: threshold=3.0370
+    rep05/30 arm=D(eps=1e-03) L2: threshold=1.7415
+    rep05/30 arm=D(eps=1e-03) L3: threshold=0.6704
+    rep05/30 arm=D(eps=1e-03) L4: threshold=-0.1686
+    rep05/30 arm=D(eps=1e-03) → done L4  Pf=1.7400e-04
+  rep05/30 done: Pf=1.7400e-04  beta=3.5767  lv=4  (82.0s  tot=417.2s)
+  rep06/30 seed=5
+    rep06/30 arm=D(eps=1e-03) L1: threshold=3.0135
+    rep06/30 arm=D(eps=1e-03) L2: threshold=1.5972
+    rep06/30 arm=D(eps=1e-03) L3: threshold=0.5103
+    rep06/30 arm=D(eps=1e-03) L4: threshold=-0.3438
+    rep06/30 arm=D(eps=1e-03) → done L4  Pf=3.6800e-04
+  rep06/30 done: Pf=3.6800e-04  beta=3.3758  lv=4  (82.8s  tot=500.0s)
+  rep07/30 seed=6
+    rep07/30 arm=D(eps=1e-03) L1: threshold=3.2644
+    rep07/30 arm=D(eps=1e-03) L2: threshold=1.6605
+    rep07/30 arm=D(eps=1e-03) L3: threshold=0.5977
+    rep07/30 arm=D(eps=1e-03) L4: threshold=-0.4422
+    rep07/30 arm=D(eps=1e-03) → done L4  Pf=2.5800e-04
+  rep07/30 done: Pf=2.5800e-04  beta=3.4723  lv=4  (82.1s  tot=582.1s)
+  rep08/30 seed=7
+    rep08/30 arm=D(eps=1e-03) L1: threshold=3.1009
+    rep08/30 arm=D(eps=1e-03) L2: threshold=1.6227
+    rep08/30 arm=D(eps=1e-03) L3: threshold=0.6215
+    rep08/30 arm=D(eps=1e-03) L4: threshold=-0.3050
+    rep08/30 arm=D(eps=1e-03) → done L4  Pf=3.2900e-04
+  rep08/30 done: Pf=3.2900e-04  beta=3.4065  lv=4  (82.4s  tot=664.5s)
+  rep09/30 seed=8
+    rep09/30 arm=D(eps=1e-03) L1: threshold=3.0179
+    rep09/30 arm=D(eps=1e-03) L2: threshold=1.6161
+    rep09/30 arm=D(eps=1e-03) L3: threshold=0.6508
+    rep09/30 arm=D(eps=1e-03) L4: threshold=-0.2329
+    rep09/30 arm=D(eps=1e-03) → done L4  Pf=1.8500e-04
+  rep09/30 done: Pf=1.8500e-04  beta=3.5606  lv=4  (83.0s  tot=747.5s)
+  rep10/30 seed=9
+    rep10/30 arm=D(eps=1e-03) L1: threshold=3.0407
+    rep10/30 arm=D(eps=1e-03) L2: threshold=1.5275
+    rep10/30 arm=D(eps=1e-03) L3: threshold=0.4717
+    rep10/30 arm=D(eps=1e-03) L4: threshold=-0.6818
+    rep10/30 arm=D(eps=1e-03) → done L4  Pf=4.3800e-04
+  rep10/30 done: Pf=4.3800e-04  beta=3.3276  lv=4  (82.8s  tot=830.3s)
+  rep11/30 seed=10
+    rep11/30 arm=D(eps=1e-03) L1: threshold=3.0836
+    rep11/30 arm=D(eps=1e-03) L2: threshold=1.5576
+    rep11/30 arm=D(eps=1e-03) L3: threshold=0.7579
+    rep11/30 arm=D(eps=1e-03) L4: threshold=-0.1415
+    rep11/30 arm=D(eps=1e-03) → done L4  Pf=1.3400e-04
+  rep11/30 done: Pf=1.3400e-04  beta=3.6444  lv=4  (82.0s  tot=912.3s)
+  rep12/30 seed=11
+    rep12/30 arm=D(eps=1e-03) L1: threshold=3.0404
+    rep12/30 arm=D(eps=1e-03) L2: threshold=1.5510
+    rep12/30 arm=D(eps=1e-03) L3: threshold=0.4823
+    rep12/30 arm=D(eps=1e-03) L4: threshold=-0.0171
+    rep12/30 arm=D(eps=1e-03) → done L4  Pf=1.3100e-04
+  rep12/30 done: Pf=1.3100e-04  beta=3.6502  lv=4  (82.5s  tot=994.8s)
+  rep13/30 seed=12
+    rep13/30 arm=D(eps=1e-03) L1: threshold=3.0878
+    rep13/30 arm=D(eps=1e-03) L2: threshold=1.5046
+    rep13/30 arm=D(eps=1e-03) L3: threshold=0.5320
+    rep13/30 arm=D(eps=1e-03) L4: threshold=-0.5078
+    rep13/30 arm=D(eps=1e-03) → done L4  Pf=2.1600e-04
+  rep13/30 done: Pf=2.1600e-04  beta=3.5197  lv=4  (83.0s  tot=1077.8s)
+  rep14/30 seed=13
+    rep14/30 arm=D(eps=1e-03) L1: threshold=3.1136
+    rep14/30 arm=D(eps=1e-03) L2: threshold=1.6618
+    rep14/30 arm=D(eps=1e-03) L3: threshold=0.6588
+    rep14/30 arm=D(eps=1e-03) L4: threshold=-0.2849
+    rep14/30 arm=D(eps=1e-03) → done L4  Pf=1.7700e-04
+  rep14/30 done: Pf=1.7700e-04  beta=3.5722  lv=4  (83.9s  tot=1161.7s)
+  rep15/30 seed=14
+    rep15/30 arm=D(eps=1e-03) L1: threshold=3.2040
+    rep15/30 arm=D(eps=1e-03) L2: threshold=1.7452
+    rep15/30 arm=D(eps=1e-03) L3: threshold=0.8259
+    rep15/30 arm=D(eps=1e-03) L4: threshold=-0.1433
+    rep15/30 arm=D(eps=1e-03) → done L4  Pf=1.1700e-04
+  rep15/30 done: Pf=1.1700e-04  beta=3.6792  lv=4  (83.3s  tot=1245.1s)
+  rep16/30 seed=15
+    rep16/30 arm=D(eps=1e-03) L1: threshold=3.1778
+    rep16/30 arm=D(eps=1e-03) L2: threshold=1.6313
+    rep16/30 arm=D(eps=1e-03) L3: threshold=0.6114
+    rep16/30 arm=D(eps=1e-03) L4: threshold=-0.3307
+    rep16/30 arm=D(eps=1e-03) → done L4  Pf=2.7800e-04
+  rep16/30 done: Pf=2.7800e-04  beta=3.4522  lv=4  (81.3s  tot=1326.4s)
+  rep17/30 seed=16
+    rep17/30 arm=D(eps=1e-03) L1: threshold=2.9819
+    rep17/30 arm=D(eps=1e-03) L2: threshold=1.3025
+    rep17/30 arm=D(eps=1e-03) L3: threshold=0.1605
+    rep17/30 arm=D(eps=1e-03) L4: threshold=-0.6748
+    rep17/30 arm=D(eps=1e-03) → done L4  Pf=4.7800e-04
+  rep17/30 done: Pf=4.7800e-04  beta=3.3032  lv=4  (81.4s  tot=1407.8s)
+  rep18/30 seed=17
+    rep18/30 arm=D(eps=1e-03) L1: threshold=3.0944
+    rep18/30 arm=D(eps=1e-03) L2: threshold=1.5978
+    rep18/30 arm=D(eps=1e-03) L3: threshold=0.6000
+    rep18/30 arm=D(eps=1e-03) L4: threshold=-0.2484
+    rep18/30 arm=D(eps=1e-03) → done L4  Pf=2.5700e-04
+  rep18/30 done: Pf=2.5700e-04  beta=3.4734  lv=4  (81.1s  tot=1489.0s)
+  rep19/30 seed=18
+    rep19/30 arm=D(eps=1e-03) L1: threshold=3.1957
+    rep19/30 arm=D(eps=1e-03) L2: threshold=1.7809
+    rep19/30 arm=D(eps=1e-03) L3: threshold=0.4043
+    rep19/30 arm=D(eps=1e-03) L4: threshold=-0.0682
+    rep19/30 arm=D(eps=1e-03) → done L4  Pf=2.3000e-04
+  rep19/30 done: Pf=2.3000e-04  beta=3.5030  lv=4  (81.5s  tot=1570.4s)
+  rep20/30 seed=19
+    rep20/30 arm=D(eps=1e-03) L1: threshold=3.0041
+    rep20/30 arm=D(eps=1e-03) L2: threshold=1.4873
+    rep20/30 arm=D(eps=1e-03) L3: threshold=0.4745
+    rep20/30 arm=D(eps=1e-03) L4: threshold=-0.3697
+    rep20/30 arm=D(eps=1e-03) → done L4  Pf=2.8700e-04
+  rep20/30 done: Pf=2.8700e-04  beta=3.4436  lv=4  (80.6s  tot=1651.0s)
+  rep21/30 seed=20
+    rep21/30 arm=D(eps=1e-03) L1: threshold=3.2081
+    rep21/30 arm=D(eps=1e-03) L2: threshold=1.7338
+    rep21/30 arm=D(eps=1e-03) L3: threshold=0.6885
+    rep21/30 arm=D(eps=1e-03) L4: threshold=-0.2038
+    rep21/30 arm=D(eps=1e-03) → done L4  Pf=1.3300e-04
+  rep21/30 done: Pf=1.3300e-04  beta=3.6463  lv=4  (80.4s  tot=1731.4s)
+  rep22/30 seed=21
+    rep22/30 arm=D(eps=1e-03) L1: threshold=3.0738
+    rep22/30 arm=D(eps=1e-03) L2: threshold=1.6330
+    rep22/30 arm=D(eps=1e-03) L3: threshold=0.5138
+    rep22/30 arm=D(eps=1e-03) L4: threshold=-0.5861
+    rep22/30 arm=D(eps=1e-03) → done L4  Pf=3.3900e-04
+  rep22/30 done: Pf=3.3900e-04  beta=3.3983  lv=4  (80.6s  tot=1812.0s)
+  rep23/30 seed=22
+    rep23/30 arm=D(eps=1e-03) L1: threshold=3.1719
+    rep23/30 arm=D(eps=1e-03) L2: threshold=1.6242
+    rep23/30 arm=D(eps=1e-03) L3: threshold=0.5490
+    rep23/30 arm=D(eps=1e-03) L4: threshold=-0.2142
+    rep23/30 arm=D(eps=1e-03) → done L4  Pf=2.7500e-04
+  rep23/30 done: Pf=2.7500e-04  beta=3.4551  lv=4  (80.4s  tot=1892.4s)
+  rep24/30 seed=23
+    rep24/30 arm=D(eps=1e-03) L1: threshold=3.1096
+    rep24/30 arm=D(eps=1e-03) L2: threshold=1.5742
+    rep24/30 arm=D(eps=1e-03) L3: threshold=0.4850
+    rep24/30 arm=D(eps=1e-03) L4: threshold=-0.4747
+    rep24/30 arm=D(eps=1e-03) → done L4  Pf=2.8000e-04
+  rep24/30 done: Pf=2.8000e-04  beta=3.4503  lv=4  (80.1s  tot=1972.5s)
+  rep25/30 seed=24
+    rep25/30 arm=D(eps=1e-03) L1: threshold=3.1234
+    rep25/30 arm=D(eps=1e-03) L2: threshold=1.7628
+    rep25/30 arm=D(eps=1e-03) L3: threshold=0.6061
+    rep25/30 arm=D(eps=1e-03) L4: threshold=-0.3937
+    rep25/30 arm=D(eps=1e-03) → done L4  Pf=2.6600e-04
+  rep25/30 done: Pf=2.6600e-04  beta=3.4641  lv=4  (80.3s  tot=2052.8s)
+  rep26/30 seed=25
+    rep26/30 arm=D(eps=1e-03) L1: threshold=3.1554
+    rep26/30 arm=D(eps=1e-03) L2: threshold=1.6826
+    rep26/30 arm=D(eps=1e-03) L3: threshold=0.5217
+    rep26/30 arm=D(eps=1e-03) L4: threshold=-0.4505
+    rep26/30 arm=D(eps=1e-03) → done L4  Pf=3.4800e-04
+  rep26/30 done: Pf=3.4800e-04  beta=3.3911  lv=4  (81.7s  tot=2134.5s)
+  rep27/30 seed=26
+    rep27/30 arm=D(eps=1e-03) L1: threshold=3.0804
+    rep27/30 arm=D(eps=1e-03) L2: threshold=1.6947
+    rep27/30 arm=D(eps=1e-03) L3: threshold=0.8235
+    rep27/30 arm=D(eps=1e-03) L4: threshold=-0.1434
+    rep27/30 arm=D(eps=1e-03) → done L4  Pf=1.2700e-04
+  rep27/30 done: Pf=1.2700e-04  beta=3.6582  lv=4  (81.7s  tot=2216.2s)
+  rep28/30 seed=27
+    rep28/30 arm=D(eps=1e-03) L1: threshold=3.1030
+    rep28/30 arm=D(eps=1e-03) L2: threshold=1.6154
+    rep28/30 arm=D(eps=1e-03) L3: threshold=0.6179
+    rep28/30 arm=D(eps=1e-03) L4: threshold=0.0118
+    rep28/30 arm=D(eps=1e-03) L5: threshold=-1.2181
+    rep28/30 arm=D(eps=1e-03) → done L5  Pf=9.1900e-05
+  rep28/30 done: Pf=9.1900e-05  beta=3.7403  lv=5  (83.7s  tot=2300.0s)
+  rep29/30 seed=28
+    rep29/30 arm=D(eps=1e-03) L1: threshold=3.1789
+    rep29/30 arm=D(eps=1e-03) L2: threshold=1.6358
+    rep29/30 arm=D(eps=1e-03) L3: threshold=0.4125
+    rep29/30 arm=D(eps=1e-03) L4: threshold=-0.2262
+    rep29/30 arm=D(eps=1e-03) → done L4  Pf=3.0100e-04
+  rep29/30 done: Pf=3.0100e-04  beta=3.4307  lv=4  (89.0s  tot=2389.0s)
+  rep30/30 seed=29
+    rep30/30 arm=D(eps=1e-03) L1: threshold=3.1980
+    rep30/30 arm=D(eps=1e-03) L2: threshold=1.6859
+    rep30/30 arm=D(eps=1e-03) L3: threshold=0.6638
+    rep30/30 arm=D(eps=1e-03) L4: threshold=-0.0861
+    rep30/30 arm=D(eps=1e-03) → done L4  Pf=1.7100e-04
+  rep30/30 done: Pf=1.7100e-04  beta=3.5812  lv=4  (86.6s  tot=2475.6s)
+
+--- ARM D  eps=1e-02 ---
+
+[arm=D  eps=1e-02  b3.5_r0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=D(eps=1e-02) L1: threshold=3.0931
+    rep01/30 arm=D(eps=1e-02) L2: threshold=1.6397
+    rep01/30 arm=D(eps=1e-02) L3: threshold=0.4536
+    rep01/30 arm=D(eps=1e-02) L4: threshold=-0.4245
+    rep01/30 arm=D(eps=1e-02) → done L4  Pf=3.2300e-04
+  rep01/30 done: Pf=3.2300e-04  beta=3.4115  lv=4  (59.0s  tot=59.0s)
+  rep02/30 seed=1
+    rep02/30 arm=D(eps=1e-02) L1: threshold=3.1489
+    rep02/30 arm=D(eps=1e-02) L2: threshold=1.6997
+    rep02/30 arm=D(eps=1e-02) L3: threshold=0.7396
+    rep02/30 arm=D(eps=1e-02) L4: threshold=-0.2909
+    rep02/30 arm=D(eps=1e-02) → done L4  Pf=2.0800e-04
+  rep02/30 done: Pf=2.0800e-04  beta=3.5297  lv=4  (58.4s  tot=117.3s)
+  rep03/30 seed=2
+    rep03/30 arm=D(eps=1e-02) L1: threshold=3.1314
+    rep03/30 arm=D(eps=1e-02) L2: threshold=1.5940
+    rep03/30 arm=D(eps=1e-02) L3: threshold=0.5095
+    rep03/30 arm=D(eps=1e-02) L4: threshold=-0.4096
+    rep03/30 arm=D(eps=1e-02) → done L4  Pf=1.9000e-04
+  rep03/30 done: Pf=1.9000e-04  beta=3.5536  lv=4  (58.6s  tot=175.9s)
+  rep04/30 seed=3
+    rep04/30 arm=D(eps=1e-02) L1: threshold=3.2301
+    rep04/30 arm=D(eps=1e-02) L2: threshold=1.7051
+    rep04/30 arm=D(eps=1e-02) L3: threshold=0.5758
+    rep04/30 arm=D(eps=1e-02) L4: threshold=-0.3912
+    rep04/30 arm=D(eps=1e-02) → done L4  Pf=2.8700e-04
+  rep04/30 done: Pf=2.8700e-04  beta=3.4436  lv=4  (58.5s  tot=234.4s)
+  rep05/30 seed=4
+    rep05/30 arm=D(eps=1e-02) L1: threshold=3.0387
+    rep05/30 arm=D(eps=1e-02) L2: threshold=1.7749
+    rep05/30 arm=D(eps=1e-02) L3: threshold=0.6637
+    rep05/30 arm=D(eps=1e-02) L4: threshold=-0.1693
+    rep05/30 arm=D(eps=1e-02) → done L4  Pf=1.7200e-04
+  rep05/30 done: Pf=1.7200e-04  beta=3.5797  lv=4  (58.4s  tot=292.8s)
+  rep06/30 seed=5
+    rep06/30 arm=D(eps=1e-02) L1: threshold=2.9978
+    rep06/30 arm=D(eps=1e-02) L2: threshold=1.6093
+    rep06/30 arm=D(eps=1e-02) L3: threshold=0.4925
+    rep06/30 arm=D(eps=1e-02) L4: threshold=-0.3631
+    rep06/30 arm=D(eps=1e-02) → done L4  Pf=3.5100e-04
+  rep06/30 done: Pf=3.5100e-04  beta=3.3888  lv=4  (58.8s  tot=351.6s)
+  rep07/30 seed=6
+    rep07/30 arm=D(eps=1e-02) L1: threshold=3.2518
+    rep07/30 arm=D(eps=1e-02) L2: threshold=1.6777
+    rep07/30 arm=D(eps=1e-02) L3: threshold=0.5776
+    rep07/30 arm=D(eps=1e-02) L4: threshold=-0.4630
+    rep07/30 arm=D(eps=1e-02) → done L4  Pf=2.4800e-04
+  rep07/30 done: Pf=2.4800e-04  beta=3.4829  lv=4  (58.4s  tot=410.0s)
+  rep08/30 seed=7
+    rep08/30 arm=D(eps=1e-02) L1: threshold=3.0919
+    rep08/30 arm=D(eps=1e-02) L2: threshold=1.6338
+    rep08/30 arm=D(eps=1e-02) L3: threshold=0.6066
+    rep08/30 arm=D(eps=1e-02) L4: threshold=-0.3236
+    rep08/30 arm=D(eps=1e-02) → done L4  Pf=3.2900e-04
+  rep08/30 done: Pf=3.2900e-04  beta=3.4065  lv=4  (61.3s  tot=471.3s)
+  rep09/30 seed=8
+    rep09/30 arm=D(eps=1e-02) L1: threshold=2.9978
+    rep09/30 arm=D(eps=1e-02) L2: threshold=1.6071
+    rep09/30 arm=D(eps=1e-02) L3: threshold=0.6378
+    rep09/30 arm=D(eps=1e-02) L4: threshold=-0.2503
+    rep09/30 arm=D(eps=1e-02) → done L4  Pf=1.8500e-04
+  rep09/30 done: Pf=1.8500e-04  beta=3.5606  lv=4  (59.6s  tot=530.9s)
+  rep10/30 seed=9
+    rep10/30 arm=D(eps=1e-02) L1: threshold=3.0329
+    rep10/30 arm=D(eps=1e-02) L2: threshold=1.5030
+    rep10/30 arm=D(eps=1e-02) L3: threshold=0.4525
+    rep10/30 arm=D(eps=1e-02) L4: threshold=-0.4285
+    rep10/30 arm=D(eps=1e-02) → done L4  Pf=4.7800e-04
+  rep10/30 done: Pf=4.7800e-04  beta=3.3032  lv=4  (60.1s  tot=591.0s)
+  rep11/30 seed=10
+    rep11/30 arm=D(eps=1e-02) L1: threshold=3.0723
+    rep11/30 arm=D(eps=1e-02) L2: threshold=1.5412
+    rep11/30 arm=D(eps=1e-02) L3: threshold=0.7619
+    rep11/30 arm=D(eps=1e-02) L4: threshold=-0.1497
+    rep11/30 arm=D(eps=1e-02) → done L4  Pf=1.4200e-04
+  rep11/30 done: Pf=1.4200e-04  beta=3.6295  lv=4  (60.5s  tot=651.5s)
+  rep12/30 seed=11
+    rep12/30 arm=D(eps=1e-02) L1: threshold=3.0372
+    rep12/30 arm=D(eps=1e-02) L2: threshold=1.5429
+    rep12/30 arm=D(eps=1e-02) L3: threshold=0.4832
+    rep12/30 arm=D(eps=1e-02) L4: threshold=-0.0384
+    rep12/30 arm=D(eps=1e-02) → done L4  Pf=2.1400e-04
+  rep12/30 done: Pf=2.1400e-04  beta=3.5222  lv=4  (61.0s  tot=712.5s)
+  rep13/30 seed=12
+    rep13/30 arm=D(eps=1e-02) L1: threshold=3.0733
+    rep13/30 arm=D(eps=1e-02) L2: threshold=1.4908
+    rep13/30 arm=D(eps=1e-02) L3: threshold=0.5101
+    rep13/30 arm=D(eps=1e-02) L4: threshold=-0.5346
+    rep13/30 arm=D(eps=1e-02) → done L4  Pf=2.5300e-04
+  rep13/30 done: Pf=2.5300e-04  beta=3.4776  lv=4  (58.9s  tot=771.3s)
+  rep14/30 seed=13
+    rep14/30 arm=D(eps=1e-02) L1: threshold=3.1200
+    rep14/30 arm=D(eps=1e-02) L2: threshold=1.6504
+    rep14/30 arm=D(eps=1e-02) L3: threshold=0.6395
+    rep14/30 arm=D(eps=1e-02) L4: threshold=-0.1861
+    rep14/30 arm=D(eps=1e-02) → done L4  Pf=1.6300e-04
+  rep14/30 done: Pf=1.6300e-04  beta=3.5937  lv=4  (58.1s  tot=829.4s)
+  rep15/30 seed=14
+    rep15/30 arm=D(eps=1e-02) L1: threshold=3.1865
+    rep15/30 arm=D(eps=1e-02) L2: threshold=1.7532
+    rep15/30 arm=D(eps=1e-02) L3: threshold=0.8084
+    rep15/30 arm=D(eps=1e-02) L4: threshold=-0.1611
+    rep15/30 arm=D(eps=1e-02) → done L4  Pf=1.2100e-04
+  rep15/30 done: Pf=1.2100e-04  beta=3.6706  lv=4  (57.5s  tot=887.0s)
+  rep16/30 seed=15
+    rep16/30 arm=D(eps=1e-02) L1: threshold=3.1744
+    rep16/30 arm=D(eps=1e-02) L2: threshold=1.6229
+    rep16/30 arm=D(eps=1e-02) L3: threshold=0.6381
+    rep16/30 arm=D(eps=1e-02) L4: threshold=-0.3208
+    rep16/30 arm=D(eps=1e-02) → done L4  Pf=2.5100e-04
+  rep16/30 done: Pf=2.5100e-04  beta=3.4797  lv=4  (60.0s  tot=947.0s)
+  rep17/30 seed=16
+    rep17/30 arm=D(eps=1e-02) L1: threshold=2.9745
+    rep17/30 arm=D(eps=1e-02) L2: threshold=1.3573
+    rep17/30 arm=D(eps=1e-02) L3: threshold=0.2776
+    rep17/30 arm=D(eps=1e-02) L4: threshold=-0.6463
+    rep17/30 arm=D(eps=1e-02) → done L4  Pf=3.8900e-04
+  rep17/30 done: Pf=3.8900e-04  beta=3.3605  lv=4  (57.7s  tot=1004.7s)
+  rep18/30 seed=17
+    rep18/30 arm=D(eps=1e-02) L1: threshold=3.1016
+    rep18/30 arm=D(eps=1e-02) L2: threshold=1.6044
+    rep18/30 arm=D(eps=1e-02) L3: threshold=0.5774
+    rep18/30 arm=D(eps=1e-02) L4: threshold=-0.2680
+    rep18/30 arm=D(eps=1e-02) → done L4  Pf=2.6700e-04
+  rep18/30 done: Pf=2.6700e-04  beta=3.4631  lv=4  (58.4s  tot=1063.1s)
+  rep19/30 seed=18
+    rep19/30 arm=D(eps=1e-02) L1: threshold=3.1916
+    rep19/30 arm=D(eps=1e-02) L2: threshold=1.8095
+    rep19/30 arm=D(eps=1e-02) L3: threshold=0.4804
+    rep19/30 arm=D(eps=1e-02) L4: threshold=-0.0872
+    rep19/30 arm=D(eps=1e-02) → done L4  Pf=2.0300e-04
+  rep19/30 done: Pf=2.0300e-04  beta=3.5362  lv=4  (62.8s  tot=1125.9s)
+  rep20/30 seed=19
+    rep20/30 arm=D(eps=1e-02) L1: threshold=2.9913
+    rep20/30 arm=D(eps=1e-02) L2: threshold=1.4697
+    rep20/30 arm=D(eps=1e-02) L3: threshold=0.4560
+    rep20/30 arm=D(eps=1e-02) L4: threshold=-0.3900
+    rep20/30 arm=D(eps=1e-02) → done L4  Pf=2.9500e-04
+  rep20/30 done: Pf=2.9500e-04  beta=3.4362  lv=4  (58.9s  tot=1184.8s)
+  rep21/30 seed=20
+    rep21/30 arm=D(eps=1e-02) L1: threshold=3.2282
+    rep21/30 arm=D(eps=1e-02) L2: threshold=1.7523
+    rep21/30 arm=D(eps=1e-02) L3: threshold=0.6656
+    rep21/30 arm=D(eps=1e-02) L4: threshold=-0.1752
+    rep21/30 arm=D(eps=1e-02) → done L4  Pf=1.5100e-04
+  rep21/30 done: Pf=1.5100e-04  beta=3.6136  lv=4  (57.8s  tot=1242.6s)
+  rep22/30 seed=21
+    rep22/30 arm=D(eps=1e-02) L1: threshold=3.1160
+    rep22/30 arm=D(eps=1e-02) L2: threshold=1.6605
+    rep22/30 arm=D(eps=1e-02) L3: threshold=0.4951
+    rep22/30 arm=D(eps=1e-02) L4: threshold=-0.5512
+    rep22/30 arm=D(eps=1e-02) → done L4  Pf=3.2900e-04
+  rep22/30 done: Pf=3.2900e-04  beta=3.4065  lv=4  (58.7s  tot=1301.3s)
+  rep23/30 seed=22
+    rep23/30 arm=D(eps=1e-02) L1: threshold=3.1648
+    rep23/30 arm=D(eps=1e-02) L2: threshold=1.6206
+    rep23/30 arm=D(eps=1e-02) L3: threshold=0.5738
+    rep23/30 arm=D(eps=1e-02) L4: threshold=-0.2318
+    rep23/30 arm=D(eps=1e-02) → done L4  Pf=2.6700e-04
+  rep23/30 done: Pf=2.6700e-04  beta=3.4631  lv=4  (59.7s  tot=1360.9s)
+  rep24/30 seed=23
+    rep24/30 arm=D(eps=1e-02) L1: threshold=3.0959
+    rep24/30 arm=D(eps=1e-02) L2: threshold=1.5318
+    rep24/30 arm=D(eps=1e-02) L3: threshold=0.4682
+    rep24/30 arm=D(eps=1e-02) L4: threshold=-0.3517
+    rep24/30 arm=D(eps=1e-02) → done L4  Pf=3.3900e-04
+  rep24/30 done: Pf=3.3900e-04  beta=3.3983  lv=4  (57.9s  tot=1418.8s)
+  rep25/30 seed=24
+    rep25/30 arm=D(eps=1e-02) L1: threshold=3.1421
+    rep25/30 arm=D(eps=1e-02) L2: threshold=1.7597
+    rep25/30 arm=D(eps=1e-02) L3: threshold=0.5973
+    rep25/30 arm=D(eps=1e-02) L4: threshold=-0.2279
+    rep25/30 arm=D(eps=1e-02) → done L4  Pf=2.3900e-04
+  rep25/30 done: Pf=2.3900e-04  beta=3.4928  lv=4  (59.0s  tot=1477.8s)
+  rep26/30 seed=25
+    rep26/30 arm=D(eps=1e-02) L1: threshold=3.1620
+    rep26/30 arm=D(eps=1e-02) L2: threshold=1.6853
+    rep26/30 arm=D(eps=1e-02) L3: threshold=0.5103
+    rep26/30 arm=D(eps=1e-02) L4: threshold=-0.4645
+    rep26/30 arm=D(eps=1e-02) → done L4  Pf=3.4800e-04
+  rep26/30 done: Pf=3.4800e-04  beta=3.3911  lv=4  (58.3s  tot=1536.1s)
+  rep27/30 seed=26
+    rep27/30 arm=D(eps=1e-02) L1: threshold=3.0765
+    rep27/30 arm=D(eps=1e-02) L2: threshold=1.6903
+    rep27/30 arm=D(eps=1e-02) L3: threshold=0.8057
+    rep27/30 arm=D(eps=1e-02) L4: threshold=-0.1560
+    rep27/30 arm=D(eps=1e-02) → done L4  Pf=1.2700e-04
+  rep27/30 done: Pf=1.2700e-04  beta=3.6582  lv=4  (60.5s  tot=1596.7s)
+  rep28/30 seed=27
+    rep28/30 arm=D(eps=1e-02) L1: threshold=3.0897
+    rep28/30 arm=D(eps=1e-02) L2: threshold=1.6022
+    rep28/30 arm=D(eps=1e-02) L3: threshold=0.5339
+    rep28/30 arm=D(eps=1e-02) L4: threshold=-0.0245
+    rep28/30 arm=D(eps=1e-02) → done L4  Pf=1.5600e-04
+  rep28/30 done: Pf=1.5600e-04  beta=3.6051  lv=4  (58.3s  tot=1655.0s)
+  rep29/30 seed=28
+    rep29/30 arm=D(eps=1e-02) L1: threshold=3.1703
+    rep29/30 arm=D(eps=1e-02) L2: threshold=1.6442
+    rep29/30 arm=D(eps=1e-02) L3: threshold=0.4715
+    rep29/30 arm=D(eps=1e-02) L4: threshold=-0.2502
+    rep29/30 arm=D(eps=1e-02) → done L4  Pf=2.9000e-04
+  rep29/30 done: Pf=2.9000e-04  beta=3.4408  lv=4  (59.8s  tot=1714.8s)
+  rep30/30 seed=29
+    rep30/30 arm=D(eps=1e-02) L1: threshold=3.1878
+    rep30/30 arm=D(eps=1e-02) L2: threshold=1.6765
+    rep30/30 arm=D(eps=1e-02) L3: threshold=0.6509
+    rep30/30 arm=D(eps=1e-02) L4: threshold=-0.0844
+    rep30/30 arm=D(eps=1e-02) → done L4  Pf=1.7100e-04
+  rep30/30 done: Pf=1.7100e-04  beta=3.5812  lv=4  (58.1s  tot=1772.8s)
+
+--- ARM D  eps=1e-01 ---
+
+[arm=D  eps=1e-01  b3.5_r0.0  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=D(eps=1e-01) L1: threshold=3.1506
+    rep01/30 arm=D(eps=1e-01) L2: threshold=1.6683
+    rep01/30 arm=D(eps=1e-01) L3: threshold=0.5457
+    rep01/30 arm=D(eps=1e-01) L4: threshold=-0.3961
+    rep01/30 arm=D(eps=1e-01) → done L4  Pf=2.5000e-04
+  rep01/30 done: Pf=2.5000e-04  beta=3.4808  lv=4  (47.2s  tot=47.2s)
+  rep02/30 seed=1
+    rep02/30 arm=D(eps=1e-01) L1: threshold=3.1465
+    rep02/30 arm=D(eps=1e-01) L2: threshold=1.6444
+    rep02/30 arm=D(eps=1e-01) L3: threshold=0.6884
+    rep02/30 arm=D(eps=1e-01) L4: threshold=-0.3632
+    rep02/30 arm=D(eps=1e-01) → done L4  Pf=2.0800e-04
+  rep02/30 done: Pf=2.0800e-04  beta=3.5297  lv=4  (48.0s  tot=95.2s)
+  rep03/30 seed=2
+    rep03/30 arm=D(eps=1e-01) L1: threshold=3.0936
+    rep03/30 arm=D(eps=1e-01) L2: threshold=1.6056
+    rep03/30 arm=D(eps=1e-01) L3: threshold=0.5370
+    rep03/30 arm=D(eps=1e-01) L4: threshold=-0.3614
+    rep03/30 arm=D(eps=1e-01) → done L4  Pf=2.8400e-04
+  rep03/30 done: Pf=2.8400e-04  beta=3.4465  lv=4  (48.0s  tot=143.2s)
+  rep04/30 seed=3
+    rep04/30 arm=D(eps=1e-01) L1: threshold=3.2272
+    rep04/30 arm=D(eps=1e-01) L2: threshold=1.7318
+    rep04/30 arm=D(eps=1e-01) L3: threshold=0.6226
+    rep04/30 arm=D(eps=1e-01) L4: threshold=-0.4376
+    rep04/30 arm=D(eps=1e-01) → done L4  Pf=2.2800e-04
+  rep04/30 done: Pf=2.2800e-04  beta=3.5054  lv=4  (47.6s  tot=190.8s)
+  rep05/30 seed=4
+    rep05/30 arm=D(eps=1e-01) L1: threshold=3.0609
+    rep05/30 arm=D(eps=1e-01) L2: threshold=1.7937
+    rep05/30 arm=D(eps=1e-01) L3: threshold=0.6257
+    rep05/30 arm=D(eps=1e-01) L4: threshold=-0.2427
+    rep05/30 arm=D(eps=1e-01) → done L4  Pf=1.7900e-04
+  rep05/30 done: Pf=1.7900e-04  beta=3.5693  lv=4  (48.2s  tot=239.0s)
+  rep06/30 seed=5
+    rep06/30 arm=D(eps=1e-01) L1: threshold=3.0258
+    rep06/30 arm=D(eps=1e-01) L2: threshold=1.6531
+    rep06/30 arm=D(eps=1e-01) L3: threshold=0.5610
+    rep06/30 arm=D(eps=1e-01) L4: threshold=-0.3115
+    rep06/30 arm=D(eps=1e-01) → done L4  Pf=3.0200e-04
+  rep06/30 done: Pf=3.0200e-04  beta=3.4298  lv=4  (48.3s  tot=287.4s)
+  rep07/30 seed=6
+    rep07/30 arm=D(eps=1e-01) L1: threshold=3.2221
+    rep07/30 arm=D(eps=1e-01) L2: threshold=1.6468
+    rep07/30 arm=D(eps=1e-01) L3: threshold=0.5491
+    rep07/30 arm=D(eps=1e-01) L4: threshold=-0.5089
+    rep07/30 arm=D(eps=1e-01) → done L4  Pf=2.4200e-04
+  rep07/30 done: Pf=2.4200e-04  beta=3.4895  lv=4  (48.1s  tot=335.5s)
+  rep08/30 seed=7
+    rep08/30 arm=D(eps=1e-01) L1: threshold=3.0842
+    rep08/30 arm=D(eps=1e-01) L2: threshold=1.5878
+    rep08/30 arm=D(eps=1e-01) L3: threshold=0.6652
+    rep08/30 arm=D(eps=1e-01) L4: threshold=-0.2991
+    rep08/30 arm=D(eps=1e-01) → done L4  Pf=1.7200e-04
+  rep08/30 done: Pf=1.7200e-04  beta=3.5797  lv=4  (47.8s  tot=383.3s)
+  rep09/30 seed=8
+    rep09/30 arm=D(eps=1e-01) L1: threshold=3.0446
+    rep09/30 arm=D(eps=1e-01) L2: threshold=1.5828
+    rep09/30 arm=D(eps=1e-01) L3: threshold=0.6270
+    rep09/30 arm=D(eps=1e-01) L4: threshold=-0.2780
+    rep09/30 arm=D(eps=1e-01) → done L4  Pf=1.4900e-04
+  rep09/30 done: Pf=1.4900e-04  beta=3.6170  lv=4  (49.2s  tot=432.5s)
+  rep10/30 seed=9
+    rep10/30 arm=D(eps=1e-01) L1: threshold=3.0762
+    rep10/30 arm=D(eps=1e-01) L2: threshold=1.4923
+    rep10/30 arm=D(eps=1e-01) L3: threshold=0.4620
+    rep10/30 arm=D(eps=1e-01) L4: threshold=-0.5059
+    rep10/30 arm=D(eps=1e-01) → done L4  Pf=4.4000e-04
+  rep10/30 done: Pf=4.4000e-04  beta=3.3263  lv=4  (47.9s  tot=480.4s)
+  rep11/30 seed=10
+    rep11/30 arm=D(eps=1e-01) L1: threshold=3.0451
+    rep11/30 arm=D(eps=1e-01) L2: threshold=1.5025
+    rep11/30 arm=D(eps=1e-01) L3: threshold=0.7023
+    rep11/30 arm=D(eps=1e-01) L4: threshold=-0.2103
+    rep11/30 arm=D(eps=1e-01) → done L4  Pf=1.5200e-04
+  rep11/30 done: Pf=1.5200e-04  beta=3.6119  lv=4  (48.1s  tot=528.5s)
+  rep12/30 seed=11
+    rep12/30 arm=D(eps=1e-01) L1: threshold=3.0228
+    rep12/30 arm=D(eps=1e-01) L2: threshold=1.5458
+    rep12/30 arm=D(eps=1e-01) L3: threshold=0.4243
+    rep12/30 arm=D(eps=1e-01) L4: threshold=-0.1184
+    rep12/30 arm=D(eps=1e-01) → done L4  Pf=2.6000e-04
+  rep12/30 done: Pf=2.6000e-04  beta=3.4702  lv=4  (50.0s  tot=578.5s)
+  rep13/30 seed=12
+    rep13/30 arm=D(eps=1e-01) L1: threshold=3.0458
+    rep13/30 arm=D(eps=1e-01) L2: threshold=1.4799
+    rep13/30 arm=D(eps=1e-01) L3: threshold=0.5398
+    rep13/30 arm=D(eps=1e-01) L4: threshold=-0.6072
+    rep13/30 arm=D(eps=1e-01) → done L4  Pf=2.6300e-04
+  rep13/30 done: Pf=2.6300e-04  beta=3.4672  lv=4  (48.5s  tot=627.0s)
+  rep14/30 seed=13
+    rep14/30 arm=D(eps=1e-01) L1: threshold=3.1028
+    rep14/30 arm=D(eps=1e-01) L2: threshold=1.6471
+    rep14/30 arm=D(eps=1e-01) L3: threshold=0.6274
+    rep14/30 arm=D(eps=1e-01) L4: threshold=-0.1158
+    rep14/30 arm=D(eps=1e-01) → done L4  Pf=1.7000e-04
+  rep14/30 done: Pf=1.7000e-04  beta=3.5827  lv=4  (49.3s  tot=676.4s)
+  rep15/30 seed=14
+    rep15/30 arm=D(eps=1e-01) L1: threshold=3.1679
+    rep15/30 arm=D(eps=1e-01) L2: threshold=1.7523
+    rep15/30 arm=D(eps=1e-01) L3: threshold=0.7787
+    rep15/30 arm=D(eps=1e-01) L4: threshold=0.0496
+    rep15/30 arm=D(eps=1e-01) L5: threshold=-0.9923
+    rep15/30 arm=D(eps=1e-01) → done L5  Pf=8.4100e-05
+  rep15/30 done: Pf=8.4100e-05  beta=3.7625  lv=5  (48.4s  tot=724.8s)
+  rep16/30 seed=15
+    rep16/30 arm=D(eps=1e-01) L1: threshold=3.1781
+    rep16/30 arm=D(eps=1e-01) L2: threshold=1.6142
+    rep16/30 arm=D(eps=1e-01) L3: threshold=0.6086
+    rep16/30 arm=D(eps=1e-01) L4: threshold=-0.3835
+    rep16/30 arm=D(eps=1e-01) → done L4  Pf=2.3500e-04
+  rep16/30 done: Pf=2.3500e-04  beta=3.4973  lv=4  (49.2s  tot=773.9s)
+  rep17/30 seed=16
+    rep17/30 arm=D(eps=1e-01) L1: threshold=2.9753
+    rep17/30 arm=D(eps=1e-01) L2: threshold=1.3685
+    rep17/30 arm=D(eps=1e-01) L3: threshold=0.2253
+    rep17/30 arm=D(eps=1e-01) L4: threshold=-0.5052
+    rep17/30 arm=D(eps=1e-01) → done L4  Pf=3.6300e-04
+  rep17/30 done: Pf=3.6300e-04  beta=3.3796  lv=4  (49.1s  tot=823.1s)
+  rep18/30 seed=17
+    rep18/30 arm=D(eps=1e-01) L1: threshold=3.1187
+    rep18/30 arm=D(eps=1e-01) L2: threshold=1.6055
+    rep18/30 arm=D(eps=1e-01) L3: threshold=0.5414
+    rep18/30 arm=D(eps=1e-01) L4: threshold=-0.3468
+    rep18/30 arm=D(eps=1e-01) → done L4  Pf=2.9500e-04
+  rep18/30 done: Pf=2.9500e-04  beta=3.4362  lv=4  (47.5s  tot=870.6s)
+  rep19/30 seed=18
+    rep19/30 arm=D(eps=1e-01) L1: threshold=3.1902
+    rep19/30 arm=D(eps=1e-01) L2: threshold=1.7768
+    rep19/30 arm=D(eps=1e-01) L3: threshold=0.4540
+    rep19/30 arm=D(eps=1e-01) L4: threshold=-0.1769
+    rep19/30 arm=D(eps=1e-01) → done L4  Pf=1.9200e-04
+  rep19/30 done: Pf=1.9200e-04  beta=3.5508  lv=4  (48.0s  tot=918.5s)
+  rep20/30 seed=19
+    rep20/30 arm=D(eps=1e-01) L1: threshold=2.9885
+    rep20/30 arm=D(eps=1e-01) L2: threshold=1.4493
+    rep20/30 arm=D(eps=1e-01) L3: threshold=0.4022
+    rep20/30 arm=D(eps=1e-01) L4: threshold=-0.4566
+    rep20/30 arm=D(eps=1e-01) → done L4  Pf=3.3600e-04
+  rep20/30 done: Pf=3.3600e-04  beta=3.4008  lv=4  (48.8s  tot=967.3s)
+  rep21/30 seed=20
+    rep21/30 arm=D(eps=1e-01) L1: threshold=3.2050
+    rep21/30 arm=D(eps=1e-01) L2: threshold=1.7029
+    rep21/30 arm=D(eps=1e-01) L3: threshold=0.6907
+    rep21/30 arm=D(eps=1e-01) L4: threshold=-0.1539
+    rep21/30 arm=D(eps=1e-01) → done L4  Pf=1.4700e-04
+  rep21/30 done: Pf=1.4700e-04  beta=3.6205  lv=4  (47.5s  tot=1014.8s)
+  rep22/30 seed=21
+    rep22/30 arm=D(eps=1e-01) L1: threshold=3.1366
+    rep22/30 arm=D(eps=1e-01) L2: threshold=1.7173
+    rep22/30 arm=D(eps=1e-01) L3: threshold=0.5351
+    rep22/30 arm=D(eps=1e-01) L4: threshold=-0.5963
+    rep22/30 arm=D(eps=1e-01) → done L4  Pf=3.2400e-04
+  rep22/30 done: Pf=3.2400e-04  beta=3.4107  lv=4  (48.8s  tot=1063.7s)
+  rep23/30 seed=22
+    rep23/30 arm=D(eps=1e-01) L1: threshold=3.1786
+    rep23/30 arm=D(eps=1e-01) L2: threshold=1.6090
+    rep23/30 arm=D(eps=1e-01) L3: threshold=0.5844
+    rep23/30 arm=D(eps=1e-01) L4: threshold=-0.2929
+    rep23/30 arm=D(eps=1e-01) → done L4  Pf=2.4100e-04
+  rep23/30 done: Pf=2.4100e-04  beta=3.4906  lv=4  (47.8s  tot=1111.4s)
+  rep24/30 seed=23
+    rep24/30 arm=D(eps=1e-01) L1: threshold=3.0873
+    rep24/30 arm=D(eps=1e-01) L2: threshold=1.5276
+    rep24/30 arm=D(eps=1e-01) L3: threshold=0.4463
+    rep24/30 arm=D(eps=1e-01) L4: threshold=-0.3522
+    rep24/30 arm=D(eps=1e-01) → done L4  Pf=3.7400e-04
+  rep24/30 done: Pf=3.7400e-04  beta=3.3714  lv=4  (47.9s  tot=1159.3s)
+  rep25/30 seed=24
+    rep25/30 arm=D(eps=1e-01) L1: threshold=3.1431
+    rep25/30 arm=D(eps=1e-01) L2: threshold=1.7633
+    rep25/30 arm=D(eps=1e-01) L3: threshold=0.5784
+    rep25/30 arm=D(eps=1e-01) L4: threshold=-0.2276
+    rep25/30 arm=D(eps=1e-01) → done L4  Pf=2.1500e-04
+  rep25/30 done: Pf=2.1500e-04  beta=3.5210  lv=4  (47.9s  tot=1207.2s)
+  rep26/30 seed=25
+    rep26/30 arm=D(eps=1e-01) L1: threshold=3.1502
+    rep26/30 arm=D(eps=1e-01) L2: threshold=1.6408
+    rep26/30 arm=D(eps=1e-01) L3: threshold=0.4863
+    rep26/30 arm=D(eps=1e-01) L4: threshold=-0.5257
+    rep26/30 arm=D(eps=1e-01) → done L4  Pf=3.4200e-04
+  rep26/30 done: Pf=3.4200e-04  beta=3.3959  lv=4  (46.9s  tot=1254.2s)
+  rep27/30 seed=26
+    rep27/30 arm=D(eps=1e-01) L1: threshold=3.0465
+    rep27/30 arm=D(eps=1e-01) L2: threshold=1.6686
+    rep27/30 arm=D(eps=1e-01) L3: threshold=0.7701
+    rep27/30 arm=D(eps=1e-01) L4: threshold=-0.2052
+    rep27/30 arm=D(eps=1e-01) → done L4  Pf=1.3600e-04
+  rep27/30 done: Pf=1.3600e-04  beta=3.6406  lv=4  (46.7s  tot=1300.9s)
+  rep28/30 seed=27
+    rep28/30 arm=D(eps=1e-01) L1: threshold=3.1010
+    rep28/30 arm=D(eps=1e-01) L2: threshold=1.7146
+    rep28/30 arm=D(eps=1e-01) L3: threshold=0.6365
+    rep28/30 arm=D(eps=1e-01) L4: threshold=-0.0103
+    rep28/30 arm=D(eps=1e-01) → done L4  Pf=1.2700e-04
+  rep28/30 done: Pf=1.2700e-04  beta=3.6582  lv=4  (47.6s  tot=1348.5s)
+  rep29/30 seed=28
+    rep29/30 arm=D(eps=1e-01) L1: threshold=3.1464
+    rep29/30 arm=D(eps=1e-01) L2: threshold=1.7593
+    rep29/30 arm=D(eps=1e-01) L3: threshold=0.4988
+    rep29/30 arm=D(eps=1e-01) L4: threshold=-0.3417
+    rep29/30 arm=D(eps=1e-01) → done L4  Pf=3.0100e-04
+  rep29/30 done: Pf=3.0100e-04  beta=3.4307  lv=4  (47.3s  tot=1395.8s)
+  rep30/30 seed=29
+    rep30/30 arm=D(eps=1e-01) L1: threshold=3.1677
+    rep30/30 arm=D(eps=1e-01) L2: threshold=1.6259
+    rep30/30 arm=D(eps=1e-01) L3: threshold=0.5874
+    rep30/30 arm=D(eps=1e-01) L4: threshold=-0.1512
+    rep30/30 arm=D(eps=1e-01) → done L4  Pf=1.8500e-04
+  rep30/30 done: Pf=1.8500e-04  beta=3.5606  lv=4  (47.4s  tot=1443.3s)
+
+--- Summary: beta=3.5, rho=0.0 ---
+  ARM A:  beta_hat=3.5061  bias=+0.0061  COV=0.031  grad_opt=2.23e+06
+  ARM D eps=1e-03: beta_hat=3.5059  bias=+0.0059  COV=0.031  grad_opt=6.70e+06  grad_unopt=1.16e+07  E_opt=0.328  E_unopt=0.190
+  ARM D eps=1e-02: beta_hat=3.4960  bias=-0.0040  COV=0.027  grad_opt=3.88e+06  grad_unopt=6.65e+06  E_opt=0.771  E_unopt=0.451
+  ARM D eps=1e-01: beta_hat=3.5078  bias=+0.0078  COV=0.028  grad_opt=2.64e+06  grad_unopt=4.46e+06  E_opt=1.021  E_unopt=0.603
+
+[Saving plots for beta=3.5, rho=0.0]
+  Saved eps_sweep_beta3.5_rho0.0.png
+  Saved level_diag_beta3.5_rho0.0.png
+  Saved beta_boxplot_beta3.5_rho0.0.png
+
+======================================================================
+Config: beta=4.0  rho=0.75  Pf_ref=3.1671e-05
+
+--- ARM A (baseline) ---
+
+[arm=A  eps=0e+00  b4.0_r0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=A(eps=0e+00) L1: threshold=4.9875
+    rep01/30 arm=A(eps=0e+00) L2: threshold=3.0714
+    rep01/30 arm=A(eps=0e+00) L3: threshold=1.5891
+    rep01/30 arm=A(eps=0e+00) L4: threshold=0.6218
+    rep01/30 arm=A(eps=0e+00) L5: threshold=-0.3581
+    rep01/30 arm=A(eps=0e+00) → done L5  Pf=2.8400e-05
+  rep01/30 done: Pf=2.8400e-05  beta=4.0257  lv=5  (11.0s  tot=11.0s)
+  rep02/30 seed=1
+    rep02/30 arm=A(eps=0e+00) L1: threshold=5.1439
+    rep02/30 arm=A(eps=0e+00) L2: threshold=3.2352
+    rep02/30 arm=A(eps=0e+00) L3: threshold=1.9805
+    rep02/30 arm=A(eps=0e+00) L4: threshold=0.7731
+    rep02/30 arm=A(eps=0e+00) L5: threshold=-0.2578
+    rep02/30 arm=A(eps=0e+00) → done L5  Pf=1.9200e-05
+  rep02/30 done: Pf=1.9200e-05  beta=4.1169  lv=5  (11.0s  tot=21.9s)
+  rep03/30 seed=2
+    rep03/30 arm=A(eps=0e+00) L1: threshold=5.0261
+    rep03/30 arm=A(eps=0e+00) L2: threshold=3.1301
+    rep03/30 arm=A(eps=0e+00) L3: threshold=1.7312
+    rep03/30 arm=A(eps=0e+00) L4: threshold=0.6878
+    rep03/30 arm=A(eps=0e+00) L5: threshold=-0.4929
+    rep03/30 arm=A(eps=0e+00) → done L5  Pf=2.7100e-05
+  rep03/30 done: Pf=2.7100e-05  beta=4.0367  lv=5  (11.0s  tot=32.9s)
+  rep04/30 seed=3
+    rep04/30 arm=A(eps=0e+00) L1: threshold=5.1810
+    rep04/30 arm=A(eps=0e+00) L2: threshold=3.1071
+    rep04/30 arm=A(eps=0e+00) L3: threshold=1.6164
+    rep04/30 arm=A(eps=0e+00) L4: threshold=0.5048
+    rep04/30 arm=A(eps=0e+00) L5: threshold=-0.6464
+    rep04/30 arm=A(eps=0e+00) → done L5  Pf=3.0100e-05
+  rep04/30 done: Pf=3.0100e-05  beta=4.0120  lv=5  (11.1s  tot=44.0s)
+  rep05/30 seed=4
+    rep05/30 arm=A(eps=0e+00) L1: threshold=4.9749
+    rep05/30 arm=A(eps=0e+00) L2: threshold=3.1423
+    rep05/30 arm=A(eps=0e+00) L3: threshold=1.8384
+    rep05/30 arm=A(eps=0e+00) L4: threshold=0.6251
+    rep05/30 arm=A(eps=0e+00) L5: threshold=-0.3701
+    rep05/30 arm=A(eps=0e+00) → done L5  Pf=2.0800e-05
+  rep05/30 done: Pf=2.0800e-05  beta=4.0984  lv=5  (10.9s  tot=54.9s)
+  rep06/30 seed=5
+    rep06/30 arm=A(eps=0e+00) L1: threshold=4.8839
+    rep06/30 arm=A(eps=0e+00) L2: threshold=3.0938
+    rep06/30 arm=A(eps=0e+00) L3: threshold=1.5511
+    rep06/30 arm=A(eps=0e+00) L4: threshold=0.4066
+    rep06/30 arm=A(eps=0e+00) L5: threshold=-0.7328
+    rep06/30 arm=A(eps=0e+00) → done L5  Pf=5.5100e-05
+  rep06/30 done: Pf=5.5100e-05  beta=3.8670  lv=5  (10.9s  tot=65.8s)
+  rep07/30 seed=6
+    rep07/30 arm=A(eps=0e+00) L1: threshold=5.1155
+    rep07/30 arm=A(eps=0e+00) L2: threshold=3.1258
+    rep07/30 arm=A(eps=0e+00) L3: threshold=1.7442
+    rep07/30 arm=A(eps=0e+00) L4: threshold=0.5998
+    rep07/30 arm=A(eps=0e+00) L5: threshold=-0.3291
+    rep07/30 arm=A(eps=0e+00) → done L5  Pf=2.4500e-05
+  rep07/30 done: Pf=2.4500e-05  beta=4.0603  lv=5  (10.9s  tot=76.6s)
+  rep08/30 seed=7
+    rep08/30 arm=A(eps=0e+00) L1: threshold=5.0426
+    rep08/30 arm=A(eps=0e+00) L2: threshold=3.0936
+    rep08/30 arm=A(eps=0e+00) L3: threshold=1.7077
+    rep08/30 arm=A(eps=0e+00) L4: threshold=0.5241
+    rep08/30 arm=A(eps=0e+00) L5: threshold=-0.6469
+    rep08/30 arm=A(eps=0e+00) → done L5  Pf=3.1900e-05
+  rep08/30 done: Pf=3.1900e-05  beta=3.9983  lv=5  (10.9s  tot=87.5s)
+  rep09/30 seed=8
+    rep09/30 arm=A(eps=0e+00) L1: threshold=4.9363
+    rep09/30 arm=A(eps=0e+00) L2: threshold=3.0163
+    rep09/30 arm=A(eps=0e+00) L3: threshold=1.6084
+    rep09/30 arm=A(eps=0e+00) L4: threshold=0.4938
+    rep09/30 arm=A(eps=0e+00) L5: threshold=-0.3248
+    rep09/30 arm=A(eps=0e+00) → done L5  Pf=2.4700e-05
+  rep09/30 done: Pf=2.4700e-05  beta=4.0584  lv=5  (10.8s  tot=98.3s)
+  rep10/30 seed=9
+    rep10/30 arm=A(eps=0e+00) L1: threshold=4.9534
+    rep10/30 arm=A(eps=0e+00) L2: threshold=3.0630
+    rep10/30 arm=A(eps=0e+00) L3: threshold=1.8160
+    rep10/30 arm=A(eps=0e+00) L4: threshold=0.4899
+    rep10/30 arm=A(eps=0e+00) L5: threshold=-0.3924
+    rep10/30 arm=A(eps=0e+00) → done L5  Pf=2.8900e-05
+  rep10/30 done: Pf=2.8900e-05  beta=4.0216  lv=5  (10.9s  tot=109.2s)
+  rep11/30 seed=10
+    rep11/30 arm=A(eps=0e+00) L1: threshold=5.1357
+    rep11/30 arm=A(eps=0e+00) L2: threshold=3.0570
+    rep11/30 arm=A(eps=0e+00) L3: threshold=1.7319
+    rep11/30 arm=A(eps=0e+00) L4: threshold=0.4747
+    rep11/30 arm=A(eps=0e+00) L5: threshold=-0.4772
+    rep11/30 arm=A(eps=0e+00) → done L5  Pf=3.1200e-05
+  rep11/30 done: Pf=3.1200e-05  beta=4.0035  lv=5  (10.8s  tot=120.0s)
+  rep12/30 seed=11
+    rep12/30 arm=A(eps=0e+00) L1: threshold=4.9276
+    rep12/30 arm=A(eps=0e+00) L2: threshold=3.0623
+    rep12/30 arm=A(eps=0e+00) L3: threshold=1.7781
+    rep12/30 arm=A(eps=0e+00) L4: threshold=0.8747
+    rep12/30 arm=A(eps=0e+00) L5: threshold=-0.0227
+    rep12/30 arm=A(eps=0e+00) → done L5  Pf=1.1200e-05
+  rep12/30 done: Pf=1.1200e-05  beta=4.2395  lv=5  (10.9s  tot=130.9s)
+  rep13/30 seed=12
+    rep13/30 arm=A(eps=0e+00) L1: threshold=5.0453
+    rep13/30 arm=A(eps=0e+00) L2: threshold=3.0225
+    rep13/30 arm=A(eps=0e+00) L3: threshold=1.6392
+    rep13/30 arm=A(eps=0e+00) L4: threshold=0.5052
+    rep13/30 arm=A(eps=0e+00) L5: threshold=-0.5553
+    rep13/30 arm=A(eps=0e+00) → done L5  Pf=4.4200e-05
+  rep13/30 done: Pf=4.4200e-05  beta=3.9204  lv=5  (10.8s  tot=141.7s)
+  rep14/30 seed=13
+    rep14/30 arm=A(eps=0e+00) L1: threshold=5.0979
+    rep14/30 arm=A(eps=0e+00) L2: threshold=3.1271
+    rep14/30 arm=A(eps=0e+00) L3: threshold=1.7220
+    rep14/30 arm=A(eps=0e+00) L4: threshold=0.5515
+    rep14/30 arm=A(eps=0e+00) L5: threshold=-0.5160
+    rep14/30 arm=A(eps=0e+00) → done L5  Pf=2.6900e-05
+  rep14/30 done: Pf=2.6900e-05  beta=4.0385  lv=5  (10.9s  tot=152.6s)
+  rep15/30 seed=14
+    rep15/30 arm=A(eps=0e+00) L1: threshold=5.1808
+    rep15/30 arm=A(eps=0e+00) L2: threshold=3.2365
+    rep15/30 arm=A(eps=0e+00) L3: threshold=2.0449
+    rep15/30 arm=A(eps=0e+00) L4: threshold=0.7430
+    rep15/30 arm=A(eps=0e+00) L5: threshold=-0.0167
+    rep15/30 arm=A(eps=0e+00) → done L5  Pf=1.1300e-05
+  rep15/30 done: Pf=1.1300e-05  beta=4.2375  lv=5  (10.8s  tot=163.4s)
+  rep16/30 seed=15
+    rep16/30 arm=A(eps=0e+00) L1: threshold=5.0949
+    rep16/30 arm=A(eps=0e+00) L2: threshold=2.9584
+    rep16/30 arm=A(eps=0e+00) L3: threshold=1.3322
+    rep16/30 arm=A(eps=0e+00) L4: threshold=-0.0190
+    rep16/30 arm=A(eps=0e+00) → done L4  Pf=1.0200e-04
+  rep16/30 done: Pf=1.0200e-04  beta=3.7140  lv=4  (10.9s  tot=174.3s)
+  rep17/30 seed=16
+    rep17/30 arm=A(eps=0e+00) L1: threshold=4.9438
+    rep17/30 arm=A(eps=0e+00) L2: threshold=2.7629
+    rep17/30 arm=A(eps=0e+00) L3: threshold=1.3717
+    rep17/30 arm=A(eps=0e+00) L4: threshold=0.2400
+    rep17/30 arm=A(eps=0e+00) L5: threshold=-0.5351
+    rep17/30 arm=A(eps=0e+00) → done L5  Pf=5.2700e-05
+  rep17/30 done: Pf=5.2700e-05  beta=3.8778  lv=5  (10.9s  tot=185.2s)
+  rep18/30 seed=17
+    rep18/30 arm=A(eps=0e+00) L1: threshold=5.0816
+    rep18/30 arm=A(eps=0e+00) L2: threshold=2.9642
+    rep18/30 arm=A(eps=0e+00) L3: threshold=1.6530
+    rep18/30 arm=A(eps=0e+00) L4: threshold=0.3653
+    rep18/30 arm=A(eps=0e+00) L5: threshold=-0.4453
+    rep18/30 arm=A(eps=0e+00) → done L5  Pf=4.8600e-05
+  rep18/30 done: Pf=4.8600e-05  beta=3.8975  lv=5  (10.9s  tot=196.1s)
+  rep19/30 seed=18
+    rep19/30 arm=A(eps=0e+00) L1: threshold=5.1092
+    rep19/30 arm=A(eps=0e+00) L2: threshold=3.2240
+    rep19/30 arm=A(eps=0e+00) L3: threshold=1.7412
+    rep19/30 arm=A(eps=0e+00) L4: threshold=0.5498
+    rep19/30 arm=A(eps=0e+00) L5: threshold=-0.3122
+    rep19/30 arm=A(eps=0e+00) → done L5  Pf=2.5900e-05
+  rep19/30 done: Pf=2.5900e-05  beta=4.0474  lv=5  (10.8s  tot=206.9s)
+  rep20/30 seed=19
+    rep20/30 arm=A(eps=0e+00) L1: threshold=4.8316
+    rep20/30 arm=A(eps=0e+00) L2: threshold=2.7833
+    rep20/30 arm=A(eps=0e+00) L3: threshold=1.3775
+    rep20/30 arm=A(eps=0e+00) L4: threshold=0.1147
+    rep20/30 arm=A(eps=0e+00) L5: threshold=-0.6678
+    rep20/30 arm=A(eps=0e+00) → done L5  Pf=7.2000e-05
+  rep20/30 done: Pf=7.2000e-05  beta=3.8012  lv=5  (10.9s  tot=217.8s)
+  rep21/30 seed=20
+    rep21/30 arm=A(eps=0e+00) L1: threshold=5.0788
+    rep21/30 arm=A(eps=0e+00) L2: threshold=3.1596
+    rep21/30 arm=A(eps=0e+00) L3: threshold=1.7582
+    rep21/30 arm=A(eps=0e+00) L4: threshold=0.5872
+    rep21/30 arm=A(eps=0e+00) L5: threshold=-0.6671
+    rep21/30 arm=A(eps=0e+00) → done L5  Pf=3.7000e-05
+  rep21/30 done: Pf=3.7000e-05  beta=3.9630  lv=5  (10.8s  tot=228.6s)
+  rep22/30 seed=21
+    rep22/30 arm=A(eps=0e+00) L1: threshold=4.9975
+    rep22/30 arm=A(eps=0e+00) L2: threshold=3.0870
+    rep22/30 arm=A(eps=0e+00) L3: threshold=1.6581
+    rep22/30 arm=A(eps=0e+00) L4: threshold=0.3778
+    rep22/30 arm=A(eps=0e+00) L5: threshold=-0.6132
+    rep22/30 arm=A(eps=0e+00) → done L5  Pf=4.1100e-05
+  rep22/30 done: Pf=4.1100e-05  beta=3.9379  lv=5  (10.9s  tot=239.5s)
+  rep23/30 seed=22
+    rep23/30 arm=A(eps=0e+00) L1: threshold=5.1986
+    rep23/30 arm=A(eps=0e+00) L2: threshold=3.1225
+    rep23/30 arm=A(eps=0e+00) L3: threshold=1.8195
+    rep23/30 arm=A(eps=0e+00) L4: threshold=0.6813
+    rep23/30 arm=A(eps=0e+00) L5: threshold=-0.2806
+    rep23/30 arm=A(eps=0e+00) → done L5  Pf=2.4000e-05
+  rep23/30 done: Pf=2.4000e-05  beta=4.0652  lv=5  (10.9s  tot=250.4s)
+  rep24/30 seed=23
+    rep24/30 arm=A(eps=0e+00) L1: threshold=5.0279
+    rep24/30 arm=A(eps=0e+00) L2: threshold=2.8872
+    rep24/30 arm=A(eps=0e+00) L3: threshold=1.4507
+    rep24/30 arm=A(eps=0e+00) L4: threshold=0.2260
+    rep24/30 arm=A(eps=0e+00) L5: threshold=-0.5395
+    rep24/30 arm=A(eps=0e+00) → done L5  Pf=6.0900e-05
+  rep24/30 done: Pf=6.0900e-05  beta=3.8425  lv=5  (10.8s  tot=261.2s)
+  rep25/30 seed=24
+    rep25/30 arm=A(eps=0e+00) L1: threshold=5.1296
+    rep25/30 arm=A(eps=0e+00) L2: threshold=3.1881
+    rep25/30 arm=A(eps=0e+00) L3: threshold=1.6620
+    rep25/30 arm=A(eps=0e+00) L4: threshold=0.5897
+    rep25/30 arm=A(eps=0e+00) L5: threshold=-0.4936
+    rep25/30 arm=A(eps=0e+00) → done L5  Pf=2.9700e-05
+  rep25/30 done: Pf=2.9700e-05  beta=4.0152  lv=5  (10.8s  tot=272.0s)
+  rep26/30 seed=25
+    rep26/30 arm=A(eps=0e+00) L1: threshold=5.1065
+    rep26/30 arm=A(eps=0e+00) L2: threshold=3.1882
+    rep26/30 arm=A(eps=0e+00) L3: threshold=1.7739
+    rep26/30 arm=A(eps=0e+00) L4: threshold=0.4971
+    rep26/30 arm=A(eps=0e+00) L5: threshold=-0.4872
+    rep26/30 arm=A(eps=0e+00) → done L5  Pf=3.6900e-05
+  rep26/30 done: Pf=3.6900e-05  beta=3.9637  lv=5  (10.8s  tot=282.8s)
+  rep27/30 seed=26
+    rep27/30 arm=A(eps=0e+00) L1: threshold=5.0457
+    rep27/30 arm=A(eps=0e+00) L2: threshold=3.1607
+    rep27/30 arm=A(eps=0e+00) L3: threshold=1.8762
+    rep27/30 arm=A(eps=0e+00) L4: threshold=0.6370
+    rep27/30 arm=A(eps=0e+00) L5: threshold=-0.4862
+    rep27/30 arm=A(eps=0e+00) → done L5  Pf=2.7600e-05
+  rep27/30 done: Pf=2.7600e-05  beta=4.0324  lv=5  (10.8s  tot=293.6s)
+  rep28/30 seed=27
+    rep28/30 arm=A(eps=0e+00) L1: threshold=5.0820
+    rep28/30 arm=A(eps=0e+00) L2: threshold=3.1508
+    rep28/30 arm=A(eps=0e+00) L3: threshold=1.8375
+    rep28/30 arm=A(eps=0e+00) L4: threshold=0.6813
+    rep28/30 arm=A(eps=0e+00) L5: threshold=-0.2322
+    rep28/30 arm=A(eps=0e+00) → done L5  Pf=2.1100e-05
+  rep28/30 done: Pf=2.1100e-05  beta=4.0951  lv=5  (10.8s  tot=304.5s)
+  rep29/30 seed=28
+    rep29/30 arm=A(eps=0e+00) L1: threshold=5.0810
+    rep29/30 arm=A(eps=0e+00) L2: threshold=3.1544
+    rep29/30 arm=A(eps=0e+00) L3: threshold=1.7018
+    rep29/30 arm=A(eps=0e+00) L4: threshold=0.5158
+    rep29/30 arm=A(eps=0e+00) L5: threshold=-0.4321
+    rep29/30 arm=A(eps=0e+00) → done L5  Pf=3.8800e-05
+  rep29/30 done: Pf=3.8800e-05  beta=3.9517  lv=5  (10.8s  tot=315.3s)
+  rep30/30 seed=29
+    rep30/30 arm=A(eps=0e+00) L1: threshold=5.1273
+    rep30/30 arm=A(eps=0e+00) L2: threshold=3.0780
+    rep30/30 arm=A(eps=0e+00) L3: threshold=1.6554
+    rep30/30 arm=A(eps=0e+00) L4: threshold=0.5405
+    rep30/30 arm=A(eps=0e+00) L5: threshold=-0.5669
+    rep30/30 arm=A(eps=0e+00) → done L5  Pf=3.6700e-05
+  rep30/30 done: Pf=3.6700e-05  beta=3.9650  lv=5  (11.0s  tot=326.2s)
+
+--- ARM D  eps=1e-03 ---
+
+[arm=D  eps=1e-03  b4.0_r0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=D(eps=1e-03) L1: threshold=5.0175
+    rep01/30 arm=D(eps=1e-03) L2: threshold=3.1101
+    rep01/30 arm=D(eps=1e-03) L3: threshold=1.6237
+    rep01/30 arm=D(eps=1e-03) L4: threshold=0.6236
+    rep01/30 arm=D(eps=1e-03) L5: threshold=-0.3495
+    rep01/30 arm=D(eps=1e-03) → done L5  Pf=2.7600e-05
+  rep01/30 done: Pf=2.7600e-05  beta=4.0324  lv=5  (103.5s  tot=103.5s)
+  rep02/30 seed=1
+    rep02/30 arm=D(eps=1e-03) L1: threshold=5.1439
+    rep02/30 arm=D(eps=1e-03) L2: threshold=3.2351
+    rep02/30 arm=D(eps=1e-03) L3: threshold=1.9801
+    rep02/30 arm=D(eps=1e-03) L4: threshold=0.7710
+    rep02/30 arm=D(eps=1e-03) L5: threshold=-0.2572
+    rep02/30 arm=D(eps=1e-03) → done L5  Pf=1.9600e-05
+  rep02/30 done: Pf=1.9600e-05  beta=4.1121  lv=5  (103.1s  tot=206.6s)
+  rep03/30 seed=2
+    rep03/30 arm=D(eps=1e-03) L1: threshold=5.0266
+    rep03/30 arm=D(eps=1e-03) L2: threshold=3.1302
+    rep03/30 arm=D(eps=1e-03) L3: threshold=1.7326
+    rep03/30 arm=D(eps=1e-03) L4: threshold=0.6884
+    rep03/30 arm=D(eps=1e-03) L5: threshold=-0.4928
+    rep03/30 arm=D(eps=1e-03) → done L5  Pf=2.7700e-05
+  rep03/30 done: Pf=2.7700e-05  beta=4.0316  lv=5  (103.1s  tot=309.8s)
+  rep04/30 seed=3
+    rep04/30 arm=D(eps=1e-03) L1: threshold=5.1876
+    rep04/30 arm=D(eps=1e-03) L2: threshold=3.1104
+    rep04/30 arm=D(eps=1e-03) L3: threshold=1.6240
+    rep04/30 arm=D(eps=1e-03) L4: threshold=0.5053
+    rep04/30 arm=D(eps=1e-03) L5: threshold=-0.6451
+    rep04/30 arm=D(eps=1e-03) → done L5  Pf=3.0100e-05
+  rep04/30 done: Pf=3.0100e-05  beta=4.0120  lv=5  (103.1s  tot=412.9s)
+  rep05/30 seed=4
+    rep05/30 arm=D(eps=1e-03) L1: threshold=4.9755
+    rep05/30 arm=D(eps=1e-03) L2: threshold=3.1427
+    rep05/30 arm=D(eps=1e-03) L3: threshold=1.8379
+    rep05/30 arm=D(eps=1e-03) L4: threshold=0.6165
+    rep05/30 arm=D(eps=1e-03) L5: threshold=-0.3804
+    rep05/30 arm=D(eps=1e-03) → done L5  Pf=2.1000e-05
+  rep05/30 done: Pf=2.1000e-05  beta=4.0962  lv=5  (103.0s  tot=515.9s)
+  rep06/30 seed=5
+    rep06/30 arm=D(eps=1e-03) L1: threshold=4.8840
+    rep06/30 arm=D(eps=1e-03) L2: threshold=3.0940
+    rep06/30 arm=D(eps=1e-03) L3: threshold=1.5513
+    rep06/30 arm=D(eps=1e-03) L4: threshold=0.4761
+    rep06/30 arm=D(eps=1e-03) L5: threshold=-0.5490
+    rep06/30 arm=D(eps=1e-03) → done L5  Pf=5.1200e-05
+  rep06/30 done: Pf=5.1200e-05  beta=3.8848  lv=5  (103.1s  tot=619.0s)
+  rep07/30 seed=6
+    rep07/30 arm=D(eps=1e-03) L1: threshold=5.1165
+    rep07/30 arm=D(eps=1e-03) L2: threshold=3.1262
+    rep07/30 arm=D(eps=1e-03) L3: threshold=1.7419
+    rep07/30 arm=D(eps=1e-03) L4: threshold=0.6171
+    rep07/30 arm=D(eps=1e-03) L5: threshold=-0.3290
+    rep07/30 arm=D(eps=1e-03) → done L5  Pf=2.4200e-05
+  rep07/30 done: Pf=2.4200e-05  beta=4.0632  lv=5  (103.0s  tot=722.0s)
+  rep08/30 seed=7
+    rep08/30 arm=D(eps=1e-03) L1: threshold=5.0432
+    rep08/30 arm=D(eps=1e-03) L2: threshold=3.0980
+    rep08/30 arm=D(eps=1e-03) L3: threshold=1.7103
+    rep08/30 arm=D(eps=1e-03) L4: threshold=0.5260
+    rep08/30 arm=D(eps=1e-03) L5: threshold=-0.6447
+    rep08/30 arm=D(eps=1e-03) → done L5  Pf=3.1900e-05
+  rep08/30 done: Pf=3.1900e-05  beta=3.9983  lv=5  (104.3s  tot=826.2s)
+  rep09/30 seed=8
+    rep09/30 arm=D(eps=1e-03) L1: threshold=4.9371
+    rep09/30 arm=D(eps=1e-03) L2: threshold=3.0170
+    rep09/30 arm=D(eps=1e-03) L3: threshold=1.6086
+    rep09/30 arm=D(eps=1e-03) L4: threshold=0.4940
+    rep09/30 arm=D(eps=1e-03) L5: threshold=-0.3239
+    rep09/30 arm=D(eps=1e-03) → done L5  Pf=2.5200e-05
+  rep09/30 done: Pf=2.5200e-05  beta=4.0538  lv=5  (103.2s  tot=929.5s)
+  rep10/30 seed=9
+    rep10/30 arm=D(eps=1e-03) L1: threshold=4.9538
+    rep10/30 arm=D(eps=1e-03) L2: threshold=3.0626
+    rep10/30 arm=D(eps=1e-03) L3: threshold=1.8159
+    rep10/30 arm=D(eps=1e-03) L4: threshold=0.4916
+    rep10/30 arm=D(eps=1e-03) L5: threshold=-0.3918
+    rep10/30 arm=D(eps=1e-03) → done L5  Pf=2.8900e-05
+  rep10/30 done: Pf=2.8900e-05  beta=4.0216  lv=5  (103.1s  tot=1032.5s)
+  rep11/30 seed=10
+    rep11/30 arm=D(eps=1e-03) L1: threshold=5.1353
+    rep11/30 arm=D(eps=1e-03) L2: threshold=3.0561
+    rep11/30 arm=D(eps=1e-03) L3: threshold=1.7323
+    rep11/30 arm=D(eps=1e-03) L4: threshold=0.4736
+    rep11/30 arm=D(eps=1e-03) L5: threshold=-0.4788
+    rep11/30 arm=D(eps=1e-03) → done L5  Pf=3.1200e-05
+  rep11/30 done: Pf=3.1200e-05  beta=4.0035  lv=5  (104.5s  tot=1137.1s)
+  rep12/30 seed=11
+    rep12/30 arm=D(eps=1e-03) L1: threshold=4.9281
+    rep12/30 arm=D(eps=1e-03) L2: threshold=3.0567
+    rep12/30 arm=D(eps=1e-03) L3: threshold=1.7775
+    rep12/30 arm=D(eps=1e-03) L4: threshold=0.8754
+    rep12/30 arm=D(eps=1e-03) L5: threshold=-0.0225
+    rep12/30 arm=D(eps=1e-03) → done L5  Pf=1.1200e-05
+  rep12/30 done: Pf=1.1200e-05  beta=4.2395  lv=5  (103.6s  tot=1240.7s)
+  rep13/30 seed=12
+    rep13/30 arm=D(eps=1e-03) L1: threshold=5.0454
+    rep13/30 arm=D(eps=1e-03) L2: threshold=3.0180
+    rep13/30 arm=D(eps=1e-03) L3: threshold=1.6809
+    rep13/30 arm=D(eps=1e-03) L4: threshold=0.5089
+    rep13/30 arm=D(eps=1e-03) L5: threshold=-0.5565
+    rep13/30 arm=D(eps=1e-03) → done L5  Pf=4.4200e-05
+  rep13/30 done: Pf=4.4200e-05  beta=3.9204  lv=5  (103.0s  tot=1343.7s)
+  rep14/30 seed=13
+    rep14/30 arm=D(eps=1e-03) L1: threshold=5.0955
+    rep14/30 arm=D(eps=1e-03) L2: threshold=3.1264
+    rep14/30 arm=D(eps=1e-03) L3: threshold=1.7229
+    rep14/30 arm=D(eps=1e-03) L4: threshold=0.5527
+    rep14/30 arm=D(eps=1e-03) L5: threshold=-0.5151
+    rep14/30 arm=D(eps=1e-03) → done L5  Pf=2.6500e-05
+  rep14/30 done: Pf=2.6500e-05  beta=4.0420  lv=5  (103.6s  tot=1447.3s)
+  rep15/30 seed=14
+    rep15/30 arm=D(eps=1e-03) L1: threshold=5.1508
+    rep15/30 arm=D(eps=1e-03) L2: threshold=3.2041
+    rep15/30 arm=D(eps=1e-03) L3: threshold=1.9962
+    rep15/30 arm=D(eps=1e-03) L4: threshold=0.7352
+    rep15/30 arm=D(eps=1e-03) L5: threshold=-0.0871
+    rep15/30 arm=D(eps=1e-03) → done L5  Pf=1.2900e-05
+  rep15/30 done: Pf=1.2900e-05  beta=4.2077  lv=5  (103.2s  tot=1550.5s)
+  rep16/30 seed=15
+    rep16/30 arm=D(eps=1e-03) L1: threshold=5.1113
+    rep16/30 arm=D(eps=1e-03) L2: threshold=2.9587
+    rep16/30 arm=D(eps=1e-03) L3: threshold=1.3612
+    rep16/30 arm=D(eps=1e-03) L4: threshold=0.0658
+    rep16/30 arm=D(eps=1e-03) L5: threshold=-0.9397
+    rep16/30 arm=D(eps=1e-03) → done L5  Pf=9.3700e-05
+  rep16/30 done: Pf=9.3700e-05  beta=3.7354  lv=5  (103.4s  tot=1653.9s)
+  rep17/30 seed=16
+    rep17/30 arm=D(eps=1e-03) L1: threshold=4.9373
+    rep17/30 arm=D(eps=1e-03) L2: threshold=2.7639
+    rep17/30 arm=D(eps=1e-03) L3: threshold=1.2969
+    rep17/30 arm=D(eps=1e-03) L4: threshold=0.2040
+    rep17/30 arm=D(eps=1e-03) L5: threshold=-0.5581
+    rep17/30 arm=D(eps=1e-03) → done L5  Pf=5.8600e-05
+  rep17/30 done: Pf=5.8600e-05  beta=3.8519  lv=5  (103.4s  tot=1757.3s)
+  rep18/30 seed=17
+    rep18/30 arm=D(eps=1e-03) L1: threshold=5.0823
+    rep18/30 arm=D(eps=1e-03) L2: threshold=2.9644
+    rep18/30 arm=D(eps=1e-03) L3: threshold=1.6535
+    rep18/30 arm=D(eps=1e-03) L4: threshold=0.3637
+    rep18/30 arm=D(eps=1e-03) L5: threshold=-0.4290
+    rep18/30 arm=D(eps=1e-03) → done L5  Pf=4.7600e-05
+  rep18/30 done: Pf=4.7600e-05  beta=3.9025  lv=5  (104.0s  tot=1861.3s)
+  rep19/30 seed=18
+    rep19/30 arm=D(eps=1e-03) L1: threshold=5.1093
+    rep19/30 arm=D(eps=1e-03) L2: threshold=3.2419
+    rep19/30 arm=D(eps=1e-03) L3: threshold=1.7483
+    rep19/30 arm=D(eps=1e-03) L4: threshold=0.5689
+    rep19/30 arm=D(eps=1e-03) L5: threshold=-0.3113
+    rep19/30 arm=D(eps=1e-03) → done L5  Pf=2.5700e-05
+  rep19/30 done: Pf=2.5700e-05  beta=4.0492  lv=5  (103.1s  tot=1964.5s)
+  rep20/30 seed=19
+    rep20/30 arm=D(eps=1e-03) L1: threshold=4.8572
+    rep20/30 arm=D(eps=1e-03) L2: threshold=2.7857
+    rep20/30 arm=D(eps=1e-03) L3: threshold=1.3787
+    rep20/30 arm=D(eps=1e-03) L4: threshold=0.1142
+    rep20/30 arm=D(eps=1e-03) L5: threshold=-0.6673
+    rep20/30 arm=D(eps=1e-03) → done L5  Pf=7.2100e-05
+  rep20/30 done: Pf=7.2100e-05  beta=3.8009  lv=5  (103.2s  tot=2067.7s)
+  rep21/30 seed=20
+    rep21/30 arm=D(eps=1e-03) L1: threshold=5.0792
+    rep21/30 arm=D(eps=1e-03) L2: threshold=3.1660
+    rep21/30 arm=D(eps=1e-03) L3: threshold=1.7704
+    rep21/30 arm=D(eps=1e-03) L4: threshold=0.6322
+    rep21/30 arm=D(eps=1e-03) L5: threshold=-0.6312
+    rep21/30 arm=D(eps=1e-03) → done L5  Pf=3.4000e-05
+  rep21/30 done: Pf=3.4000e-05  beta=3.9832  lv=5  (103.2s  tot=2170.9s)
+  rep22/30 seed=21
+    rep22/30 arm=D(eps=1e-03) L1: threshold=5.0091
+    rep22/30 arm=D(eps=1e-03) L2: threshold=3.0887
+    rep22/30 arm=D(eps=1e-03) L3: threshold=1.6856
+    rep22/30 arm=D(eps=1e-03) L4: threshold=0.3906
+    rep22/30 arm=D(eps=1e-03) L5: threshold=-0.6079
+    rep22/30 arm=D(eps=1e-03) → done L5  Pf=4.1000e-05
+  rep22/30 done: Pf=4.1000e-05  beta=3.9385  lv=5  (103.2s  tot=2274.1s)
+  rep23/30 seed=22
+    rep23/30 arm=D(eps=1e-03) L1: threshold=5.1988
+    rep23/30 arm=D(eps=1e-03) L2: threshold=3.1227
+    rep23/30 arm=D(eps=1e-03) L3: threshold=1.8192
+    rep23/30 arm=D(eps=1e-03) L4: threshold=0.6816
+    rep23/30 arm=D(eps=1e-03) L5: threshold=-0.2804
+    rep23/30 arm=D(eps=1e-03) → done L5  Pf=2.4000e-05
+  rep23/30 done: Pf=2.4000e-05  beta=4.0652  lv=5  (103.6s  tot=2377.7s)
+  rep24/30 seed=23
+    rep24/30 arm=D(eps=1e-03) L1: threshold=5.0283
+    rep24/30 arm=D(eps=1e-03) L2: threshold=2.8872
+    rep24/30 arm=D(eps=1e-03) L3: threshold=1.4332
+    rep24/30 arm=D(eps=1e-03) L4: threshold=0.2257
+    rep24/30 arm=D(eps=1e-03) L5: threshold=-0.5463
+    rep24/30 arm=D(eps=1e-03) → done L5  Pf=6.3400e-05
+  rep24/30 done: Pf=6.3400e-05  beta=3.8326  lv=5  (103.4s  tot=2481.1s)
+  rep25/30 seed=24
+    rep25/30 arm=D(eps=1e-03) L1: threshold=5.1299
+    rep25/30 arm=D(eps=1e-03) L2: threshold=3.1882
+    rep25/30 arm=D(eps=1e-03) L3: threshold=1.6624
+    rep25/30 arm=D(eps=1e-03) L4: threshold=0.5901
+    rep25/30 arm=D(eps=1e-03) L5: threshold=-0.4925
+    rep25/30 arm=D(eps=1e-03) → done L5  Pf=2.9700e-05
+  rep25/30 done: Pf=2.9700e-05  beta=4.0152  lv=5  (103.2s  tot=2584.2s)
+  rep26/30 seed=25
+    rep26/30 arm=D(eps=1e-03) L1: threshold=5.1071
+    rep26/30 arm=D(eps=1e-03) L2: threshold=3.1886
+    rep26/30 arm=D(eps=1e-03) L3: threshold=1.7744
+    rep26/30 arm=D(eps=1e-03) L4: threshold=0.4980
+    rep26/30 arm=D(eps=1e-03) L5: threshold=-0.4877
+    rep26/30 arm=D(eps=1e-03) → done L5  Pf=3.6900e-05
+  rep26/30 done: Pf=3.6900e-05  beta=3.9637  lv=5  (103.3s  tot=2687.5s)
+  rep27/30 seed=26
+    rep27/30 arm=D(eps=1e-03) L1: threshold=5.0453
+    rep27/30 arm=D(eps=1e-03) L2: threshold=3.1602
+    rep27/30 arm=D(eps=1e-03) L3: threshold=1.8768
+    rep27/30 arm=D(eps=1e-03) L4: threshold=0.6374
+    rep27/30 arm=D(eps=1e-03) L5: threshold=-0.4846
+    rep27/30 arm=D(eps=1e-03) → done L5  Pf=2.7600e-05
+  rep27/30 done: Pf=2.7600e-05  beta=4.0324  lv=5  (103.3s  tot=2790.8s)
+  rep28/30 seed=27
+    rep28/30 arm=D(eps=1e-03) L1: threshold=5.0818
+    rep28/30 arm=D(eps=1e-03) L2: threshold=3.1497
+    rep28/30 arm=D(eps=1e-03) L3: threshold=1.8176
+    rep28/30 arm=D(eps=1e-03) L4: threshold=0.6825
+    rep28/30 arm=D(eps=1e-03) L5: threshold=-0.2339
+    rep28/30 arm=D(eps=1e-03) → done L5  Pf=2.1100e-05
+  rep28/30 done: Pf=2.1100e-05  beta=4.0951  lv=5  (102.7s  tot=2893.5s)
+  rep29/30 seed=28
+    rep29/30 arm=D(eps=1e-03) L1: threshold=5.0809
+    rep29/30 arm=D(eps=1e-03) L2: threshold=3.1573
+    rep29/30 arm=D(eps=1e-03) L3: threshold=1.7077
+    rep29/30 arm=D(eps=1e-03) L4: threshold=0.5262
+    rep29/30 arm=D(eps=1e-03) L5: threshold=-0.4301
+    rep29/30 arm=D(eps=1e-03) → done L5  Pf=3.8800e-05
+  rep29/30 done: Pf=3.8800e-05  beta=3.9517  lv=5  (102.6s  tot=2996.1s)
+  rep30/30 seed=29
+    rep30/30 arm=D(eps=1e-03) L1: threshold=5.1272
+    rep30/30 arm=D(eps=1e-03) L2: threshold=3.0773
+    rep30/30 arm=D(eps=1e-03) L3: threshold=1.6472
+    rep30/30 arm=D(eps=1e-03) L4: threshold=0.5403
+    rep30/30 arm=D(eps=1e-03) L5: threshold=-0.5661
+    rep30/30 arm=D(eps=1e-03) → done L5  Pf=3.7000e-05
+  rep30/30 done: Pf=3.7000e-05  beta=3.9630  lv=5  (102.6s  tot=3098.7s)
+
+--- ARM D  eps=1e-02 ---
+
+[arm=D  eps=1e-02  b4.0_r0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=D(eps=1e-02) L1: threshold=4.9833
+    rep01/30 arm=D(eps=1e-02) L2: threshold=3.0618
+    rep01/30 arm=D(eps=1e-02) L3: threshold=1.5887
+    rep01/30 arm=D(eps=1e-02) L4: threshold=0.5974
+    rep01/30 arm=D(eps=1e-02) L5: threshold=-0.3638
+    rep01/30 arm=D(eps=1e-02) → done L5  Pf=2.8600e-05
+  rep01/30 done: Pf=2.8600e-05  beta=4.0241  lv=5  (67.3s  tot=67.3s)
+  rep02/30 seed=1
+    rep02/30 arm=D(eps=1e-02) L1: threshold=5.1516
+    rep02/30 arm=D(eps=1e-02) L2: threshold=3.2282
+    rep02/30 arm=D(eps=1e-02) L3: threshold=1.9689
+    rep02/30 arm=D(eps=1e-02) L4: threshold=0.7595
+    rep02/30 arm=D(eps=1e-02) L5: threshold=-0.2560
+    rep02/30 arm=D(eps=1e-02) → done L5  Pf=2.0600e-05
+  rep02/30 done: Pf=2.0600e-05  beta=4.1006  lv=5  (67.2s  tot=134.5s)
+  rep03/30 seed=2
+    rep03/30 arm=D(eps=1e-02) L1: threshold=5.0385
+    rep03/30 arm=D(eps=1e-02) L2: threshold=3.1351
+    rep03/30 arm=D(eps=1e-02) L3: threshold=1.7314
+    rep03/30 arm=D(eps=1e-02) L4: threshold=0.6787
+    rep03/30 arm=D(eps=1e-02) L5: threshold=-0.4962
+    rep03/30 arm=D(eps=1e-02) → done L5  Pf=2.7700e-05
+  rep03/30 done: Pf=2.7700e-05  beta=4.0316  lv=5  (67.7s  tot=202.2s)
+  rep04/30 seed=3
+    rep04/30 arm=D(eps=1e-02) L1: threshold=5.1690
+    rep04/30 arm=D(eps=1e-02) L2: threshold=3.1046
+    rep04/30 arm=D(eps=1e-02) L3: threshold=1.6386
+    rep04/30 arm=D(eps=1e-02) L4: threshold=0.4933
+    rep04/30 arm=D(eps=1e-02) L5: threshold=-0.6561
+    rep04/30 arm=D(eps=1e-02) → done L5  Pf=3.0600e-05
+  rep04/30 done: Pf=3.0600e-05  beta=4.0081  lv=5  (67.8s  tot=270.0s)
+  rep05/30 seed=4
+    rep05/30 arm=D(eps=1e-02) L1: threshold=4.9702
+    rep05/30 arm=D(eps=1e-02) L2: threshold=3.1786
+    rep05/30 arm=D(eps=1e-02) L3: threshold=1.8330
+    rep05/30 arm=D(eps=1e-02) L4: threshold=0.6058
+    rep05/30 arm=D(eps=1e-02) L5: threshold=-0.3329
+    rep05/30 arm=D(eps=1e-02) → done L5  Pf=2.3600e-05
+  rep05/30 done: Pf=2.3600e-05  beta=4.0691  lv=5  (67.3s  tot=337.3s)
+  rep06/30 seed=5
+    rep06/30 arm=D(eps=1e-02) L1: threshold=4.8807
+    rep06/30 arm=D(eps=1e-02) L2: threshold=3.1045
+    rep06/30 arm=D(eps=1e-02) L3: threshold=1.5480
+    rep06/30 arm=D(eps=1e-02) L4: threshold=0.4795
+    rep06/30 arm=D(eps=1e-02) L5: threshold=-0.5676
+    rep06/30 arm=D(eps=1e-02) → done L5  Pf=5.0900e-05
+  rep06/30 done: Pf=5.0900e-05  beta=3.8863  lv=5  (67.4s  tot=404.7s)
+  rep07/30 seed=6
+    rep07/30 arm=D(eps=1e-02) L1: threshold=5.1224
+    rep07/30 arm=D(eps=1e-02) L2: threshold=3.1138
+    rep07/30 arm=D(eps=1e-02) L3: threshold=1.7364
+    rep07/30 arm=D(eps=1e-02) L4: threshold=0.5805
+    rep07/30 arm=D(eps=1e-02) L5: threshold=-0.3479
+    rep07/30 arm=D(eps=1e-02) → done L5  Pf=2.4900e-05
+  rep07/30 done: Pf=2.4900e-05  beta=4.0566  lv=5  (67.4s  tot=472.1s)
+  rep08/30 seed=7
+    rep08/30 arm=D(eps=1e-02) L1: threshold=5.0416
+    rep08/30 arm=D(eps=1e-02) L2: threshold=3.0944
+    rep08/30 arm=D(eps=1e-02) L3: threshold=1.6973
+    rep08/30 arm=D(eps=1e-02) L4: threshold=0.5861
+    rep08/30 arm=D(eps=1e-02) L5: threshold=-0.6439
+    rep08/30 arm=D(eps=1e-02) → done L5  Pf=2.9400e-05
+  rep08/30 done: Pf=2.9400e-05  beta=4.0176  lv=5  (67.4s  tot=539.5s)
+  rep09/30 seed=8
+    rep09/30 arm=D(eps=1e-02) L1: threshold=4.9572
+    rep09/30 arm=D(eps=1e-02) L2: threshold=3.0089
+    rep09/30 arm=D(eps=1e-02) L3: threshold=1.6031
+    rep09/30 arm=D(eps=1e-02) L4: threshold=0.4678
+    rep09/30 arm=D(eps=1e-02) L5: threshold=-0.3404
+    rep09/30 arm=D(eps=1e-02) → done L5  Pf=2.6300e-05
+  rep09/30 done: Pf=2.6300e-05  beta=4.0438  lv=5  (67.4s  tot=606.9s)
+  rep10/30 seed=9
+    rep10/30 arm=D(eps=1e-02) L1: threshold=4.9347
+    rep10/30 arm=D(eps=1e-02) L2: threshold=3.0536
+    rep10/30 arm=D(eps=1e-02) L3: threshold=1.8285
+    rep10/30 arm=D(eps=1e-02) L4: threshold=0.5984
+    rep10/30 arm=D(eps=1e-02) L5: threshold=-0.3226
+    rep10/30 arm=D(eps=1e-02) → done L5  Pf=2.1500e-05
+  rep10/30 done: Pf=2.1500e-05  beta=4.0907  lv=5  (67.4s  tot=674.3s)
+  rep11/30 seed=10
+    rep11/30 arm=D(eps=1e-02) L1: threshold=5.1276
+    rep11/30 arm=D(eps=1e-02) L2: threshold=3.0876
+    rep11/30 arm=D(eps=1e-02) L3: threshold=1.7398
+    rep11/30 arm=D(eps=1e-02) L4: threshold=0.4849
+    rep11/30 arm=D(eps=1e-02) L5: threshold=-0.4799
+    rep11/30 arm=D(eps=1e-02) → done L5  Pf=3.1100e-05
+  rep11/30 done: Pf=3.1100e-05  beta=4.0043  lv=5  (67.8s  tot=742.1s)
+  rep12/30 seed=11
+    rep12/30 arm=D(eps=1e-02) L1: threshold=4.9237
+    rep12/30 arm=D(eps=1e-02) L2: threshold=3.0018
+    rep12/30 arm=D(eps=1e-02) L3: threshold=1.7475
+    rep12/30 arm=D(eps=1e-02) L4: threshold=0.7723
+    rep12/30 arm=D(eps=1e-02) L5: threshold=-0.1332
+    rep12/30 arm=D(eps=1e-02) → done L5  Pf=1.2700e-05
+  rep12/30 done: Pf=1.2700e-05  beta=4.2112  lv=5  (68.4s  tot=810.5s)
+  rep13/30 seed=12
+    rep13/30 arm=D(eps=1e-02) L1: threshold=5.0406
+    rep13/30 arm=D(eps=1e-02) L2: threshold=3.0138
+    rep13/30 arm=D(eps=1e-02) L3: threshold=1.6332
+    rep13/30 arm=D(eps=1e-02) L4: threshold=0.4962
+    rep13/30 arm=D(eps=1e-02) L5: threshold=-0.5740
+    rep13/30 arm=D(eps=1e-02) → done L5  Pf=4.4900e-05
+  rep13/30 done: Pf=4.4900e-05  beta=3.9166  lv=5  (68.3s  tot=878.7s)
+  rep14/30 seed=13
+    rep14/30 arm=D(eps=1e-02) L1: threshold=5.0969
+    rep14/30 arm=D(eps=1e-02) L2: threshold=3.1013
+    rep14/30 arm=D(eps=1e-02) L3: threshold=1.6890
+    rep14/30 arm=D(eps=1e-02) L4: threshold=0.5488
+    rep14/30 arm=D(eps=1e-02) L5: threshold=-0.5425
+    rep14/30 arm=D(eps=1e-02) → done L5  Pf=2.5900e-05
+  rep14/30 done: Pf=2.5900e-05  beta=4.0474  lv=5  (67.8s  tot=946.5s)
+  rep15/30 seed=14
+    rep15/30 arm=D(eps=1e-02) L1: threshold=5.1449
+    rep15/30 arm=D(eps=1e-02) L2: threshold=3.1947
+    rep15/30 arm=D(eps=1e-02) L3: threshold=1.9639
+    rep15/30 arm=D(eps=1e-02) L4: threshold=0.6954
+    rep15/30 arm=D(eps=1e-02) L5: threshold=-0.0972
+    rep15/30 arm=D(eps=1e-02) → done L5  Pf=1.4000e-05
+  rep15/30 done: Pf=1.4000e-05  beta=4.1892  lv=5  (67.5s  tot=1014.0s)
+  rep16/30 seed=15
+    rep16/30 arm=D(eps=1e-02) L1: threshold=5.1154
+    rep16/30 arm=D(eps=1e-02) L2: threshold=2.9614
+    rep16/30 arm=D(eps=1e-02) L3: threshold=1.3278
+    rep16/30 arm=D(eps=1e-02) L4: threshold=0.0096
+    rep16/30 arm=D(eps=1e-02) L5: threshold=-1.0102
+    rep16/30 arm=D(eps=1e-02) → done L5  Pf=1.0000e-04
+  rep16/30 done: Pf=1.0000e-04  beta=3.7190  lv=5  (68.2s  tot=1082.2s)
+  rep17/30 seed=16
+    rep17/30 arm=D(eps=1e-02) L1: threshold=4.9421
+    rep17/30 arm=D(eps=1e-02) L2: threshold=2.8022
+    rep17/30 arm=D(eps=1e-02) L3: threshold=1.3935
+    rep17/30 arm=D(eps=1e-02) L4: threshold=0.2352
+    rep17/30 arm=D(eps=1e-02) L5: threshold=-0.5450
+    rep17/30 arm=D(eps=1e-02) → done L5  Pf=5.1700e-05
+  rep17/30 done: Pf=5.1700e-05  beta=3.8825  lv=5  (67.4s  tot=1149.6s)
+  rep18/30 seed=17
+    rep18/30 arm=D(eps=1e-02) L1: threshold=5.0787
+    rep18/30 arm=D(eps=1e-02) L2: threshold=2.9993
+    rep18/30 arm=D(eps=1e-02) L3: threshold=1.7022
+    rep18/30 arm=D(eps=1e-02) L4: threshold=0.4412
+    rep18/30 arm=D(eps=1e-02) L5: threshold=-0.4119
+    rep18/30 arm=D(eps=1e-02) → done L5  Pf=4.4800e-05
+  rep18/30 done: Pf=4.4800e-05  beta=3.9172  lv=5  (67.4s  tot=1216.9s)
+  rep19/30 seed=18
+    rep19/30 arm=D(eps=1e-02) L1: threshold=5.1003
+    rep19/30 arm=D(eps=1e-02) L2: threshold=3.2094
+    rep19/30 arm=D(eps=1e-02) L3: threshold=1.7499
+    rep19/30 arm=D(eps=1e-02) L4: threshold=0.5293
+    rep19/30 arm=D(eps=1e-02) L5: threshold=-0.3671
+    rep19/30 arm=D(eps=1e-02) → done L5  Pf=2.7900e-05
+  rep19/30 done: Pf=2.7900e-05  beta=4.0299  lv=5  (67.4s  tot=1284.3s)
+  rep20/30 seed=19
+    rep20/30 arm=D(eps=1e-02) L1: threshold=4.8249
+    rep20/30 arm=D(eps=1e-02) L2: threshold=2.7752
+    rep20/30 arm=D(eps=1e-02) L3: threshold=1.3543
+    rep20/30 arm=D(eps=1e-02) L4: threshold=0.0851
+    rep20/30 arm=D(eps=1e-02) L5: threshold=-0.6648
+    rep20/30 arm=D(eps=1e-02) → done L5  Pf=7.1700e-05
+  rep20/30 done: Pf=7.1700e-05  beta=3.8022  lv=5  (68.0s  tot=1352.2s)
+  rep21/30 seed=20
+    rep21/30 arm=D(eps=1e-02) L1: threshold=5.0759
+    rep21/30 arm=D(eps=1e-02) L2: threshold=3.1463
+    rep21/30 arm=D(eps=1e-02) L3: threshold=1.7627
+    rep21/30 arm=D(eps=1e-02) L4: threshold=0.5846
+    rep21/30 arm=D(eps=1e-02) L5: threshold=-0.6686
+    rep21/30 arm=D(eps=1e-02) → done L5  Pf=3.9400e-05
+  rep21/30 done: Pf=3.9400e-05  beta=3.9480  lv=5  (68.2s  tot=1420.5s)
+  rep22/30 seed=21
+    rep22/30 arm=D(eps=1e-02) L1: threshold=5.0023
+    rep22/30 arm=D(eps=1e-02) L2: threshold=3.0836
+    rep22/30 arm=D(eps=1e-02) L3: threshold=1.6762
+    rep22/30 arm=D(eps=1e-02) L4: threshold=0.3756
+    rep22/30 arm=D(eps=1e-02) L5: threshold=-0.6197
+    rep22/30 arm=D(eps=1e-02) → done L5  Pf=4.1200e-05
+  rep22/30 done: Pf=4.1200e-05  beta=3.9373  lv=5  (67.9s  tot=1488.4s)
+  rep23/30 seed=22
+    rep23/30 arm=D(eps=1e-02) L1: threshold=5.2128
+    rep23/30 arm=D(eps=1e-02) L2: threshold=3.1127
+    rep23/30 arm=D(eps=1e-02) L3: threshold=1.8307
+    rep23/30 arm=D(eps=1e-02) L4: threshold=0.6800
+    rep23/30 arm=D(eps=1e-02) L5: threshold=-0.2932
+    rep23/30 arm=D(eps=1e-02) → done L5  Pf=2.4100e-05
+  rep23/30 done: Pf=2.4100e-05  beta=4.0642  lv=5  (67.3s  tot=1555.7s)
+  rep24/30 seed=23
+    rep24/30 arm=D(eps=1e-02) L1: threshold=5.0306
+    rep24/30 arm=D(eps=1e-02) L2: threshold=2.9062
+    rep24/30 arm=D(eps=1e-02) L3: threshold=1.4537
+    rep24/30 arm=D(eps=1e-02) L4: threshold=0.2203
+    rep24/30 arm=D(eps=1e-02) L5: threshold=-0.5428
+    rep24/30 arm=D(eps=1e-02) → done L5  Pf=5.9600e-05
+  rep24/30 done: Pf=5.9600e-05  beta=3.8478  lv=5  (67.9s  tot=1623.7s)
+  rep25/30 seed=24
+    rep25/30 arm=D(eps=1e-02) L1: threshold=5.1511
+    rep25/30 arm=D(eps=1e-02) L2: threshold=3.1781
+    rep25/30 arm=D(eps=1e-02) L3: threshold=1.6604
+    rep25/30 arm=D(eps=1e-02) L4: threshold=0.5824
+    rep25/30 arm=D(eps=1e-02) L5: threshold=-0.5035
+    rep25/30 arm=D(eps=1e-02) → done L5  Pf=3.0000e-05
+  rep25/30 done: Pf=3.0000e-05  beta=4.0128  lv=5  (68.0s  tot=1691.6s)
+  rep26/30 seed=25
+    rep26/30 arm=D(eps=1e-02) L1: threshold=5.0978
+    rep26/30 arm=D(eps=1e-02) L2: threshold=3.1929
+    rep26/30 arm=D(eps=1e-02) L3: threshold=1.6462
+    rep26/30 arm=D(eps=1e-02) L4: threshold=0.3603
+    rep26/30 arm=D(eps=1e-02) L5: threshold=-0.5689
+    rep26/30 arm=D(eps=1e-02) → done L5  Pf=4.3300e-05
+  rep26/30 done: Pf=4.3300e-05  beta=3.9254  lv=5  (67.5s  tot=1759.2s)
+  rep27/30 seed=26
+    rep27/30 arm=D(eps=1e-02) L1: threshold=5.0419
+    rep27/30 arm=D(eps=1e-02) L2: threshold=3.1513
+    rep27/30 arm=D(eps=1e-02) L3: threshold=1.8727
+    rep27/30 arm=D(eps=1e-02) L4: threshold=0.6606
+    rep27/30 arm=D(eps=1e-02) L5: threshold=-0.4733
+    rep27/30 arm=D(eps=1e-02) → done L5  Pf=2.7500e-05
+  rep27/30 done: Pf=2.7500e-05  beta=4.0333  lv=5  (67.4s  tot=1826.5s)
+  rep28/30 seed=27
+    rep28/30 arm=D(eps=1e-02) L1: threshold=5.0788
+    rep28/30 arm=D(eps=1e-02) L2: threshold=3.1308
+    rep28/30 arm=D(eps=1e-02) L3: threshold=1.7941
+    rep28/30 arm=D(eps=1e-02) L4: threshold=0.6493
+    rep28/30 arm=D(eps=1e-02) L5: threshold=-0.2687
+    rep28/30 arm=D(eps=1e-02) → done L5  Pf=2.1400e-05
+  rep28/30 done: Pf=2.1400e-05  beta=4.0918  lv=5  (67.8s  tot=1894.3s)
+  rep29/30 seed=28
+    rep29/30 arm=D(eps=1e-02) L1: threshold=5.0906
+    rep29/30 arm=D(eps=1e-02) L2: threshold=3.1363
+    rep29/30 arm=D(eps=1e-02) L3: threshold=1.6943
+    rep29/30 arm=D(eps=1e-02) L4: threshold=0.5193
+    rep29/30 arm=D(eps=1e-02) L5: threshold=-0.4275
+    rep29/30 arm=D(eps=1e-02) → done L5  Pf=4.0500e-05
+  rep29/30 done: Pf=4.0500e-05  beta=3.9414  lv=5  (67.8s  tot=1962.1s)
+  rep30/30 seed=29
+    rep30/30 arm=D(eps=1e-02) L1: threshold=5.1252
+    rep30/30 arm=D(eps=1e-02) L2: threshold=3.0977
+    rep30/30 arm=D(eps=1e-02) L3: threshold=1.6951
+    rep30/30 arm=D(eps=1e-02) L4: threshold=0.6999
+    rep30/30 arm=D(eps=1e-02) L5: threshold=-0.4271
+    rep30/30 arm=D(eps=1e-02) → done L5  Pf=3.1200e-05
+  rep30/30 done: Pf=3.1200e-05  beta=4.0035  lv=5  (67.3s  tot=2029.5s)
+
+--- ARM D  eps=1e-01 ---
+
+[arm=D  eps=1e-01  b4.0_r0.75  30 reps]
+  rep01/30 seed=0
+    rep01/30 arm=D(eps=1e-01) L1: threshold=4.9553
+    rep01/30 arm=D(eps=1e-01) L2: threshold=3.0267
+    rep01/30 arm=D(eps=1e-01) L3: threshold=1.5402
+    rep01/30 arm=D(eps=1e-01) L4: threshold=0.5844
+    rep01/30 arm=D(eps=1e-01) L5: threshold=-0.3133
+    rep01/30 arm=D(eps=1e-01) → done L5  Pf=2.6900e-05
+  rep01/30 done: Pf=2.6900e-05  beta=4.0385  lv=5  (51.3s  tot=51.3s)
+  rep02/30 seed=1
+    rep02/30 arm=D(eps=1e-01) L1: threshold=5.1228
+    rep02/30 arm=D(eps=1e-01) L2: threshold=3.1939
+    rep02/30 arm=D(eps=1e-01) L3: threshold=1.9414
+    rep02/30 arm=D(eps=1e-01) L4: threshold=0.7309
+    rep02/30 arm=D(eps=1e-01) L5: threshold=-0.3060
+    rep02/30 arm=D(eps=1e-01) → done L5  Pf=2.4900e-05
+  rep02/30 done: Pf=2.4900e-05  beta=4.0566  lv=5  (51.3s  tot=102.7s)
+  rep03/30 seed=2
+    rep03/30 arm=D(eps=1e-01) L1: threshold=5.0443
+    rep03/30 arm=D(eps=1e-01) L2: threshold=3.1317
+    rep03/30 arm=D(eps=1e-01) L3: threshold=1.6375
+    rep03/30 arm=D(eps=1e-01) L4: threshold=0.6354
+    rep03/30 arm=D(eps=1e-01) L5: threshold=-0.5364
+    rep03/30 arm=D(eps=1e-01) → done L5  Pf=2.9300e-05
+  rep03/30 done: Pf=2.9300e-05  beta=4.0184  lv=5  (51.8s  tot=154.4s)
+  rep04/30 seed=3
+    rep04/30 arm=D(eps=1e-01) L1: threshold=5.1602
+    rep04/30 arm=D(eps=1e-01) L2: threshold=3.1508
+    rep04/30 arm=D(eps=1e-01) L3: threshold=1.6278
+    rep04/30 arm=D(eps=1e-01) L4: threshold=0.4885
+    rep04/30 arm=D(eps=1e-01) L5: threshold=-0.6606
+    rep04/30 arm=D(eps=1e-01) → done L5  Pf=3.2400e-05
+  rep04/30 done: Pf=3.2400e-05  beta=3.9946  lv=5  (51.9s  tot=206.3s)
+  rep05/30 seed=4
+    rep05/30 arm=D(eps=1e-01) L1: threshold=4.9739
+    rep05/30 arm=D(eps=1e-01) L2: threshold=3.1102
+    rep05/30 arm=D(eps=1e-01) L3: threshold=1.8168
+    rep05/30 arm=D(eps=1e-01) L4: threshold=0.5953
+    rep05/30 arm=D(eps=1e-01) L5: threshold=-0.3773
+    rep05/30 arm=D(eps=1e-01) → done L5  Pf=2.4400e-05
+  rep05/30 done: Pf=2.4400e-05  beta=4.0613  lv=5  (51.6s  tot=257.9s)
+  rep06/30 seed=5
+    rep06/30 arm=D(eps=1e-01) L1: threshold=4.9103
+    rep06/30 arm=D(eps=1e-01) L2: threshold=3.2501
+    rep06/30 arm=D(eps=1e-01) L3: threshold=1.6629
+    rep06/30 arm=D(eps=1e-01) L4: threshold=0.5273
+    rep06/30 arm=D(eps=1e-01) L5: threshold=-0.6123
+    rep06/30 arm=D(eps=1e-01) → done L5  Pf=4.9400e-05
+  rep06/30 done: Pf=4.9400e-05  beta=3.8935  lv=5  (52.1s  tot=310.0s)
+  rep07/30 seed=6
+    rep07/30 arm=D(eps=1e-01) L1: threshold=5.1965
+    rep07/30 arm=D(eps=1e-01) L2: threshold=3.0940
+    rep07/30 arm=D(eps=1e-01) L3: threshold=1.7135
+    rep07/30 arm=D(eps=1e-01) L4: threshold=0.6239
+    rep07/30 arm=D(eps=1e-01) L5: threshold=-0.2998
+    rep07/30 arm=D(eps=1e-01) → done L5  Pf=2.4000e-05
+  rep07/30 done: Pf=2.4000e-05  beta=4.0652  lv=5  (51.9s  tot=361.9s)
+  rep08/30 seed=7
+    rep08/30 arm=D(eps=1e-01) L1: threshold=5.0202
+    rep08/30 arm=D(eps=1e-01) L2: threshold=3.0775
+    rep08/30 arm=D(eps=1e-01) L3: threshold=1.6560
+    rep08/30 arm=D(eps=1e-01) L4: threshold=0.6555
+    rep08/30 arm=D(eps=1e-01) L5: threshold=-0.4400
+    rep08/30 arm=D(eps=1e-01) → done L5  Pf=2.3700e-05
+  rep08/30 done: Pf=2.3700e-05  beta=4.0681  lv=5  (51.8s  tot=413.7s)
+  rep09/30 seed=8
+    rep09/30 arm=D(eps=1e-01) L1: threshold=4.9149
+    rep09/30 arm=D(eps=1e-01) L2: threshold=2.9828
+    rep09/30 arm=D(eps=1e-01) L3: threshold=1.6323
+    rep09/30 arm=D(eps=1e-01) L4: threshold=0.4737
+    rep09/30 arm=D(eps=1e-01) L5: threshold=-0.3062
+    rep09/30 arm=D(eps=1e-01) → done L5  Pf=2.6100e-05
+  rep09/30 done: Pf=2.6100e-05  beta=4.0456  lv=5  (52.0s  tot=465.6s)
+  rep10/30 seed=9
+    rep10/30 arm=D(eps=1e-01) L1: threshold=4.8808
+    rep10/30 arm=D(eps=1e-01) L2: threshold=3.0531
+    rep10/30 arm=D(eps=1e-01) L3: threshold=1.8191
+    rep10/30 arm=D(eps=1e-01) L4: threshold=0.5785
+    rep10/30 arm=D(eps=1e-01) L5: threshold=-0.3572
+    rep10/30 arm=D(eps=1e-01) → done L5  Pf=2.2600e-05
+  rep10/30 done: Pf=2.2600e-05  beta=4.0792  lv=5  (51.8s  tot=517.5s)
+  rep11/30 seed=10
+    rep11/30 arm=D(eps=1e-01) L1: threshold=5.0593
+    rep11/30 arm=D(eps=1e-01) L2: threshold=3.0197
+    rep11/30 arm=D(eps=1e-01) L3: threshold=1.6689
+    rep11/30 arm=D(eps=1e-01) L4: threshold=0.4143
+    rep11/30 arm=D(eps=1e-01) L5: threshold=-0.4821
+    rep11/30 arm=D(eps=1e-01) → done L5  Pf=3.3800e-05
+  rep11/30 done: Pf=3.3800e-05  beta=3.9846  lv=5  (51.9s  tot=569.4s)
+  rep12/30 seed=11
+    rep12/30 arm=D(eps=1e-01) L1: threshold=4.9039
+    rep12/30 arm=D(eps=1e-01) L2: threshold=3.0417
+    rep12/30 arm=D(eps=1e-01) L3: threshold=1.7590
+    rep12/30 arm=D(eps=1e-01) L4: threshold=0.8074
+    rep12/30 arm=D(eps=1e-01) L5: threshold=-0.0295
+    rep12/30 arm=D(eps=1e-01) → done L5  Pf=1.1400e-05
+  rep12/30 done: Pf=1.1400e-05  beta=4.2355  lv=5  (52.3s  tot=621.6s)
+  rep13/30 seed=12
+    rep13/30 arm=D(eps=1e-01) L1: threshold=5.0737
+    rep13/30 arm=D(eps=1e-01) L2: threshold=3.1099
+    rep13/30 arm=D(eps=1e-01) L3: threshold=1.7231
+    rep13/30 arm=D(eps=1e-01) L4: threshold=0.5341
+    rep13/30 arm=D(eps=1e-01) L5: threshold=-0.5168
+    rep13/30 arm=D(eps=1e-01) → done L5  Pf=4.2200e-05
+  rep13/30 done: Pf=4.2200e-05  beta=3.9315  lv=5  (52.0s  tot=673.6s)
+  rep14/30 seed=13
+    rep14/30 arm=D(eps=1e-01) L1: threshold=5.0695
+    rep14/30 arm=D(eps=1e-01) L2: threshold=3.1558
+    rep14/30 arm=D(eps=1e-01) L3: threshold=1.6853
+    rep14/30 arm=D(eps=1e-01) L4: threshold=0.5501
+    rep14/30 arm=D(eps=1e-01) L5: threshold=-0.5460
+    rep14/30 arm=D(eps=1e-01) → done L5  Pf=2.4800e-05
+  rep14/30 done: Pf=2.4800e-05  beta=4.0575  lv=5  (52.2s  tot=725.8s)
+  rep15/30 seed=14
+    rep15/30 arm=D(eps=1e-01) L1: threshold=5.2160
+    rep15/30 arm=D(eps=1e-01) L2: threshold=3.2071
+    rep15/30 arm=D(eps=1e-01) L3: threshold=1.9325
+    rep15/30 arm=D(eps=1e-01) L4: threshold=0.6925
+    rep15/30 arm=D(eps=1e-01) L5: threshold=-0.0766
+    rep15/30 arm=D(eps=1e-01) → done L5  Pf=1.2400e-05
+  rep15/30 done: Pf=1.2400e-05  beta=4.2166  lv=5  (51.8s  tot=777.6s)
+  rep16/30 seed=15
+    rep16/30 arm=D(eps=1e-01) L1: threshold=5.0757
+    rep16/30 arm=D(eps=1e-01) L2: threshold=2.9662
+    rep16/30 arm=D(eps=1e-01) L3: threshold=1.3457
+    rep16/30 arm=D(eps=1e-01) L4: threshold=0.1620
+    rep16/30 arm=D(eps=1e-01) L5: threshold=-0.9083
+    rep16/30 arm=D(eps=1e-01) → done L5  Pf=8.2100e-05
+  rep16/30 done: Pf=8.2100e-05  beta=3.7685  lv=5  (52.0s  tot=829.6s)
+  rep17/30 seed=16
+    rep17/30 arm=D(eps=1e-01) L1: threshold=4.9083
+    rep17/30 arm=D(eps=1e-01) L2: threshold=2.7726
+    rep17/30 arm=D(eps=1e-01) L3: threshold=1.3614
+    rep17/30 arm=D(eps=1e-01) L4: threshold=0.2245
+    rep17/30 arm=D(eps=1e-01) L5: threshold=-0.6056
+    rep17/30 arm=D(eps=1e-01) → done L5  Pf=5.3700e-05
+  rep17/30 done: Pf=5.3700e-05  beta=3.8732  lv=5  (51.8s  tot=881.4s)
+  rep18/30 seed=17
+    rep18/30 arm=D(eps=1e-01) L1: threshold=5.1318
+    rep18/30 arm=D(eps=1e-01) L2: threshold=3.0381
+    rep18/30 arm=D(eps=1e-01) L3: threshold=1.6359
+    rep18/30 arm=D(eps=1e-01) L4: threshold=0.3574
+    rep18/30 arm=D(eps=1e-01) L5: threshold=-0.5167
+    rep18/30 arm=D(eps=1e-01) → done L5  Pf=5.2000e-05
+  rep18/30 done: Pf=5.2000e-05  beta=3.8811  lv=5  (51.9s  tot=933.3s)
+  rep19/30 seed=18
+    rep19/30 arm=D(eps=1e-01) L1: threshold=5.1176
+    rep19/30 arm=D(eps=1e-01) L2: threshold=3.1877
+    rep19/30 arm=D(eps=1e-01) L3: threshold=1.7260
+    rep19/30 arm=D(eps=1e-01) L4: threshold=0.5290
+    rep19/30 arm=D(eps=1e-01) L5: threshold=-0.3298
+    rep19/30 arm=D(eps=1e-01) → done L5  Pf=2.0500e-05
+  rep19/30 done: Pf=2.0500e-05  beta=4.1018  lv=5  (51.8s  tot=985.1s)
+  rep20/30 seed=19
+    rep20/30 arm=D(eps=1e-01) L1: threshold=4.8805
+    rep20/30 arm=D(eps=1e-01) L2: threshold=2.7170
+    rep20/30 arm=D(eps=1e-01) L3: threshold=1.2983
+    rep20/30 arm=D(eps=1e-01) L4: threshold=0.0426
+    rep20/30 arm=D(eps=1e-01) L5: threshold=-0.7620
+    rep20/30 arm=D(eps=1e-01) → done L5  Pf=9.0200e-05
+  rep20/30 done: Pf=9.0200e-05  beta=3.7450  lv=5  (51.9s  tot=1036.9s)
+  rep21/30 seed=20
+    rep21/30 arm=D(eps=1e-01) L1: threshold=5.0680
+    rep21/30 arm=D(eps=1e-01) L2: threshold=3.1303
+    rep21/30 arm=D(eps=1e-01) L3: threshold=1.6759
+    rep21/30 arm=D(eps=1e-01) L4: threshold=0.4526
+    rep21/30 arm=D(eps=1e-01) L5: threshold=-0.7283
+    rep21/30 arm=D(eps=1e-01) → done L5  Pf=4.6100e-05
+  rep21/30 done: Pf=4.6100e-05  beta=3.9103  lv=5  (51.8s  tot=1088.7s)
+  rep22/30 seed=21
+    rep22/30 arm=D(eps=1e-01) L1: threshold=5.0038
+    rep22/30 arm=D(eps=1e-01) L2: threshold=3.1045
+    rep22/30 arm=D(eps=1e-01) L3: threshold=1.6439
+    rep22/30 arm=D(eps=1e-01) L4: threshold=0.3407
+    rep22/30 arm=D(eps=1e-01) L5: threshold=-0.6573
+    rep22/30 arm=D(eps=1e-01) → done L5  Pf=4.3800e-05
+  rep22/30 done: Pf=4.3800e-05  beta=3.9226  lv=5  (51.9s  tot=1140.7s)
+  rep23/30 seed=22
+    rep23/30 arm=D(eps=1e-01) L1: threshold=5.1837
+    rep23/30 arm=D(eps=1e-01) L2: threshold=3.1373
+    rep23/30 arm=D(eps=1e-01) L3: threshold=1.8102
+    rep23/30 arm=D(eps=1e-01) L4: threshold=0.5895
+    rep23/30 arm=D(eps=1e-01) L5: threshold=-0.3410
+    rep23/30 arm=D(eps=1e-01) → done L5  Pf=2.8700e-05
+  rep23/30 done: Pf=2.8700e-05  beta=4.0233  lv=5  (51.9s  tot=1192.5s)
+  rep24/30 seed=23
+    rep24/30 arm=D(eps=1e-01) L1: threshold=5.0485
+    rep24/30 arm=D(eps=1e-01) L2: threshold=2.9398
+    rep24/30 arm=D(eps=1e-01) L3: threshold=1.4699
+    rep24/30 arm=D(eps=1e-01) L4: threshold=0.2656
+    rep24/30 arm=D(eps=1e-01) L5: threshold=-0.5600
+    rep24/30 arm=D(eps=1e-01) → done L5  Pf=5.2000e-05
+  rep24/30 done: Pf=5.2000e-05  beta=3.8811  lv=5  (51.9s  tot=1244.5s)
+  rep25/30 seed=24
+    rep25/30 arm=D(eps=1e-01) L1: threshold=5.1828
+    rep25/30 arm=D(eps=1e-01) L2: threshold=3.2077
+    rep25/30 arm=D(eps=1e-01) L3: threshold=1.6733
+    rep25/30 arm=D(eps=1e-01) L4: threshold=0.6416
+    rep25/30 arm=D(eps=1e-01) L5: threshold=-0.5292
+    rep25/30 arm=D(eps=1e-01) → done L5  Pf=2.8300e-05
+  rep25/30 done: Pf=2.8300e-05  beta=4.0266  lv=5  (51.8s  tot=1296.3s)
+  rep26/30 seed=25
+    rep26/30 arm=D(eps=1e-01) L1: threshold=5.1288
+    rep26/30 arm=D(eps=1e-01) L2: threshold=3.2022
+    rep26/30 arm=D(eps=1e-01) L3: threshold=1.7182
+    rep26/30 arm=D(eps=1e-01) L4: threshold=0.5159
+    rep26/30 arm=D(eps=1e-01) L5: threshold=-0.4468
+    rep26/30 arm=D(eps=1e-01) → done L5  Pf=3.3100e-05
+  rep26/30 done: Pf=3.3100e-05  beta=3.9895  lv=5  (51.8s  tot=1348.1s)
+  rep27/30 seed=26
+    rep27/30 arm=D(eps=1e-01) L1: threshold=5.0021
+    rep27/30 arm=D(eps=1e-01) L2: threshold=3.1625
+    rep27/30 arm=D(eps=1e-01) L3: threshold=1.8685
+    rep27/30 arm=D(eps=1e-01) L4: threshold=0.6979
+    rep27/30 arm=D(eps=1e-01) L5: threshold=-0.5002
+    rep27/30 arm=D(eps=1e-01) → done L5  Pf=3.0400e-05
+  rep27/30 done: Pf=3.0400e-05  beta=4.0097  lv=5  (51.8s  tot=1399.9s)
+  rep28/30 seed=27
+    rep28/30 arm=D(eps=1e-01) L1: threshold=5.0854
+    rep28/30 arm=D(eps=1e-01) L2: threshold=3.0674
+    rep28/30 arm=D(eps=1e-01) L3: threshold=1.7830
+    rep28/30 arm=D(eps=1e-01) L4: threshold=0.7034
+    rep28/30 arm=D(eps=1e-01) L5: threshold=-0.3166
+    rep28/30 arm=D(eps=1e-01) → done L5  Pf=2.1100e-05
+  rep28/30 done: Pf=2.1100e-05  beta=4.0951  lv=5  (51.9s  tot=1451.8s)
+  rep29/30 seed=28
+    rep29/30 arm=D(eps=1e-01) L1: threshold=5.0498
+    rep29/30 arm=D(eps=1e-01) L2: threshold=3.1528
+    rep29/30 arm=D(eps=1e-01) L3: threshold=1.6776
+    rep29/30 arm=D(eps=1e-01) L4: threshold=0.4507
+    rep29/30 arm=D(eps=1e-01) L5: threshold=-0.4905
+    rep29/30 arm=D(eps=1e-01) → done L5  Pf=3.6500e-05
+  rep29/30 done: Pf=3.6500e-05  beta=3.9663  lv=5  (51.8s  tot=1503.6s)
+  rep30/30 seed=29
+    rep30/30 arm=D(eps=1e-01) L1: threshold=5.1028
+    rep30/30 arm=D(eps=1e-01) L2: threshold=3.0548
+    rep30/30 arm=D(eps=1e-01) L3: threshold=1.7116
+    rep30/30 arm=D(eps=1e-01) L4: threshold=0.6482
+    rep30/30 arm=D(eps=1e-01) L5: threshold=-0.4276
+    rep30/30 arm=D(eps=1e-01) → done L5  Pf=2.3700e-05
+  rep30/30 done: Pf=2.3700e-05  beta=4.0681  lv=5  (51.8s  tot=1555.4s)
+
+--- Summary: beta=4.0, rho=0.75 ---
+  ARM A:  beta_hat=3.9968  bias=-0.0032  COV=0.028  grad_opt=2.24e+06
+  ARM D eps=1e-03: beta_hat=3.9967  bias=-0.0033  COV=0.027  grad_opt=9.33e+06  grad_unopt=1.62e+07  E_opt=0.256  E_unopt=0.147
+  ARM D eps=1e-02: beta_hat=3.9951  bias=-0.0049  COV=0.026  grad_opt=5.12e+06  grad_unopt=8.80e+06  E_opt=0.500  E_unopt=0.291
+  ARM D eps=1e-01: beta_hat=4.0003  bias=+0.0003  COV=0.027  grad_opt=3.22e+06  grad_unopt=5.48e+06  E_opt=0.733  E_unopt=0.431
+
+[Saving plots for beta=4.0, rho=0.75]
+  Saved eps_sweep_beta4.0_rho0.75.png
+  Saved level_diag_beta4.0_rho0.75.png
+  Saved beta_boxplot_beta4.0_rho0.75.png
+
+  Saved yoshida_dist_raw.npz
+  Wrote results\yoshida_distance_adaptive\record_yoshida_distance_adaptive.md
+
+Total wall time: 13037.2s
+Done.  All outputs in results\yoshida_distance_adaptive
