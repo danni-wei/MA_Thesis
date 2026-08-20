@@ -59,7 +59,17 @@ results/        Experiment outputs (git-ignored; regenerate by running the
 | `HNNMC/hnnmc/*` | HNN model, training and utility code (third-party, see below) |
 | `HNNMC/hnn_hmc_*.py` | HNN-HMC sampling on banana / donut / linear-LSF / series-system targets |
 | `HNNMC/SuS_HNN_*.py` | Subset Simulation driven by HNN-HMC, per target |
-| `HNNMC/SuS_series_system.py/` | ERA-group Subset Simulation toolbox (Nataf transform, adaptive conditional sampling) |
+
+**Not included:** `HNNMC/SuS_series_system.py/` (a directory, despite the
+`.py` in its name) held a local copy of TUM ERA Group's Subset Simulation
+toolbox (Nataf transform, adaptive conditional sampling — `SuS.py`,
+`ERADist.py`, `ERANataf.py`, `aCS.py`, `corr_factor.py`, `g_series.py`,
+`run_sus_series.py`). It has been removed from this public repository
+because the ERA Group has not published explicit redistribution terms for
+it. If you need it, get it directly from their
+[Subset Simulation software page](https://www.cee.ed.tum.de/en/era/software/reliability/subset-simulation/),
+and cite the relevant Papaioannou/Straub et al. papers referenced in that
+toolbox's own file headers.
 
 ### `adim/` — polynomial chaos expansion tooling
 
