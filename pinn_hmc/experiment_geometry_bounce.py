@@ -1060,16 +1060,17 @@ def run_exp1_linear_lsf(
     n_rep: int,
     ctrl_cfg: ControllerConfig,
     arms: Tuple[str, ...] = ("A", "B", "C"),
+    d: int = 2,
 ) -> Dict:
-    label = f"beta={beta}_rho={rho}"
+    label = f"beta={beta}_rho={rho}_d={d}"
     _log(f"\n[Exp 1  {label}  n_rep={n_rep}]")
-    lsf    = ThalerLinearLSF(beta=beta, rho=rho)
-    target = CorrelatedGaussianTarget(rho=rho)
+    lsf    = ThalerLinearLSF(beta=beta, rho=rho, d=d)
+    target = CorrelatedGaussianTarget(rho=rho, d=d)
     all_arm_results = {}
     for arm in arms:
         all_arm_results[arm] = run_replications(
             arm, target, lsf, ctrl_cfg, n_rep, label=label)
-    return dict(beta=beta, rho=rho, lsf=lsf, arms=all_arm_results)
+    return dict(beta=beta, rho=rho, d=d, lsf=lsf, arms=all_arm_results)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -1290,7 +1291,7 @@ def write_record(
 # Main
 # ═══════════════════════════════════════════════════════════════════════════════
 
-def main(n_rep: int = 2, skip_exp0: bool = False) -> None:
+def main(n_rep: int = 2, skip_exp0: bool = False, d: int = 2) -> None:
     _open_log()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     tag = "_smoke" if n_rep <= 5 else ""
@@ -1330,7 +1331,7 @@ def main(n_rep: int = 2, skip_exp0: bool = False) -> None:
         _log(f"\n{'='*70}")
         _log(f"Exp 1: beta={beta}  rho={rho}")
         r = run_exp1_linear_lsf(beta=beta, rho=rho, n_rep=n_rep,
-                                ctrl_cfg=ctrl_cfg, arms=("A", "B", "C"))
+                                ctrl_cfg=ctrl_cfg, arms=("A", "B", "C"), d=d)
         exp1_results.append(r)
         lsf_ref_map[f"b{beta}_r{rho}"] = float(beta)
 
