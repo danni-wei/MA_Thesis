@@ -1,0 +1,25 @@
+This directory (hmc_hnnmc/HNNMC/) contains code adapted from third-party
+sources. It is not original work by the author of this repository (Danni
+Wei); it is included, with modification, as part of a Master's thesis
+evaluating HNN-driven HMC for structural reliability problems.
+
+1. BIhNNs
+   Copyright (c) 2022 Battelle Energy Alliance, LLC
+   Licensed under the MIT License.
+   Source: https://github.com/IdahoLabResearch/BIhNNs
+   License text: https://github.com/IdahoLabResearch/BIhNNs/blob/main/LICENSE
+
+2. hamiltonian-nn
+   Copyright (c) 2019 Sam Greydanus, Misko Dzamba, Jason Yosinski
+   Licensed under the Apache License, Version 2.0.
+   Source: https://github.com/greydanus/hamiltonian-nn
+   License text: http://www.apache.org/licenses/LICENSE-2.0
+
+BIhNNs (item 1) is itself an adaptation of hamiltonian-nn (item 2), modified
+by Som Dhulipala at Idaho National Laboratory. The code in this directory is
+a further adaptation of BIhNNs for this thesis's experiments.
+
+Individual files retain their original copyright headers; see each file for
+the specific license under which it is distributed. This NOTICE is a
+consolidated summary and does not override or modify those individual
+headers.
